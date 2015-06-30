@@ -61,6 +61,14 @@
 		8D92AAB11A9E09F900A58E28 /* YuMePresentedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D92AAB01A9E09F900A58E28 /* YuMePresentedViewController.m */; };
 		8E49D6F31AD57B8600115222 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D50B0D51A5CF86C006BCA88 /* Main_iPad.storyboard */; };
 		8E49D6F41AD57B8900115222 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D50B0D71A5CF86C006BCA88 /* Main_iPhone.storyboard */; };
+		8E7D6D491B32903D00BA7A25 /* ShowAd.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E7D6D481B32903D00BA7A25 /* ShowAd.m */; };
+		8E8006C11B304AD100221BDB /* XCTAsyncTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E8006BE1B304AD100221BDB /* XCTAsyncTestCase.m */; };
+		8E8006C21B304AD100221BDB /* XCTAsyncTestCase.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 8E8006BF1B304AD100221BDB /* XCTAsyncTestCase.podspec */; };
+		8E8006C31B304AD100221BDB /* xctestify.sh in Resources */ = {isa = PBXBuildFile; fileRef = 8E8006C01B304AD100221BDB /* xctestify.sh */; };
+		8E8006C71B304B3200221BDB /* Init.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E8006C41B304B3200221BDB /* Init.m */; };
+		8E8006C81B304B3200221BDB /* YuMeUnitTestUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E8006C61B304B3200221BDB /* YuMeUnitTestUtils.m */; };
+		8E8006C91B304B5800221BDB /* libical.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D3DDC6F1A5BFC3D006203E8 /* libical.a */; };
+		8E8006CA1B304B5A00221BDB /* libYuMeSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D3DDC701A5BFC3D006203E8 /* libYuMeSDK.a */; };
 		8EAD3C3E1B15D8E800C23C94 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8D3DDC531A5BF8BC006203E8 /* Default-568h@2x.png */; };
 		8EAD3C3F1B15D8E800C23C94 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 8D3DDC541A5BF8BC006203E8 /* Default.png */; };
 		8EAD3C401B15D8E800C23C94 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8D3DDC551A5BF8BC006203E8 /* Default@2x.png */; };
@@ -108,6 +116,13 @@
 
 /* Begin PBXContainerItemProxy section */
 		829F09EAD49AE3E6B59E3FC9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8D3DDBEA1A5BF000006203E8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8D3DDBF11A5BF000006203E8;
+			remoteInfo = YuMeZISTestApp;
+		};
+		8E8006B81B304A7000221BDB /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 8D3DDBEA1A5BF000006203E8 /* Project object */;
 			proxyType = 1;
@@ -196,6 +211,16 @@
 		8D50B0D81A5CF86C006BCA88 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
 		8D92AAAF1A9E09F900A58E28 /* YuMePresentedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YuMePresentedViewController.h; path = Src/YuMePresentedViewController.h; sourceTree = "<group>"; };
 		8D92AAB01A9E09F900A58E28 /* YuMePresentedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YuMePresentedViewController.m; path = Src/YuMePresentedViewController.m; sourceTree = "<group>"; };
+		8E7D6D481B32903D00BA7A25 /* ShowAd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShowAd.m; sourceTree = "<group>"; };
+		8E8006B21B304A7000221BDB /* YuMeZISTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YuMeZISTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8E8006B51B304A7000221BDB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8E8006BD1B304AD100221BDB /* XCTAsyncTestCase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCTAsyncTestCase.h; sourceTree = "<group>"; };
+		8E8006BE1B304AD100221BDB /* XCTAsyncTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XCTAsyncTestCase.m; sourceTree = "<group>"; };
+		8E8006BF1B304AD100221BDB /* XCTAsyncTestCase.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = XCTAsyncTestCase.podspec; sourceTree = "<group>"; };
+		8E8006C01B304AD100221BDB /* xctestify.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = xctestify.sh; sourceTree = "<group>"; };
+		8E8006C41B304B3200221BDB /* Init.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Init.m; sourceTree = "<group>"; };
+		8E8006C51B304B3200221BDB /* YuMeUnitTestUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YuMeUnitTestUtils.h; sourceTree = "<group>"; };
+		8E8006C61B304B3200221BDB /* YuMeUnitTestUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YuMeUnitTestUtils.m; sourceTree = "<group>"; };
 		8E9733031B26F07B006EF8BC /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		8EFC666C1ACBCCDA00605328 /* YuMeUnitTestUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YuMeUnitTestUtils.h; path = Tests/YuMeUnitTestUtils.h; sourceTree = "<group>"; };
 		8EFC666D1ACBCCDA00605328 /* YuMeUnitTestUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YuMeUnitTestUtils.m; path = Tests/YuMeUnitTestUtils.m; sourceTree = "<group>"; };
@@ -229,6 +254,15 @@
 				8D3DDBF61A5BF000006203E8 /* Foundation.framework in Frameworks */,
 				8D3DDC6A1A5BF9D2006203E8 /* SystemConfiguration.framework in Frameworks */,
 				8D3DDC6C1A5BF9DD006203E8 /* MobileCoreServices.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8E8006AF1B304A7000221BDB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8E8006C91B304B5800221BDB /* libical.a in Frameworks */,
+				8E8006CA1B304B5A00221BDB /* libYuMeSDK.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,6 +302,7 @@
 			children = (
 				8D3DDC6D1A5BFC3C006203E8 /* libYuMeSDK */,
 				8D3DDBFB1A5BF000006203E8 /* ZIS_TestApp */,
+				8E8006B31B304A7000221BDB /* YuMeZISTests */,
 				8D3DDBF41A5BF000006203E8 /* Frameworks */,
 				8D3DDBF31A5BF000006203E8 /* Products */,
 				A86AF7BB1E5AD850A999B3D5 /* Tests */,
@@ -280,6 +315,7 @@
 			children = (
 				8D3DDBF21A5BF000006203E8 /* YuMeZISTestApp.app */,
 				042116F9FB519C7517B3C5FE /* Tests.app */,
+				8E8006B21B304A7000221BDB /* YuMeZISTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -437,6 +473,30 @@
 			name = HLS;
 			sourceTree = "<group>";
 		};
+		8E8006B31B304A7000221BDB /* YuMeZISTests */ = {
+			isa = PBXGroup;
+			children = (
+				8E7D6D481B32903D00BA7A25 /* ShowAd.m */,
+				8E8006C41B304B3200221BDB /* Init.m */,
+				8E8006C51B304B3200221BDB /* YuMeUnitTestUtils.h */,
+				8E8006C61B304B3200221BDB /* YuMeUnitTestUtils.m */,
+				8E8006BD1B304AD100221BDB /* XCTAsyncTestCase.h */,
+				8E8006BE1B304AD100221BDB /* XCTAsyncTestCase.m */,
+				8E8006BF1B304AD100221BDB /* XCTAsyncTestCase.podspec */,
+				8E8006C01B304AD100221BDB /* xctestify.sh */,
+				8E8006B41B304A7000221BDB /* Supporting Files */,
+			);
+			path = YuMeZISTests;
+			sourceTree = "<group>";
+		};
+		8E8006B41B304A7000221BDB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8E8006B51B304A7000221BDB /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		8EFC66681ACBC97900605328 /* API_Use_Cases */ = {
 			isa = PBXGroup;
 			children = (
@@ -513,6 +573,24 @@
 			productReference = 8D3DDBF21A5BF000006203E8 /* YuMeZISTestApp.app */;
 			productType = "com.apple.product-type.application";
 		};
+		8E8006B11B304A7000221BDB /* YuMeZISTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8E8006BC1B304A7000221BDB /* Build configuration list for PBXNativeTarget "YuMeZISTests" */;
+			buildPhases = (
+				8E8006AE1B304A7000221BDB /* Sources */,
+				8E8006AF1B304A7000221BDB /* Frameworks */,
+				8E8006B01B304A7000221BDB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8E8006B91B304A7000221BDB /* PBXTargetDependency */,
+			);
+			name = YuMeZISTests;
+			productName = YuMeZISTests;
+			productReference = 8E8006B21B304A7000221BDB /* YuMeZISTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		A7777A9B220A492C924C808B /* Tests */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3FE51F8BB19018A6717B4842 /* Build configuration list for PBXNativeTarget "Tests" */;
@@ -542,6 +620,12 @@
 				CLASSPREFIX = YuMe;
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = YuMe;
+				TargetAttributes = {
+					8E8006B11B304A7000221BDB = {
+						CreatedOnToolsVersion = 6.3.2;
+						TestTargetID = 8D3DDBF11A5BF000006203E8;
+					};
+				};
 			};
 			buildConfigurationList = 8D3DDBED1A5BF000006203E8 /* Build configuration list for PBXProject "YuMeZISTestApp" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -558,6 +642,7 @@
 			targets = (
 				8D3DDBF11A5BF000006203E8 /* YuMeZISTestApp */,
 				A7777A9B220A492C924C808B /* Tests */,
+				8E8006B11B304A7000221BDB /* YuMeZISTests */,
 			);
 		};
 /* End PBXProject section */
@@ -598,6 +683,15 @@
 				8D3DDC5C1A5BF8BC006203E8 /* Default-568h@2x.png in Resources */,
 				8D3DDC5E1A5BF8BC006203E8 /* Default@2x.png in Resources */,
 				8D3DDC081A5BF000006203E8 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8E8006B01B304A7000221BDB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8E8006C31B304AD100221BDB /* xctestify.sh in Resources */,
+				8E8006C21B304AD100221BDB /* XCTAsyncTestCase.podspec in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -711,6 +805,17 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		8E8006AE1B304A7000221BDB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8E8006C81B304B3200221BDB /* YuMeUnitTestUtils.m in Sources */,
+				8E7D6D491B32903D00BA7A25 /* ShowAd.m in Sources */,
+				8E8006C11B304AD100221BDB /* XCTAsyncTestCase.m in Sources */,
+				8E8006C71B304B3200221BDB /* Init.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -719,6 +824,11 @@
 			name = YuMeZISTestApp;
 			target = 8D3DDBF11A5BF000006203E8 /* YuMeZISTestApp */;
 			targetProxy = 829F09EAD49AE3E6B59E3FC9 /* PBXContainerItemProxy */;
+		};
+		8E8006B91B304A7000221BDB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8D3DDBF11A5BF000006203E8 /* YuMeZISTestApp */;
+			targetProxy = 8E8006B81B304A7000221BDB /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -881,6 +991,71 @@
 			};
 			name = Release;
 		};
+		8E8006BA1B304A7000221BDB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = YuMeZISTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/libYuMeSDK",
+				);
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					XCTest,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/YuMeZISTestApp.app/YuMeZISTestApp";
+			};
+			name = Debug;
+		};
+		8E8006BB1B304A7000221BDB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = YuMeZISTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/libYuMeSDK",
+				);
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					XCTest,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/YuMeZISTestApp.app/YuMeZISTestApp";
+			};
+			name = Release;
+		};
 		CB8F73000CA1BF76EDBA4658 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = FE31B14D8BDC4FA7422FB157 /* Pods-Tests.debug.xcconfig */;
@@ -932,6 +1107,15 @@
 			buildConfigurations = (
 				8D3DDC1F1A5BF000006203E8 /* Debug */,
 				8D3DDC201A5BF000006203E8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8E8006BC1B304A7000221BDB /* Build configuration list for PBXNativeTarget "YuMeZISTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8E8006BA1B304A7000221BDB /* Debug */,
+				8E8006BB1B304A7000221BDB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

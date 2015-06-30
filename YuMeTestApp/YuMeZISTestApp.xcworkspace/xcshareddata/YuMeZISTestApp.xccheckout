@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>208C68D0-A714-42BC-8C92-24BE25851474</string>
+	<key>IDESourceControlProjectName</key>
+	<string>YuMeZISTestApp</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>1A458923C84142C176946912C1B8AAA18FB74E49</key>
+		<string>https://github.com/BharathRamakrishnan/YuMe-iOS-Automation.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>YuMeTestApp/YuMeZISTestApp.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>1A458923C84142C176946912C1B8AAA18FB74E49</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/BharathRamakrishnan/YuMe-iOS-Automation.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>1A458923C84142C176946912C1B8AAA18FB74E49</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>1A458923C84142C176946912C1B8AAA18FB74E49</string>
+			<key>IDESourceControlWCCName</key>
+			<string>YuMe-iOS-Automation</string>
+		</dict>
+	</array>
+</dict>
+</plist>

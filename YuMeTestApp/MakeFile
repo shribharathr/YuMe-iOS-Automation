@@ -1,0 +1,18 @@
+# Set default make action here
+
+##Clean-up the previously built binaries
+#xcodebuild -project YuMeZISTestApp.xcodeproj clean -alltargets
+
+-rm -rf build/*
+
+#xcodebuild -target Tests -configuration YuMeTestApp -sdk macosx build
+
+GHUNIT_CLI=1 WRITE_JUNIT_XML=1 xcodebuild -target Tests -configuration Debug -sdk iphonesimulator build -project /Users/Bharath/GitHub/YuMe-iOS-Automation/YuMeTestApp/YuMeZISTestApp.xcodeproj
+
+
+
+
+
+
+
+

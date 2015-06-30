@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <CoreGraphics/CoreGraphics.h>
 #import "YuMeAppSettings.h"
 #import "YuMeInterface.h"
 #import "YuMeSDKInterface.h"

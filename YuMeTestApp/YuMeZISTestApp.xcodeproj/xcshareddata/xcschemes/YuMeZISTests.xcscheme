@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0620"
+   LastUpgradeVersion = "0630"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,23 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "8D3DDBF11A5BF000006203E8"
-               BuildableName = "YuMeZISTestApp.app"
-               BlueprintName = "YuMeZISTestApp"
-               ReferencedContainer = "container:YuMeZISTestApp.xcodeproj">
-            </BuildableReference>
-         </BuildActionEntry>
-         <BuildActionEntry
-            buildForTesting = "YES"
-            buildForRunning = "YES"
-            buildForProfiling = "NO"
-            buildForArchiving = "NO"
-            buildForAnalyzing = "YES">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "8E80061A1B30303000221BDB"
-               BuildableName = "YuMeZISTestAppTests.xctest"
-               BlueprintName = "YuMeZISTestAppTests"
+               BlueprintIdentifier = "8E8006B11B304A7000221BDB"
+               BuildableName = "YuMeZISTests.xctest"
+               BlueprintName = "YuMeZISTests"
                ReferencedContainer = "container:YuMeZISTestApp.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -46,19 +32,27 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "8E80061A1B30303000221BDB"
-               BuildableName = "YuMeZISTestAppTests.xctest"
-               BlueprintName = "YuMeZISTestAppTests"
+               BlueprintIdentifier = "8E8006B11B304A7000221BDB"
+               BuildableName = "YuMeZISTests.xctest"
+               BlueprintName = "YuMeZISTests"
                ReferencedContainer = "container:YuMeZISTestApp.xcodeproj">
             </BuildableReference>
+            <SkippedTests>
+               <Test
+                  Identifier = "Init">
+               </Test>
+               <Test
+                  Identifier = "XCTAsyncTestCase">
+               </Test>
+            </SkippedTests>
          </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "8D3DDBF11A5BF000006203E8"
-            BuildableName = "YuMeZISTestApp.app"
-            BlueprintName = "YuMeZISTestApp"
+            BlueprintIdentifier = "8E8006B11B304A7000221BDB"
+            BuildableName = "YuMeZISTests.xctest"
+            BlueprintName = "YuMeZISTests"
             ReferencedContainer = "container:YuMeZISTestApp.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -72,17 +66,21 @@
       ignoresPersistentStateOnLaunch = "NO"
       debugDocumentVersioning = "YES"
       allowLocationSimulation = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
+      <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "8D3DDBF11A5BF000006203E8"
-            BuildableName = "YuMeZISTestApp.app"
-            BlueprintName = "YuMeZISTestApp"
+            BlueprintIdentifier = "8E8006B11B304A7000221BDB"
+            BuildableName = "YuMeZISTests.xctest"
+            BlueprintName = "YuMeZISTests"
             ReferencedContainer = "container:YuMeZISTestApp.xcodeproj">
          </BuildableReference>
-      </BuildableProductRunnable>
+      </MacroExpansion>
       <AdditionalOptions>
+         <AdditionalOption
+            key = "NSZombieEnabled"
+            value = "YES"
+            isEnabled = "YES">
+         </AdditionalOption>
       </AdditionalOptions>
    </LaunchAction>
    <ProfileAction
@@ -91,16 +89,15 @@
       useCustomWorkingDirectory = "NO"
       buildConfiguration = "Release"
       debugDocumentVersioning = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
+      <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "8D3DDBF11A5BF000006203E8"
-            BuildableName = "YuMeZISTestApp.app"
-            BlueprintName = "YuMeZISTestApp"
+            BlueprintIdentifier = "8E8006B11B304A7000221BDB"
+            BuildableName = "YuMeZISTests.xctest"
+            BlueprintName = "YuMeZISTests"
             ReferencedContainer = "container:YuMeZISTestApp.xcodeproj">
          </BuildableReference>
-      </BuildableProductRunnable>
+      </MacroExpansion>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">

@@ -336,50 +336,50 @@ static YuMeInterface *pYuMeInterface = nil;
         params.pAdditionalParams = @"placement_id=71239&advertisement_id=10351";
         
         //Plain Image
-        params.pAdServerUrl = @"http://172.18.8.198/~senthil/15.1.3.6/roll/plain-image/";
+        params.pAdServerUrl = @"http://172.18.8.72/~senthil/15.1.3.6/roll/plain-image/";
         params.pDomainId = @"1639lzSeTNzO";
         params.pAdditionalParams = @"";
         
         //Plain Image - 404
-        params.pAdServerUrl = @"http://172.18.8.198/~senthil/15.1.3.6/roll/plain-image/404";
+        params.pAdServerUrl = @"http://172.18.8.72/~senthil/15.1.3.6/roll/plain-image/404";
         params.pDomainId = @"1639lzSeTNzO";
         params.pAdditionalParams = @"";
         
         //Plain Image - Timeout
-        params.pAdServerUrl = @"http://172.18.8.198/~senthil/15.1.3.6/roll/plain-image/timed-out";
+        params.pAdServerUrl = @"http://172.18.8.72/~senthil/15.1.3.6/roll/plain-image/timed-out";
         params.pDomainId = @"1639lzSeTNzO";
         params.pAdditionalParams = @"";
         
         //Plain Video
-        params.pAdServerUrl = @"http://172.18.8.198/~senthil/15.1.3.6/roll/plain-video/";
+        params.pAdServerUrl = @"http://172.18.8.72/~senthil/15.1.3.6/roll/plain-video/";
         params.pDomainId = @"1639lzSeTNzO";
         params.pAdditionalParams = @"";
         
         //Plain Video - 404 (Didn't get error but timed out)
-        params.pAdServerUrl = @"http://172.18.8.198/~senthil/15.1.3.6/roll/plain-video/404";
+        params.pAdServerUrl = @"http://172.18.8.72/~senthil/15.1.3.6/roll/plain-video/404";
         params.pDomainId = @"1639lzSeTNzO";
         params.pAdditionalParams = @"";
         
         //Plain Video - Timeout
-        params.pAdServerUrl = @"http://172.18.8.198/~senthil/15.1.3.6/roll/plain-video/timed-out";
+        params.pAdServerUrl = @"http://172.18.8.72/~senthil/15.1.3.6/roll/plain-video/timed-out";
         params.pDomainId = @"1639lzSeTNzO";
         params.pAdditionalParams = @"";
         
         //MRAID Telemetry - Inline
-        params.pAdServerUrl = @"http://172.18.8.198/~senthil/15.1.3.6/roll/mraid-telemetry-inline";
+        params.pAdServerUrl = @"http://172.18.8.72/~senthil/15.1.3.6/roll/mraid-telemetry-inline";
         params.pDomainId = @"1639lzSeTNzO";
         params.pAdditionalParams = @"";
         
         //Ad Coverage
         //params.pAdServerUrl = @"http://shadow01.yumenetworks.com/";
-        params.pAdServerUrl = @"http://172.18.8.198/~senthil/15.1.3.6/roll/ad_coverage";
+        params.pAdServerUrl = @"http://172.18.8.72/~senthil/15.1.3.6/roll/ad_coverage";
         params.pDomainId = @"1463xHTGXBBE";
         params.pAdditionalParams = @"";
         
         //Preroll: Swipe (V->V) - With Pre and Post Surveys
         //Midroll: MRAID Telemetry - With Pre and Post Surveys
         //Postroll: VPAID - With Pre and Post Surveys
-        params.pAdServerUrl = @"http://172.18.8.198/~senthil/15.1.3.6/roll/survey-pre-post";
+        params.pAdServerUrl = @"http://172.18.8.72/~senthil/15.1.3.6/roll/survey-pre-post";
         params.pDomainId = @"1639lzSeTNzO";
         params.pAdditionalParams = @"";
         
@@ -390,7 +390,7 @@ static YuMeInterface *pYuMeInterface = nil;
         
         //VPaid - Ad 1
         //params.pAdServerUrl = @"http://qa-web-001.sjc1.yumenetworks.com/";
-        params.pAdServerUrl = @"http://172.18.8.198/~senthil/15.1.5.6/";
+        params.pAdServerUrl = @"http://172.18.8.72/~senthil/15.1.5.6/";
         params.pDomainId = @"3679FjmiiOWJ";
         params.pAdditionalParams = @"placement_id=72504&advertisement_id=12925";
         
@@ -400,7 +400,7 @@ static YuMeInterface *pYuMeInterface = nil;
         params.pAdditionalParams = @"placement_id=71992&advertisement_id=12519";
         
         //Gameloft
-        params.pAdServerUrl = @"http://172.18.8.198/~senthil/zis/gameloft/";
+        params.pAdServerUrl = @"http://172.18.8.72/~senthil/zis/gameloft/";
         params.pDomainId = @"1463xHTGXBBE";
         params.pAdditionalParams = @"";
         
@@ -416,7 +416,7 @@ static YuMeInterface *pYuMeInterface = nil;
         
         //Plain-Image - Redirect
         //params.pAdServerUrl = @"http://172.18.8.68/2015/01jan/12jan_zis_html5/prefetch/unit_test/r_image/";
-        //params.pAdServerUrl = @"http://172.18.8.198/~senthil/zis/pi-redirect/";
+        //params.pAdServerUrl = @"http://172.18.8.72/~senthil/zis/pi-redirect/";
         params.pAdServerUrl = @"http://172.18.8.176/~bharath/utest/redirectImage/";
         params.pDomainId = @"211EsvNSRHO";
         params.pAdditionalParams = @"placement_id=5571&advertisement_id=5479";
@@ -427,7 +427,7 @@ static YuMeInterface *pYuMeInterface = nil;
         params.pAdditionalParams = @"client_ip=141.241.128.11";
         
         params.pAdServerUrl = @"http://shadow01.yumenetworks.com/";
-        //params.pAdServerUrl = @"http://172.18.8.198/~senthil/15.1.3.6/roll/ad_coverage";
+        //params.pAdServerUrl = @"http://172.18.8.72/~senthil/15.1.3.6/roll/ad_coverage";
         params.pDomainId = @"1463xHTGXBBE";
         params.pAdditionalParams = @"";
         
