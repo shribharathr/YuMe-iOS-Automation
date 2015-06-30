@@ -70,14 +70,12 @@
     }];
 }
 
-- (NSError)presentShowAd {
+- (void)presentShowAd:(NSError **)pError {
     presentedAdViewController = [[YuMePresentedViewController alloc] init];
     adDisplayViewController = [YuMeUnitTestUtils topMostController];
     [adDisplayViewController presentViewController:presentedAdViewController animated:NO completion:^() {
         NSLog(@"Presented Roll View Controller in Application: %@", presentedAdViewController);
-        NSError *pError = nil;
-        GHAssertTrue([pYuMeSDK yumeSdkShowAd:adDisplayViewController.view viewController:presentedAdViewController errorInfo:&pError], @"");
-        return pError;
+        GHAssertTrue([pYuMeSDK yumeSdkShowAd:adDisplayViewController.view viewController:presentedAdViewController errorInfo:pError], @"");
     }];
 }
 
@@ -169,7 +167,8 @@
     [self waitForStatus:kGHUnitWaitStatusSuccess timeout:kTIME_OUT];
     GHTestLog(@"YuMeAdEventAdReadyToPlay event received.");
 
-    NSError *error = [self presentShowAd];
+    NSError *error = nil;
+    [self presentShowAd:&error];
     if (error) {
         GHTestLog(@"Error: %@", [[YuMeUnitTestUtils getErrDesc:error] description]);
         GHFail([NSString stringWithFormat:@" %s <Error>: %@", __FUNCTION__ , [[YuMeUnitTestUtils getErrDesc:error] description]]);
@@ -584,7 +583,8 @@
     [self waitForStatus:kGHUnitWaitStatusSuccess timeout:kTIME_OUT];
     GHTestLog(@"YuMeAdEventAdReadyToPlay event received.");
 
-    NSError *error = [self presentShowAd];
+    NSError *error = nil;
+    [self presentShowAd:&error];
     if (error) {
         GHTestLog(@"Error: %@", [[YuMeUnitTestUtils getErrDesc:error] description]);
         GHFail([NSString stringWithFormat:@" %s <Error>: %@", __FUNCTION__ , [[YuMeUnitTestUtils getErrDesc:error] description]]);
@@ -700,7 +700,8 @@
     [self waitForStatus:kGHUnitWaitStatusSuccess timeout:kTIME_OUT];
     GHTestLog(@"YuMeAdEventAdReadyToPlay event received.");
     
-    NSError *error = [self presentShowAd];
+    NSError *error = nil; 
+[self presentShowAd:&error];
     if (error) {
         GHTestLog(@"Error: %@", [[YuMeUnitTestUtils getErrDesc:error] description]);
         GHFail([NSString stringWithFormat:@" %s <Error>: %@", __FUNCTION__ , [[YuMeUnitTestUtils getErrDesc:error] description]]);
@@ -869,7 +870,8 @@
     [self waitForStatus:kGHUnitWaitStatusSuccess timeout:kTIME_OUT];
     GHTestLog(@"YuMeAdEventAdReadyToPlay event received.");
     
-    NSError *error = [self presentShowAd];
+    NSError *error = nil; 
+[self presentShowAd:&error];
     if (error) {
         GHTestLog(@"Error: %@", [[YuMeUnitTestUtils getErrDesc:error] description]);
         GHFail([NSString stringWithFormat:@" %s <Error>: %@", __FUNCTION__ , [[YuMeUnitTestUtils getErrDesc:error] description]]);
@@ -979,7 +981,8 @@
     [self waitForStatus:kGHUnitWaitStatusSuccess timeout:kTIME_OUT];
     GHTestLog(@"YuMeAdEventAdReadyToPlay event received.");
     
-    NSError *error = [self presentShowAd];
+    NSError *error = nil; 
+[self presentShowAd:&error];
     if (error) {
         GHTestLog(@"Error: %@", [[YuMeUnitTestUtils getErrDesc:error] description]);
         GHFail([NSString stringWithFormat:@" %s <Error>: %@", __FUNCTION__ , [[YuMeUnitTestUtils getErrDesc:error] description]]);
@@ -1091,7 +1094,8 @@
     [self waitForStatus:kGHUnitWaitStatusSuccess timeout:kTIME_OUT];
     GHTestLog(@"YuMeAdEventAdReadyToPlay event received.");
     
-    NSError *error = [self presentShowAd];
+    NSError *error = nil; 
+[self presentShowAd:&error];
     if (error) {
         GHTestLog(@"Error: %@", [[YuMeUnitTestUtils getErrDesc:error] description]);
         GHFail([NSString stringWithFormat:@" %s <Error>: %@", __FUNCTION__ , [[YuMeUnitTestUtils getErrDesc:error] description]]);
@@ -1460,7 +1464,8 @@
     
     GHRunForInterval(1);
     
-    NSError *error = [self presentShowAd];
+    NSError *error = nil; 
+[self presentShowAd:&error];
     if (error) {
         GHTestLog(@"Error: %@", [[YuMeUnitTestUtils getErrDesc:error] description]);
         GHFail([NSString stringWithFormat:@" %s <Error>: %@", __FUNCTION__ , [[YuMeUnitTestUtils getErrDesc:error] description]]);
