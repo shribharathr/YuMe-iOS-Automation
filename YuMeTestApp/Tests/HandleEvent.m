@@ -23,7 +23,7 @@
 - (BOOL)shouldRunOnMainThread {
     // By default NO, but if you have a UI test or test dependent on running on the main thread return YES.
     // Also an async test that calls back on the main thread, you'll probably want to return YES.
-    return NO;
+    return YES;
 }
 
 - (void)setUpClass {

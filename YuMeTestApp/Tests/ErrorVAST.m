@@ -89,6 +89,8 @@
  http://172.18.4.131/vast-unit-testing/error/dynamic_preroll_playlist-case1-2.vast2xml
 
  */
+
+/*
 - (void)test_VAST_EC_001 {
     NSError *pError = nil;
     NSArray *userInfo = nil;
@@ -168,5 +170,6 @@
     GHTestLog(@"YuMeAdEventAdNotReady / YuMeAdEventAdCompleted event fired.");
     
 }
+ */
 
 @end

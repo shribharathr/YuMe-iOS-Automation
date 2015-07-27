@@ -1096,6 +1096,7 @@
  VPAID
  http://qa-web-001.sjc1.yumenetworks.com/dynamic_preroll_playlist.vast2xml?domain=3679FjmiiOWJ&xml_version=v3&placement_id=72504&advertisement_id=12925
  */
+
 - (void)test_FEATURE_VPAID {
     NSError *pError = nil;
     NSArray *userInfo = nil;
@@ -1135,9 +1136,9 @@
     
     pError = nil;
     params.eSdkUsageMode = YuMeSdkUsageModePrefetch;
-    params.pAdServerUrl = @"http://qa-web-001.sjc1.yumenetworks.com/";
-    params.pDomainId = @"3679FjmiiOWJ";
-    params.pAdditionalParams = @"placement_id=72504&advertisement_id=12925";
+    params.pAdServerUrl = @"http://qa-web-001.sjc1.yumenetworks.com";
+    params.pDomainId = @"3968vyRqcKgs";
+    params.pAdditionalParams = @"placement_id=74100&advertisement_id=13465";
     
     GHAssertTrue([pYuMeSDK yumeSdkModifyAdParams:params errorInfo:&pError], @"yumeSdkModifyAdParams() fails");
     if (pError) {

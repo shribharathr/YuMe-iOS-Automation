@@ -8,16 +8,18 @@
 
 #import "YuMeUnitTestUtils.h"
 #import "YuMeAppUtils.h"
+#include <stdio.h>
 
 BOOL bIsEventReceived = NO;
 BOOL bIsEventMatch = NO;
 NSCondition *waitForEventCondition;
 NSString *waitForEventName;
 NSString *responeEventName;
-FILE *logFile;
+FILE *debugLogFile;
+int stdout_dupfd;
+int stderrSave;
 
 @implementation YuMeUnitTestUtils
-
 
 /*
  * Get the top most viewcontriller from appliation.
@@ -186,10 +188,16 @@ FILE *logFile;
 }
 
 + (void)createConsoleLogFile:(NSString *)fileName {
+    
     NSString *testfileName = [fileName stringByReplacingOccurrencesOfString:@"test_" withString:@""];
     [YuMeUnitTestUtils deleteConsoleLogFile:testfileName];
     NSString *logFilePath = [YuMeUnitTestUtils getConsoleLogFilePath:testfileName];
-    logFile = freopen([logFilePath cStringUsingEncoding:NSASCIIStringEncoding],"a+",stderr);
+    
+    // Save stderr so it can be restored.
+    stderrSave = dup(STDERR_FILENO);
+    
+    // Send stderr to our file
+    debugLogFile = freopen([logFilePath cStringUsingEncoding:NSASCIIStringEncoding], "a", stderr);
 }
 
 + (NSString *)readConsoleLogFile:(NSString *)fileName {
@@ -197,6 +205,15 @@ FILE *logFile;
     NSString *content = [NSString stringWithContentsOfFile:[YuMeUnitTestUtils getConsoleLogFilePath:testfileName]
                                                   encoding:NSUTF8StringEncoding
                                                      error:NULL];
+    
+    
+    // Flush before restoring stderr
+    fflush(stderr);
+    
+    // Now restore stderr, so new output goes to console.
+    dup2(stderrSave, STDERR_FILENO);
+    close(stderrSave);
+    
     return content;
 }
 

@@ -110,6 +110,11 @@ static YuMeInterface *pYuMeInterface = nil;
     [self removeAppObservers];
 }
 
+- (UIInterfaceOrientationMask)supportedInterfaceOrientations {
+    return UIInterfaceOrientationMaskPortrait | UIInterfaceOrientationMaskLandscapeLeft | UIInterfaceOrientationMaskLandscape | UIInterfaceOrientationMaskLandscapeRight | UIInterfaceOrientationMaskPortraitUpsideDown; //supported orientations
+}
+
+/*
 - (NSUInteger) supportedInterfaceOrientations {
 #if YUME_ARMV6_COMPATIBILITY_ENABLED
     return UIInterfaceOrientationPortrait | UIInterfaceOrientationLandscapeLeft | UIInterfaceOrientationLandscapeLeft | UIInterfaceOrientationLandscapeRight | UIInterfaceOrientationPortraitUpsideDown; //supported orientations
@@ -118,6 +123,7 @@ static YuMeInterface *pYuMeInterface = nil;
     return UIInterfaceOrientationMaskPortrait | UIInterfaceOrientationMaskLandscapeLeft | UIInterfaceOrientationMaskLandscape | UIInterfaceOrientationMaskLandscapeRight | UIInterfaceOrientationMaskPortraitUpsideDown; //supported orientations
 #endif //YUME_ARMV6_COMPATIBILITY_ENABLED
 }
+*/
 
 - (void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
