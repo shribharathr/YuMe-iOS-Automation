@@ -42,69 +42,6 @@
                   Identifier = "Init">
                </Test>
                <Test
-                  Identifier = "ShowAd/test_SHOW_AD_002">
-               </Test>
-               <Test
-                  Identifier = "ShowAd/test_SHOW_AD_003">
-               </Test>
-               <Test
-                  Identifier = "ShowAd/test_SHOW_AD_004">
-               </Test>
-               <Test
-                  Identifier = "ShowAd/test_SHOW_AD_005">
-               </Test>
-               <Test
-                  Identifier = "ShowAd/test_SHOW_AD_006">
-               </Test>
-               <Test
-                  Identifier = "ShowAd/test_SHOW_AD_007">
-               </Test>
-               <Test
-                  Identifier = "ShowAd/test_SHOW_AD_008">
-               </Test>
-               <Test
-                  Identifier = "ShowAd/test_SHOW_AD_009">
-               </Test>
-               <Test
-                  Identifier = "ShowAd/test_SHOW_AD_010">
-               </Test>
-               <Test
-                  Identifier = "ShowAd/test_SHOW_AD_011">
-               </Test>
-               <Test
-                  Identifier = "ShowAd/test_SHOW_AD_012">
-               </Test>
-               <Test
-                  Identifier = "ShowAd/test_SHOW_AD_013">
-               </Test>
-               <Test
-                  Identifier = "ShowAd/test_SHOW_AD_014">
-               </Test>
-               <Test
-                  Identifier = "ShowAd/test_SHOW_AD_015">
-               </Test>
-               <Test
-                  Identifier = "ShowAd/test_SHOW_AD_016">
-               </Test>
-               <Test
-                  Identifier = "ShowAd/test_SHOW_AD_017">
-               </Test>
-               <Test
-                  Identifier = "ShowAd/test_SHOW_AD_018">
-               </Test>
-               <Test
-                  Identifier = "ShowAd/test_SHOW_AD_019">
-               </Test>
-               <Test
-                  Identifier = "ShowAd/test_SHOW_AD_020">
-               </Test>
-               <Test
-                  Identifier = "ShowAd/test_SHOW_AD_021">
-               </Test>
-               <Test
-                  Identifier = "ShowAd/test_SHOW_AD_022">
-               </Test>
-               <Test
                   Identifier = "XCTAsyncTestCase">
                </Test>
             </SkippedTests>
