@@ -61,6 +61,30 @@
 		8D92AAB11A9E09F900A58E28 /* YuMePresentedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D92AAB01A9E09F900A58E28 /* YuMePresentedViewController.m */; };
 		8E49D6F31AD57B8600115222 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D50B0D51A5CF86C006BCA88 /* Main_iPad.storyboard */; };
 		8E49D6F41AD57B8900115222 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D50B0D71A5CF86C006BCA88 /* Main_iPhone.storyboard */; };
+		8E734B8B1B6747D40072D9AA /* YuMeAboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D3DDC251A5BF7EA006203E8 /* YuMeAboutViewController.m */; };
+		8E734B8C1B6747D40072D9AA /* YuMeAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D3DDC291A5BF7EA006203E8 /* YuMeAppDelegate.m */; };
+		8E734B8D1B6747D40072D9AA /* YuMeAppSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D3DDC2B1A5BF7EA006203E8 /* YuMeAppSettings.m */; };
+		8E734B8E1B6747D40072D9AA /* YuMeAppUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D3DDC2D1A5BF7EA006203E8 /* YuMeAppUtils.m */; };
+		8E734B8F1B6747D40072D9AA /* YuMeInterface.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D3DDC2F1A5BF7EA006203E8 /* YuMeInterface.m */; };
+		8E734B901B6747D40072D9AA /* YuMeLogViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D3DDC311A5BF7EA006203E8 /* YuMeLogViewController.m */; };
+		8E734B911B6747D40072D9AA /* YuMeMPlayerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D3DDC331A5BF7EA006203E8 /* YuMeMPlayerController.m */; };
+		8E734B921B6747D40072D9AA /* YuMeSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D3DDC351A5BF7EA006203E8 /* YuMeSettingsViewController.m */; };
+		8E734B931B6747D40072D9AA /* YuMeSizeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D3DDC371A5BF7EA006203E8 /* YuMeSizeViewController.m */; };
+		8E734B941B6747D40072D9AA /* YuMeToast.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D3DDC391A5BF7EA006203E8 /* YuMeToast.m */; };
+		8E734B951B6747D40072D9AA /* YuMeVideoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D3DDC3B1A5BF7EA006203E8 /* YuMeVideoView.m */; };
+		8E734B961B6747D40072D9AA /* YuMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D3DDC3D1A5BF7EA006203E8 /* YuMeViewController.m */; };
+		8E734B971B6747D40072D9AA /* YuMePresentedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D92AAB01A9E09F900A58E28 /* YuMePresentedViewController.m */; };
+		8E734B981B6747EF0072D9AA /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8D3DDC531A5BF8BC006203E8 /* Default-568h@2x.png */; };
+		8E734B991B6747EF0072D9AA /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 8D3DDC541A5BF8BC006203E8 /* Default.png */; };
+		8E734B9A1B6747EF0072D9AA /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8D3DDC551A5BF8BC006203E8 /* Default@2x.png */; };
+		8E734B9B1B6747EF0072D9AA /* icon_57x57.png in Resources */ = {isa = PBXBuildFile; fileRef = 8D3DDC561A5BF8BC006203E8 /* icon_57x57.png */; };
+		8E734B9C1B6747EF0072D9AA /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 8D3DDC571A5BF8BC006203E8 /* icon.png */; };
+		8E734B9D1B6747EF0072D9AA /* info.png in Resources */ = {isa = PBXBuildFile; fileRef = 8D3DDC581A5BF8BC006203E8 /* info.png */; };
+		8E734B9E1B6747EF0072D9AA /* one.m4v in Resources */ = {isa = PBXBuildFile; fileRef = 8D3DDC591A5BF8BC006203E8 /* one.m4v */; };
+		8E734B9F1B6747EF0072D9AA /* two.m4v in Resources */ = {isa = PBXBuildFile; fileRef = 8D3DDC5A1A5BF8BC006203E8 /* two.m4v */; };
+		8E734BA01B6747EF0072D9AA /* yume_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 8D3DDC5B1A5BF8BC006203E8 /* yume_logo.png */; };
+		8E734BA11B6747EF0072D9AA /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D50B0D51A5CF86C006BCA88 /* Main_iPad.storyboard */; };
+		8E734BA21B6747EF0072D9AA /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D50B0D71A5CF86C006BCA88 /* Main_iPhone.storyboard */; };
 		8E7D6D491B32903D00BA7A25 /* ShowAd.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E7D6D481B32903D00BA7A25 /* ShowAd.m */; };
 		8E8006C11B304AD100221BDB /* XCTAsyncTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E8006BE1B304AD100221BDB /* XCTAsyncTestCase.m */; };
 		8E8006C21B304AD100221BDB /* XCTAsyncTestCase.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 8E8006BF1B304AD100221BDB /* XCTAsyncTestCase.podspec */; };
@@ -690,6 +714,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8E734B981B6747EF0072D9AA /* Default-568h@2x.png in Resources */,
+				8E734B991B6747EF0072D9AA /* Default.png in Resources */,
+				8E734B9A1B6747EF0072D9AA /* Default@2x.png in Resources */,
+				8E734B9B1B6747EF0072D9AA /* icon_57x57.png in Resources */,
+				8E734B9C1B6747EF0072D9AA /* icon.png in Resources */,
+				8E734B9D1B6747EF0072D9AA /* info.png in Resources */,
+				8E734B9E1B6747EF0072D9AA /* one.m4v in Resources */,
+				8E734B9F1B6747EF0072D9AA /* two.m4v in Resources */,
+				8E734BA01B6747EF0072D9AA /* yume_logo.png in Resources */,
+				8E734BA11B6747EF0072D9AA /* Main_iPad.storyboard in Resources */,
+				8E734BA21B6747EF0072D9AA /* Main_iPhone.storyboard in Resources */,
 				8E8006C31B304AD100221BDB /* xctestify.sh in Resources */,
 				8E8006C21B304AD100221BDB /* XCTAsyncTestCase.podspec in Resources */,
 			);
@@ -809,6 +844,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8E734B8B1B6747D40072D9AA /* YuMeAboutViewController.m in Sources */,
+				8E734B8C1B6747D40072D9AA /* YuMeAppDelegate.m in Sources */,
+				8E734B8D1B6747D40072D9AA /* YuMeAppSettings.m in Sources */,
+				8E734B8E1B6747D40072D9AA /* YuMeAppUtils.m in Sources */,
+				8E734B8F1B6747D40072D9AA /* YuMeInterface.m in Sources */,
+				8E734B901B6747D40072D9AA /* YuMeLogViewController.m in Sources */,
+				8E734B911B6747D40072D9AA /* YuMeMPlayerController.m in Sources */,
+				8E734B921B6747D40072D9AA /* YuMeSettingsViewController.m in Sources */,
+				8E734B931B6747D40072D9AA /* YuMeSizeViewController.m in Sources */,
+				8E734B941B6747D40072D9AA /* YuMeToast.m in Sources */,
+				8E734B951B6747D40072D9AA /* YuMeVideoView.m in Sources */,
+				8E734B961B6747D40072D9AA /* YuMeViewController.m in Sources */,
+				8E734B971B6747D40072D9AA /* YuMePresentedViewController.m in Sources */,
 				8E8006C81B304B3200221BDB /* YuMeUnitTestUtils.m in Sources */,
 				8E7D6D491B32903D00BA7A25 /* ShowAd.m in Sources */,
 				8E8006C11B304AD100221BDB /* XCTAsyncTestCase.m in Sources */,
