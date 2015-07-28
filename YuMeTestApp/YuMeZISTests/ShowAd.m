@@ -864,7 +864,7 @@
         eDownloadStatus = [pYuMeSDK yumeSdkGetDownloadStatus:&pError];
         NSLog(@"percentage : %f = %u", percentage , eDownloadStatus);
         
-    } while( percentage <= 0.2 || (eDownloadStatus == YuMeDownloadStatusDownloadsNotInProgress));
+    } while((percentage <= 0.2) || (eDownloadStatus == YuMeDownloadStatusDownloadsNotInProgress) || (percentage == 100.000000));
 
     presentedAdViewController = [[YuMePresentedViewController alloc] init];
     adDisplayViewController = [YuMeUnitTestUtils topMostController];
@@ -1402,7 +1402,7 @@
         eDownloadStatus = [pYuMeSDK yumeSdkGetDownloadStatus:&pError];
         NSLog(@"percentage : %f = %u", percentage , eDownloadStatus);
         
-    } while( percentage <= 0.2 || (eDownloadStatus == YuMeDownloadStatusDownloadsNotInProgress));
+    } while((percentage <= 0.2) || (eDownloadStatus == YuMeDownloadStatusDownloadsNotInProgress) || (percentage <= 100.000000));
     
     pError = nil;
     XCTAssertTrue([pYuMeSDK yumeSdkAbortDownload:&pError], @"yumeSdkAbortDownload fails");
@@ -1536,7 +1536,7 @@
         eDownloadStatus = [pYuMeSDK yumeSdkGetDownloadStatus:&pError];
         NSLog(@"percentage : %f = %u", percentage , eDownloadStatus);
         
-    } while( percentage <= 0.2 || (eDownloadStatus == YuMeDownloadStatusDownloadsNotInProgress));
+    } while((percentage <= 0.2) || (eDownloadStatus == YuMeDownloadStatusDownloadsNotInProgress) || (percentage <= 100.000000));
     
     pError = nil;
     XCTAssertTrue([pYuMeSDK yumeSdkAbortDownload:&pError], @"yumeSdkAbortDownload fails");
@@ -1650,7 +1650,7 @@
         eDownloadStatus = [pYuMeSDK yumeSdkGetDownloadStatus:&pError];
         NSLog(@"percentage : %f = %u", percentage , eDownloadStatus);
         
-    } while( percentage <= 0.2 || (eDownloadStatus == YuMeDownloadStatusDownloadsNotInProgress));
+    } while((percentage <= 0.2) || (eDownloadStatus == YuMeDownloadStatusDownloadsNotInProgress) || (percentage <= 100.000000));
     
     pError = nil;
     XCTAssertTrue([pYuMeSDK yumeSdkPauseDownload:&pError], @"yumeSdkPauseDownload fails");
