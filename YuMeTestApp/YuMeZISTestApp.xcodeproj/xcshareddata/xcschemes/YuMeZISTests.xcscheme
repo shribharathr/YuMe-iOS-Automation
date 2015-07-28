@@ -60,6 +60,12 @@
                   Identifier = "ShowAd/test_SHOW_AD_006">
                </Test>
                <Test
+                  Identifier = "ShowAd/test_SHOW_AD_007">
+               </Test>
+               <Test
+                  Identifier = "ShowAd/test_SHOW_AD_008">
+               </Test>
+               <Test
                   Identifier = "ShowAd/test_SHOW_AD_010">
                </Test>
                <Test

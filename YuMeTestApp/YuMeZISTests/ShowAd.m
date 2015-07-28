@@ -844,7 +844,12 @@
         NSLog(@"Error: %@", [[YuMeUnitTestUtils getErrDesc:pError] description]);
     }
     [self runForInterval:2];
-        
+    
+    pError = nil;
+    [pYuMeSDK yumeSdkClearCache:&pError];
+    
+    [self runForInterval:2];
+
     pError = nil;
     XCTAssertTrue([pYuMeSDK yumeSdkInitAd:&pError], @"yumeSdkInitAd() fails");
     if (pError) {
@@ -854,16 +859,19 @@
     NSLog(@"yumeSdkInitAd Successful.");
     
     float percentage = 0.0f;
-    YuMeDownloadStatus eDownloadStatus = YuMeDownloadStatusNone;
+    int timeOut = 1;
     do {
         [self runForInterval:0.2];
         pError = nil;
         percentage = [pYuMeSDK yumeSdkGetDownloadedPercentage:&pError];
+
+        timeOut++;
+        if (timeOut >= 120) {
+            break;
+        }
         
-        pError = nil;
-        eDownloadStatus = [pYuMeSDK yumeSdkGetDownloadStatus:&pError];
-        NSLog(@"percentage : %f = %u", percentage , eDownloadStatus);
-    } while(((percentage <= 0.2) && (percentage <= 100.000000)) || (eDownloadStatus == YuMeDownloadStatusDownloadsNotInProgress));
+        NSLog(@"Download : %f", percentage);
+    } while((percentage <= 0.1) && (percentage <= 99));
 
     presentedAdViewController = [[YuMePresentedViewController alloc] init];
     adDisplayViewController = [YuMeUnitTestUtils topMostController];
@@ -1391,16 +1399,19 @@
     }
     
     float percentage = 0.0f;
-    YuMeDownloadStatus eDownloadStatus = YuMeDownloadStatusNone;
+    int timeOut = 1;
     do {
         [self runForInterval:0.2];
         pError = nil;
         percentage = [pYuMeSDK yumeSdkGetDownloadedPercentage:&pError];
         
-        pError = nil;
-        eDownloadStatus = [pYuMeSDK yumeSdkGetDownloadStatus:&pError];
-        NSLog(@"percentage : %f = %u", percentage , eDownloadStatus);
-    } while(((percentage <= 0.2) && (percentage <= 100.000000)) || (eDownloadStatus == YuMeDownloadStatusDownloadsNotInProgress));
+        timeOut++;
+        if (timeOut >= 120) {
+            break;
+        }
+        
+        NSLog(@"Download : %f", percentage);
+    } while((percentage <= 0.1) && (percentage <= 99));
     
     pError = nil;
     XCTAssertTrue([pYuMeSDK yumeSdkAbortDownload:&pError], @"yumeSdkAbortDownload fails");
@@ -1524,16 +1535,19 @@
     }
     
     float percentage = 0.0f;
-    YuMeDownloadStatus eDownloadStatus = YuMeDownloadStatusNone;
+    int timeOut = 1;
     do {
         [self runForInterval:0.2];
         pError = nil;
         percentage = [pYuMeSDK yumeSdkGetDownloadedPercentage:&pError];
         
-        pError = nil;
-        eDownloadStatus = [pYuMeSDK yumeSdkGetDownloadStatus:&pError];
-        NSLog(@"percentage : %f = %u", percentage , eDownloadStatus);
-    } while(((percentage <= 0.2) && (percentage <= 100.000000)) || (eDownloadStatus == YuMeDownloadStatusDownloadsNotInProgress));
+        timeOut++;
+        if (timeOut >= 120) {
+            break;
+        }
+        
+        NSLog(@"Download : %f", percentage);
+    } while((percentage <= 0.1) && (percentage <= 99));
     
     pError = nil;
     XCTAssertTrue([pYuMeSDK yumeSdkAbortDownload:&pError], @"yumeSdkAbortDownload fails");
@@ -1637,16 +1651,19 @@
     [self runForInterval:1];
     
     float percentage = 0.0f;
-    YuMeDownloadStatus eDownloadStatus = YuMeDownloadStatusNone;
+    int timeOut = 1;
     do {
         [self runForInterval:0.2];
         pError = nil;
         percentage = [pYuMeSDK yumeSdkGetDownloadedPercentage:&pError];
         
-        pError = nil;
-        eDownloadStatus = [pYuMeSDK yumeSdkGetDownloadStatus:&pError];
-        NSLog(@"percentage : %f = %u", percentage , eDownloadStatus);
-    } while(((percentage <= 0.2) && (percentage <= 100.000000)) || (eDownloadStatus == YuMeDownloadStatusDownloadsNotInProgress));
+        timeOut++;
+        if (timeOut >= 120) {
+            break;
+        }
+        
+        NSLog(@"Download : %f", percentage);
+    } while((percentage <= 0.1) && (percentage <= 99));
     
     pError = nil;
     XCTAssertTrue([pYuMeSDK yumeSdkPauseDownload:&pError], @"yumeSdkPauseDownload fails");
