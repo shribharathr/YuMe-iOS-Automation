@@ -863,8 +863,7 @@
         pError = nil;
         eDownloadStatus = [pYuMeSDK yumeSdkGetDownloadStatus:&pError];
         NSLog(@"percentage : %f = %u", percentage , eDownloadStatus);
-        
-    } while((percentage <= 0.2) || (eDownloadStatus == YuMeDownloadStatusDownloadsNotInProgress) || (percentage == 100.000000));
+    } while(((percentage <= 0.2) && (percentage <= 100.000000)) || (eDownloadStatus == YuMeDownloadStatusDownloadsNotInProgress));
 
     presentedAdViewController = [[YuMePresentedViewController alloc] init];
     adDisplayViewController = [YuMeUnitTestUtils topMostController];
@@ -1401,8 +1400,7 @@
         pError = nil;
         eDownloadStatus = [pYuMeSDK yumeSdkGetDownloadStatus:&pError];
         NSLog(@"percentage : %f = %u", percentage , eDownloadStatus);
-        
-    } while((percentage <= 0.2) || (eDownloadStatus == YuMeDownloadStatusDownloadsNotInProgress) || (percentage <= 100.000000));
+    } while(((percentage <= 0.2) && (percentage <= 100.000000)) || (eDownloadStatus == YuMeDownloadStatusDownloadsNotInProgress));
     
     pError = nil;
     XCTAssertTrue([pYuMeSDK yumeSdkAbortDownload:&pError], @"yumeSdkAbortDownload fails");
@@ -1535,8 +1533,7 @@
         pError = nil;
         eDownloadStatus = [pYuMeSDK yumeSdkGetDownloadStatus:&pError];
         NSLog(@"percentage : %f = %u", percentage , eDownloadStatus);
-        
-    } while((percentage <= 0.2) || (eDownloadStatus == YuMeDownloadStatusDownloadsNotInProgress) || (percentage <= 100.000000));
+    } while(((percentage <= 0.2) && (percentage <= 100.000000)) || (eDownloadStatus == YuMeDownloadStatusDownloadsNotInProgress));
     
     pError = nil;
     XCTAssertTrue([pYuMeSDK yumeSdkAbortDownload:&pError], @"yumeSdkAbortDownload fails");
@@ -1649,8 +1646,7 @@
         pError = nil;
         eDownloadStatus = [pYuMeSDK yumeSdkGetDownloadStatus:&pError];
         NSLog(@"percentage : %f = %u", percentage , eDownloadStatus);
-        
-    } while((percentage <= 0.2) || (eDownloadStatus == YuMeDownloadStatusDownloadsNotInProgress) || (percentage <= 100.000000));
+    } while(((percentage <= 0.2) && (percentage <= 100.000000)) || (eDownloadStatus == YuMeDownloadStatusDownloadsNotInProgress));
     
     pError = nil;
     XCTAssertTrue([pYuMeSDK yumeSdkPauseDownload:&pError], @"yumeSdkPauseDownload fails");
