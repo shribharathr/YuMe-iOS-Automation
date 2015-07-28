@@ -77,18 +77,23 @@
     presentedAdViewController = [[YuMePresentedViewController alloc] init];
     adDisplayViewController = [YuMeUnitTestUtils topMostController];
     [adDisplayViewController presentViewController:presentedAdViewController animated:NO completion:^() {
-        NSLog(@"Presented Roll View Controller in Application: %@", presentedAdViewController);
-        XCTAssertTrue([pYuMeSDK yumeSdkShowAd:adDisplayViewController.view viewController:presentedAdViewController errorInfo:pError], @"");
+        dispatch_after(0, dispatch_get_main_queue(), ^{
+            NSLog(@"Presented Roll View Controller in Application: %@", presentedAdViewController);
+            [pYuMeSDK yumeSdkShowAd:adDisplayViewController.view viewController:presentedAdViewController errorInfo:pError];
+        });
     }];
 }
 
 - (void)dismissShowAd {
     if (adDisplayViewController != nil) {
-        [adDisplayViewController dismissViewControllerAnimated:YES completion:^{
-            NSLog(@"Dismissed Roll View Controller in Application");
+        [adDisplayViewController dismissViewControllerAnimated:NO completion:^{
+            dispatch_after(0, dispatch_get_main_queue(), ^{
+                NSLog(@"Dismissed Roll View Controller in Application");
+                adDisplayViewController = nil;
+                presentedAdViewController = nil;
+                [self runForInterval:1];
+            });
         }];
-        adDisplayViewController = nil;
-        presentedAdViewController = nil;
     }
 }
 
@@ -758,7 +763,7 @@
     [self waitForStatus:kXCTUnitWaitStatusSuccess timeout:kTIME_OUT];
     NSLog(@"YuMeAdEventAdPlaying event received.");
     
-    [self runForInterval:2];
+    [self runForInterval:0.5];
     
     [self prepare];
     NSArray *userInfo3 = [NSArray arrayWithObjects: NSStringFromSelector(_cmd), [YuMeAppUtils getAdEventStr:YuMeAdEventAdCompleted], nil];
@@ -849,14 +854,17 @@
     NSLog(@"yumeSdkInitAd Successful.");
     
     float percentage = 0.0f;
+    YuMeDownloadStatus eDownloadStatus = YuMeDownloadStatusNone;
     do {
         [self runForInterval:0.2];
         pError = nil;
         percentage = [pYuMeSDK yumeSdkGetDownloadedPercentage:&pError];
         
-        NSLog(@"percentage : %f", percentage);
+        pError = nil;
+        eDownloadStatus = [pYuMeSDK yumeSdkGetDownloadStatus:&pError];
+        NSLog(@"percentage : %f = %u", percentage , eDownloadStatus);
         
-    } while( percentage <= 0.2 );
+    } while( percentage <= 0.2 || (eDownloadStatus == YuMeDownloadStatusDownloadsNotInProgress));
 
     presentedAdViewController = [[YuMePresentedViewController alloc] init];
     adDisplayViewController = [YuMeUnitTestUtils topMostController];
@@ -1384,14 +1392,17 @@
     }
     
     float percentage = 0.0f;
+    YuMeDownloadStatus eDownloadStatus = YuMeDownloadStatusNone;
     do {
         [self runForInterval:0.2];
         pError = nil;
         percentage = [pYuMeSDK yumeSdkGetDownloadedPercentage:&pError];
         
-        NSLog(@"percentage : %f", percentage);
+        pError = nil;
+        eDownloadStatus = [pYuMeSDK yumeSdkGetDownloadStatus:&pError];
+        NSLog(@"percentage : %f = %u", percentage , eDownloadStatus);
         
-    } while( percentage <= 0.2 );
+    } while( percentage <= 0.2 || (eDownloadStatus == YuMeDownloadStatusDownloadsNotInProgress));
     
     pError = nil;
     XCTAssertTrue([pYuMeSDK yumeSdkAbortDownload:&pError], @"yumeSdkAbortDownload fails");
@@ -1515,14 +1526,17 @@
     }
     
     float percentage = 0.0f;
+    YuMeDownloadStatus eDownloadStatus = YuMeDownloadStatusNone;
     do {
         [self runForInterval:0.2];
         pError = nil;
         percentage = [pYuMeSDK yumeSdkGetDownloadedPercentage:&pError];
         
-        NSLog(@"percentage : %f", percentage);
+        pError = nil;
+        eDownloadStatus = [pYuMeSDK yumeSdkGetDownloadStatus:&pError];
+        NSLog(@"percentage : %f = %u", percentage , eDownloadStatus);
         
-    } while( percentage <= 0.2 );
+    } while( percentage <= 0.2 || (eDownloadStatus == YuMeDownloadStatusDownloadsNotInProgress));
     
     pError = nil;
     XCTAssertTrue([pYuMeSDK yumeSdkAbortDownload:&pError], @"yumeSdkAbortDownload fails");
@@ -1625,16 +1639,18 @@
 
     [self runForInterval:1];
     
-    
     float percentage = 0.0f;
+    YuMeDownloadStatus eDownloadStatus = YuMeDownloadStatusNone;
     do {
         [self runForInterval:0.2];
         pError = nil;
         percentage = [pYuMeSDK yumeSdkGetDownloadedPercentage:&pError];
         
-        NSLog(@"percentage : %f", percentage);
+        pError = nil;
+        eDownloadStatus = [pYuMeSDK yumeSdkGetDownloadStatus:&pError];
+        NSLog(@"percentage : %f = %u", percentage , eDownloadStatus);
         
-    } while( percentage <= 0.2 );
+    } while( percentage <= 0.2 || (eDownloadStatus == YuMeDownloadStatusDownloadsNotInProgress));
     
     pError = nil;
     XCTAssertTrue([pYuMeSDK yumeSdkPauseDownload:&pError], @"yumeSdkPauseDownload fails");

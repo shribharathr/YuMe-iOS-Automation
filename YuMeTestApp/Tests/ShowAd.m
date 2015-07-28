@@ -70,12 +70,15 @@
     }];
 }
 
+/*
 - (void)presentShowAd:(NSError **)pError {
     presentedAdViewController = [[YuMePresentedViewController alloc] init];
     adDisplayViewController = [YuMeUnitTestUtils topMostController];
     [adDisplayViewController presentViewController:presentedAdViewController animated:NO completion:^() {
-        NSLog(@"Presented Roll View Controller in Application: %@", presentedAdViewController);
-        GHAssertTrue([pYuMeSDK yumeSdkShowAd:adDisplayViewController.view viewController:presentedAdViewController errorInfo:pError], @"");
+        dispatch_after(0, dispatch_get_main_queue(), ^{
+            NSLog(@"Presented Roll View Controller in Application: %@", presentedAdViewController);
+            [pYuMeSDK yumeSdkShowAd:adDisplayViewController.view viewController:presentedAdViewController errorInfo:pError];
+        });
     }];
 }
 
@@ -88,6 +91,7 @@
         presentedAdViewController = nil;
     }
 }
+*/
 
 /**
  SDK State: Not Initialized
