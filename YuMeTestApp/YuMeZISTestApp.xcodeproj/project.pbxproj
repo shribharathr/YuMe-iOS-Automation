@@ -16,7 +16,6 @@
 		50C53FFE5E9758018274941E /* StopAd.m in Sources */ = {isa = PBXBuildFile; fileRef = 49EE89A0AD19562AC831A719 /* StopAd.m */; };
 		50CAE6D77847D6087CA7B927 /* IsCacheEnabled.m in Sources */ = {isa = PBXBuildFile; fileRef = 1146B787B0A4174A8EBFA1E1 /* IsCacheEnabled.m */; };
 		599E368272E0813502D648D0 /* SetLogLevel.m in Sources */ = {isa = PBXBuildFile; fileRef = 47C92EEDB8634DBC0AB9A685 /* SetLogLevel.m */; };
-		6A3CC5102BAE6A17F563ED51 /* libPods-Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C46205DD0F98E9B67CB697A /* libPods-Tests.a */; };
 		6B6FAF1A10136E96FB8EB50D /* SetCBT.m in Sources */ = {isa = PBXBuildFile; fileRef = 28BEC1893722564C7DBE5219 /* SetCBT.m */; };
 		6CB7DDEABA659C83E674189C /* ShowAdStreaming.m in Sources */ = {isa = PBXBuildFile; fileRef = DB2F7A53417D53699DD69D74 /* ShowAdStreaming.m */; };
 		75947FE6D37FAA6D7CA69B78 /* GetDownloadPercentage.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BE3973B51859E14381ED826 /* GetDownloadPercentage.m */; };
@@ -285,7 +284,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				896503C6F8FCE2227B66BE54 /* Foundation.framework in Frameworks */,
-				6A3CC5102BAE6A17F563ED51 /* libPods-Tests.a in Frameworks */,
 				8EFC66711ACBD00C00605328 /* libical.a in Frameworks */,
 				8EFC66701ACBD00900605328 /* libYuMeSDK.a in Frameworks */,
 			);
