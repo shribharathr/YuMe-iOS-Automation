@@ -70,7 +70,6 @@
     }];
 }
 
-/*
 - (void)presentShowAd:(NSError **)pError {
     presentedAdViewController = [[YuMePresentedViewController alloc] init];
     adDisplayViewController = [YuMeUnitTestUtils topMostController];
@@ -91,7 +90,7 @@
         presentedAdViewController = nil;
     }
 }
-*/
+
 
 /**
  SDK State: Not Initialized
