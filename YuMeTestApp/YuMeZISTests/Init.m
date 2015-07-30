@@ -98,8 +98,8 @@
     YuMeAdParams *params = [YuMeUnitTestUtils getApplicationYuMeAdParams];
     XCTAssertNotNil(params, @"params object not found");
     
-    //GHTestLog(@"Test AdParams: \n%@", [YuMeUnitTestUtils getStringYuMeAdParms:params]);
-    //GHTestLog(@"Initializes with the fetched YuMe Ad Params.");
+    //NSLog(@"Test AdParams: \n%@", [YuMeUnitTestUtils getStringYuMeAdParms:params]);
+    //NSLog(@"Initializes with the fetched YuMe Ad Params.");
     
 #if pYuMeMPlayerController
         XCTAssertTrue([pYuMeSDK yumeSdkInit:params
@@ -120,15 +120,15 @@
     [self performSelectorInBackground:@selector(initEventListener:) withObject:userInfo];
     [self waitForStatus:kXCTUnitWaitStatusSuccess timeout:kTIME_OUT];
     
-    //GHTestLog(@"YuMeAdEventInitSuccess event received.");
+    //NSLog(@"YuMeAdEventInitSuccess event received.");
     
     if (pError) {
         XCTFail(@"Fail : %@", [NSString stringWithFormat:@" %s <Error>: %@", __FUNCTION__ , [[YuMeUnitTestUtils getErrDesc:pError] description]]);
         
-        //GHTestLog(@"Error: %@", [[YuMeUnitTestUtils getErrDesc:pError] description]);
+        //NSLog(@"Error: %@", [[YuMeUnitTestUtils getErrDesc:pError] description]);
     }
     
-    //GHTestLog(@"Initialization Successful.");
+    //NSLog(@"Initialization Successful.");
 }
 
 /*!
@@ -148,7 +148,7 @@
     
     YuMeAdParams *params =  nil;
     XCTAssertNil(params, @"params object is NULL");
-    //GHTestLog(@"Test AdParams: \n%@", [YuMeUnitTestUtils getStringYuMeAdParms:params]);
+    //NSLog(@"Test AdParams: \n%@", [YuMeUnitTestUtils getStringYuMeAdParms:params]);
     
 #if pYuMeMPlayerController
         XCTAssertFalse([pYuMeSDK yumeSdkInit:params
@@ -165,7 +165,7 @@
     if (pError) {
         NSString *str = [YuMeUnitTestUtils getErrDesc:pError];
         XCTAssertEqualObjects(str, @"yumeSdkInit(): Invalid Ad Params Object.", @"");
-        //GHTestLog(@"Result : %@", str);
+        //NSLog(@"Result : %@", str);
     }
 }
 
@@ -188,7 +188,7 @@
     params.pDomainId = nil;
     
     XCTAssertNil(params.pDomainId, @"params.pDomainId object is NULL");
-    //GHTestLog(@"Test AdParams: \n%@", [YuMeUnitTestUtils getStringYuMeAdParms:params]);
+    //NSLog(@"Test AdParams: \n%@", [YuMeUnitTestUtils getStringYuMeAdParms:params]);
     
 #if pYuMeMPlayerController
     XCTAssertFalse([pYuMeSDK yumeSdkInit:params
@@ -205,7 +205,7 @@
     if (pError) {
         NSString *str = [YuMeUnitTestUtils getErrDesc:pError];
         XCTAssertEqualObjects(str, @"yumeSdkInit(): Invalid Domain Id.", @"");
-        //GHTestLog(@"Result : %@", str);
+        //NSLog(@"Result : %@", str);
     }
 }
 
@@ -227,7 +227,7 @@
     
     YuMeAdParams *params = [YuMeUnitTestUtils getApplicationYuMeAdParams];
     XCTAssertNotNil(params, @"params object not found");
-    //GHTestLog(@"Test AdParams: \n%@", [YuMeUnitTestUtils getStringYuMeAdParms:params]);
+    //NSLog(@"Test AdParams: \n%@", [YuMeUnitTestUtils getStringYuMeAdParms:params]);
     
 #if pYuMeMPlayerController
         XCTAssertFalse([pYuMeSDK yumeSdkInit:params
@@ -245,7 +245,7 @@
     if (pError) {
         NSString *str = [YuMeUnitTestUtils getErrDesc:pError];
         XCTAssertEqualObjects(str, @"yumeSdkInit(): Invalid YuMeAppDelegate object.", @"");
-        //GHTestLog(@"Result : %@", str);
+        //NSLog(@"Result : %@", str);
     }
 }
 
@@ -260,7 +260,7 @@
  */
 - (void)test_INIT_005 {
     XCTFail(@"Please do it manually");
-    //GHTestLog(@"Result : %@", @"Please do it manually");
+    //NSLog(@"Result : %@", @"Please do it manually");
 }
 
 /*!
@@ -281,7 +281,7 @@
     
     YuMeAdParams *params = [YuMeUnitTestUtils getApplicationYuMeAdParams];
     XCTAssertNotNil(params, @"params object not found");
-    //GHTestLog(@"Test AdParams: \n%@", [YuMeUnitTestUtils getStringYuMeAdParms:params]);
+    //NSLog(@"Test AdParams: \n%@", [YuMeUnitTestUtils getStringYuMeAdParms:params]);
 
 #if pYuMeMPlayerController
         XCTAssertFalse([pYuMeSDK yumeSdkInit:params
@@ -294,14 +294,14 @@
     
     // Call init Again
     [pYuMeSDK yumeSdkInit:params appDelegate:pYuMeInterface errorInfo:&pError1];
-    //GHTestLog(@"New Init Call ignored and the previous Initialization continues.");
+    //NSLog(@"New Init Call ignored and the previous Initialization continues.");
 #endif
     params = nil;
     
     if (pError1) {
         NSString *str = [YuMeUnitTestUtils getErrDesc:pError1];
         XCTAssertEqualObjects(str, @"yumeSdkInit(): Initialization Process already in Progress - 1.", @"");
-        //GHTestLog(@"Result : %@", str);
+        //NSLog(@"Result : %@", str);
     }
     
     [self prepare];
@@ -309,14 +309,14 @@
     [self performSelectorInBackground:@selector(initEventListener:) withObject:userInfo];
     [self waitForStatus:kXCTUnitWaitStatusSuccess timeout:kTIME_OUT];
     
-    //GHTestLog(@"Notifies YuMeAdEventInitSuccess event.");
+    //NSLog(@"Notifies YuMeAdEventInitSuccess event.");
     
     if (pError) {
         XCTFail(@"Fail : %@", [NSString stringWithFormat:@" %s <Error>: %@", __FUNCTION__ , [[YuMeUnitTestUtils getErrDesc:pError] description]]);
-        //GHTestLog(@"Error: %@", [[YuMeUnitTestUtils getErrDesc:pError] description]);
+        //NSLog(@"Error: %@", [[YuMeUnitTestUtils getErrDesc:pError] description]);
     }
     
-    //GHTestLog(@"Initialization Successful.");
+    //NSLog(@"Initialization Successful.");
 }
 
 /*!
@@ -337,7 +337,7 @@
     
     YuMeAdParams *params = [YuMeUnitTestUtils getApplicationYuMeAdParams];
     XCTAssertNotNil(params, @"params object not found");
-    //GHTestLog(@"Test AdParams: \n%@", [YuMeUnitTestUtils getStringYuMeAdParms:params]);
+    //NSLog(@"Test AdParams: \n%@", [YuMeUnitTestUtils getStringYuMeAdParms:params]);
     
 #if pYuMeMPlayerController
     XCTAssertFalse([pYuMeSDK yumeSdkInit:params
@@ -352,14 +352,14 @@
     
     // Call init Again
     [pYuMeSDK yumeSdkInit:params appDelegate:pYuMeInterface errorInfo:&pError1];
-    //GHTestLog(@"New Init Call ignored and the previous Initialization continues.");
+    //NSLog(@"New Init Call ignored and the previous Initialization continues.");
 #endif
     params = nil;
     
     if (pError1) {
         NSString *str = [YuMeUnitTestUtils getErrDesc:pError1];
         XCTAssertEqualObjects(str, @"yumeSdkInit(): Initialization Process already in Progress - 2.", @"");
-        //GHTestLog(@"Result : %@", str);
+        //NSLog(@"Result : %@", str);
     }
     
     [self prepare];
@@ -367,14 +367,14 @@
     [self performSelectorInBackground:@selector(initEventListener:) withObject:userInfo];
     [self waitForStatus:kXCTUnitWaitStatusSuccess timeout:kTIME_OUT];
     
-    //GHTestLog(@"Notifies YuMeAdEventInitSuccess event.");
+    //NSLog(@"Notifies YuMeAdEventInitSuccess event.");
     
     if (pError) {
         XCTFail(@"Fail : %@", [NSString stringWithFormat:@" %s <Error>: %@", __FUNCTION__ , [[YuMeUnitTestUtils getErrDesc:pError] description]]);
-        //GHTestLog(@"Error: %@", [[YuMeUnitTestUtils getErrDesc:pError] description]);
+        //NSLog(@"Error: %@", [[YuMeUnitTestUtils getErrDesc:pError] description]);
     }
     
-    //GHTestLog(@"Initialization Successful.");
+    //NSLog(@"Initialization Successful.");
 }
 
 /*!
@@ -395,7 +395,7 @@
     
     YuMeAdParams *params = [YuMeUnitTestUtils getApplicationYuMeAdParams];
     XCTAssertNotNil(params, @"params object not nil");
-    //GHTestLog(@"Test AdParams: \n%@", [YuMeUnitTestUtils getStringYuMeAdParms:params]);
+    //NSLog(@"Test AdParams: \n%@", [YuMeUnitTestUtils getStringYuMeAdParms:params]);
     
 #if pYuMeMPlayerController
     XCTAssertFalse([pYuMeSDK yumeSdkInit:params
@@ -414,25 +414,25 @@
     [self performSelectorInBackground:@selector(initEventListener:) withObject:userInfo];
     [self waitForStatus:kXCTUnitWaitStatusSuccess timeout:kTIME_OUT];
     
-    //GHTestLog(@"Notifies YuMeAdEventInitSuccess event.");
+    //NSLog(@"Notifies YuMeAdEventInitSuccess event.");
     
     if (pError) {
         XCTFail(@"Fail : %@", [NSString stringWithFormat:@" %s <Error>: %@", __FUNCTION__ , [[YuMeUnitTestUtils getErrDesc:pError] description]]);
-        //GHTestLog(@"Error: %@", [[YuMeUnitTestUtils getErrDesc:pError] description]);
+        //NSLog(@"Error: %@", [[YuMeUnitTestUtils getErrDesc:pError] description]);
     }
     
-    //GHTestLog(@"Initialization Successful.");
+    //NSLog(@"Initialization Successful.");
     
     [self runForInterval:1];
     
     // Call init Again
     XCTAssertFalse([pYuMeSDK yumeSdkInit:params appDelegate:pYuMeInterface errorInfo:&pError1] , @"New Init Call ignored.");
-    //GHTestLog(@"New Init Call ignored.");
+    //NSLog(@"New Init Call ignored.");
     
     if (pError1) {
         NSString *str = [YuMeUnitTestUtils getErrDesc:pError1];
         XCTAssertEqualObjects(str, @"yumeSdkInit(): YuMe SDK is already Initialized.", @"");
-        //GHTestLog(@"Result : %@", str);
+        //NSLog(@"Result : %@", str);
     }
 }
 
@@ -454,7 +454,7 @@
     
     YuMeAdParams *params = [YuMeUnitTestUtils getApplicationYuMeAdParams];
     XCTAssertNotNil(params, @"params object not nil");
-    //GHTestLog(@"Test AdParams: \n%@", [YuMeUnitTestUtils getStringYuMeAdParms:params]);
+    //NSLog(@"Test AdParams: \n%@", [YuMeUnitTestUtils getStringYuMeAdParms:params]);
     
 #if pYuMeMPlayerController
     XCTAssertFalse([pYuMeSDK yumeSdkInit:params
@@ -471,14 +471,14 @@
     NSArray *userInfo = [NSArray arrayWithObjects: NSStringFromSelector(_cmd), [YuMeAppUtils getAdEventStr:YuMeAdEventInitSuccess], nil];
     [self performSelectorInBackground:@selector(initEventListener:) withObject:userInfo];
     [self waitForStatus:kXCTUnitWaitStatusSuccess timeout:kTIME_OUT];
-    //GHTestLog(@"Notifies YuMeAdEventInitSuccess event.");
+    //NSLog(@"Notifies YuMeAdEventInitSuccess event.");
     
     if (pError) {
         XCTFail(@"Fail : %@", [NSString stringWithFormat:@" %s <Error>: %@", __FUNCTION__ , [[YuMeUnitTestUtils getErrDesc:pError] description]]);
-        //GHTestLog(@"Error: %@", [[YuMeUnitTestUtils getErrDesc:pError] description]);
+        //NSLog(@"Error: %@", [[YuMeUnitTestUtils getErrDesc:pError] description]);
     }
     
-    //GHTestLog(@"Initialization Successful.");
+    //NSLog(@"Initialization Successful.");
     
     [self runForInterval:1];
     
@@ -486,15 +486,15 @@
     pYuMeInterface = [YuMeUnitTestUtils getYuMeInterface];
     
     // Call init Again
-    //GHTestLog(@"Different YuMeAppDelegate object");
+    //NSLog(@"Different YuMeAppDelegate object");
     XCTAssertFalse([pYuMeSDK yumeSdkInit:params appDelegate:pYuMeInterface errorInfo:&pError1] , @"New Init Call ignored.");
-    //GHTestLog(@"New Init Call ignored.");
+    //NSLog(@"New Init Call ignored.");
 
     params = nil;
     if (pError1) {
         NSString *str = [YuMeUnitTestUtils getErrDesc:pError1];
         XCTAssertEqualObjects(str, @"yumeSdkInit(): YuMe SDK is already Initialized, Delegate updated.", @"");
-        //GHTestLog(@"Result : %@", str);
+        //NSLog(@"Result : %@", str);
     }
 }
 
@@ -516,7 +516,7 @@
     
     YuMeAdParams *params = [YuMeUnitTestUtils getApplicationYuMeAdParams];
     XCTAssertNotNil(params, @"params object not nil");
-    //GHTestLog(@"Test AdParams: \n%@", [YuMeUnitTestUtils getStringYuMeAdParms:params]);
+    //NSLog(@"Test AdParams: \n%@", [YuMeUnitTestUtils getStringYuMeAdParms:params]);
     
 #if pYuMeMPlayerController
     XCTAssertFalse([pYuMeSDK yumeSdkInit:params
@@ -533,26 +533,26 @@
     NSArray *userInfo = [NSArray arrayWithObjects: NSStringFromSelector(_cmd), [YuMeAppUtils getAdEventStr:YuMeAdEventInitSuccess], nil];
     [self performSelectorInBackground:@selector(initEventListener:) withObject:userInfo];
     [self waitForStatus:kXCTUnitWaitStatusSuccess timeout:kTIME_OUT];
-    //GHTestLog(@"Notifies YuMeAdEventInitSuccess event.");
+    //NSLog(@"Notifies YuMeAdEventInitSuccess event.");
     
     if (pError) {
         XCTFail(@"Fail : %@", [NSString stringWithFormat:@" %s <Error>: %@", __FUNCTION__ , [[YuMeUnitTestUtils getErrDesc:pError] description]]);
-        //GHTestLog(@"Error: %@", [[YuMeUnitTestUtils getErrDesc:pError] description]);
+        //NSLog(@"Error: %@", [[YuMeUnitTestUtils getErrDesc:pError] description]);
     }
     
-    //GHTestLog(@"Initialization Successful.");
+    //NSLog(@"Initialization Successful.");
     
     pYuMeInterface = nil;
     // Call init Again
-    //GHTestLog(@"Invalid YuMeAppDelegate object");
+    //NSLog(@"Invalid YuMeAppDelegate object");
     XCTAssertFalse([pYuMeSDK yumeSdkInit:params appDelegate:pYuMeInterface errorInfo:&pError1] , @"New Init Call ignored.");
-    //GHTestLog(@"New Init Call ignored.");
+    //NSLog(@"New Init Call ignored.");
     params = nil;
     
     if (pError1) {
         NSString *str = [YuMeUnitTestUtils getErrDesc:pError1];
         XCTAssertEqualObjects(str, @"yumeSdkInit(): YuMe SDK is already Initialized, Invalid Delegate received and ignored.", @"");
-        //GHTestLog(@"Result : %@", str);
+        //NSLog(@"Result : %@", str);
     }
 }
 
@@ -576,7 +576,7 @@
     
     XCTAssertNotNil(params, @"params object not nil");
     
-    //GHTestLog(@"Test AdParams: \n%@", [YuMeUnitTestUtils getStringYuMeAdParms:params]);
+    //NSLog(@"Test AdParams: \n%@", [YuMeUnitTestUtils getStringYuMeAdParms:params]);
     
 #if pYuMeMPlayerController
     XCTAssertTrue([pYuMeSDK yumeSdkInit:params
@@ -597,14 +597,14 @@
     [self performSelectorInBackground:@selector(initEventListener:) withObject:userInfo];
     [self waitForStatus:kXCTUnitWaitStatusSuccess timeout:kTIME_OUT];
     
-    //GHTestLog(@"Notifies YuMeAdEventInitFailed event.");
+    //NSLog(@"Notifies YuMeAdEventInitFailed event.");
     
     if (pError) {
         XCTFail(@"Fail : %@", [NSString stringWithFormat:@" %s <Error>: %@", __FUNCTION__ , [[YuMeUnitTestUtils getErrDesc:pError] description]]);
-        //GHTestLog(@"Error: %@", [[YuMeUnitTestUtils getErrDesc:pError] description]);
+        //NSLog(@"Error: %@", [[YuMeUnitTestUtils getErrDesc:pError] description]);
     }
     
-    //GHTestLog(@"Initialization Fails");
+    //NSLog(@"Initialization Fails");
 }
 
 /*!
@@ -628,7 +628,7 @@
     
     XCTAssertNotNil(params, @"params object not nil");
     
-    //GHTestLog(@"Test AdParams: \n%@", [YuMeUnitTestUtils getStringYuMeAdParms:params]);
+    //NSLog(@"Test AdParams: \n%@", [YuMeUnitTestUtils getStringYuMeAdParms:params]);
     
 #if pYuMeMPlayerController
     XCTAssertTrue([pYuMeSDK yumeSdkInit:params
@@ -649,14 +649,14 @@
     [self performSelectorInBackground:@selector(initEventListener:) withObject:userInfo];
     [self waitForStatus:kXCTUnitWaitStatusSuccess timeout:kTIME_OUT];
     
-    //GHTestLog(@"Notifies YuMeAdEventInitFailed event.");
+    //NSLog(@"Notifies YuMeAdEventInitFailed event.");
     
     if (pError) {
         XCTFail(@"Fail : %@", [NSString stringWithFormat:@" %s <Error>: %@", __FUNCTION__ , [[YuMeUnitTestUtils getErrDesc:pError] description]]);
-        //GHTestLog(@"Error: %@", [[YuMeUnitTestUtils getErrDesc:pError] description]);
+        //NSLog(@"Error: %@", [[YuMeUnitTestUtils getErrDesc:pError] description]);
     }
     
-    //GHTestLog(@"Initialization Fails");
+    //NSLog(@"Initialization Fails");
 }
 
 /*!
@@ -671,7 +671,7 @@
  */
 - (void)test_INIT_013 {
     XCTFail(@"Please do it manually");
-    //GHTestLog(@"Result : %@", @"Please do it manually");
+    //NSLog(@"Result : %@", @"Please do it manually");
 
     /*
     NSError *pError = nil;
@@ -683,7 +683,7 @@
     //params.pAdServerUrl = @"http://download.yumenetworks.com/yume/demo/bharath/unittest/malformed_json";
 
     XCTAssertNotNil(params, @"params object not nil");
-    //GHTestLog(@"Test AdParams: \n%@", [YuMeUnitTestUtils getStringYuMeAdParms:params]);
+    //NSLog(@"Test AdParams: \n%@", [YuMeUnitTestUtils getStringYuMeAdParms:params]);
     
 #if pYuMeMPlayerController
     XCTAssertTrue([pYuMeSDK yumeSdkInit:params
@@ -704,20 +704,20 @@
     [self performSelectorInBackground:@selector(initEventListener:) withObject:userInfo];
     [self waitForStatus:kXCTUnitWaitStatusSuccess timeout:kTIME_OUT];
     
-    //GHTestLog(@"Notifies YuMeAdEventInitFailed event.");
+    //NSLog(@"Notifies YuMeAdEventInitFailed event.");
     
     if (pError) {
         XCTFail(@"Fail : %@", ([NSString stringWithFormat:@" %s <Error>: %@", __FUNCTION__ , [[YuMeUnitTestUtils getErrDesc:pError] description]]);
-        //GHTestLog(@"Error: %@", [[YuMeUnitTestUtils getErrDesc:pError] description]);
+        //NSLog(@"Error: %@", [[YuMeUnitTestUtils getErrDesc:pError] description]);
     }
     
-    //GHTestLog(@"Initialization Fails");
+    //NSLog(@"Initialization Fails");
      */
 }
 
 - (void)test_INIT_014 {
     XCTFail(@"Please do it manually");
-    //GHTestLog(@"Result : %@", @"Please do it manually");
+    //NSLog(@"Result : %@", @"Please do it manually");
 }
 
 /*!
@@ -747,8 +747,8 @@
     YuMeAdParams *params = [YuMeUnitTestUtils getApplicationYuMeAdParams];
     XCTAssertNotNil(params, @"params object not found");
     
-    //GHTestLog(@"Test AdParams: \n%@", [YuMeUnitTestUtils getStringYuMeAdParms:params]);
-    //GHTestLog(@"Initializes with the fetched YuMe Ad Params.");
+    //NSLog(@"Test AdParams: \n%@", [YuMeUnitTestUtils getStringYuMeAdParms:params]);
+    //NSLog(@"Initializes with the fetched YuMe Ad Params.");
     
 #if pYuMeMPlayerController
     XCTAssertTrue([pYuMeSDK yumeSdkInit:params
@@ -769,14 +769,14 @@
     [self performSelectorInBackground:@selector(initEventListener:) withObject:userInfo];
     [self waitForStatus:kXCTUnitWaitStatusSuccess timeout:kTIME_OUT];
     
-    //GHTestLog(@"Notifies YuMeAdEventInitSuccess event.");
+    //NSLog(@"Notifies YuMeAdEventInitSuccess event.");
     
     if (pError) {
         XCTFail(@"Fail : %@", [NSString stringWithFormat:@" %s <Error>: %@", __FUNCTION__ , [[YuMeUnitTestUtils getErrDesc:pError] description]]);
-        //GHTestLog(@"Error: %@", [[YuMeUnitTestUtils getErrDesc:pError] description]);
+        //NSLog(@"Error: %@", [[YuMeUnitTestUtils getErrDesc:pError] description]);
     }
     
-    //GHTestLog(@"Initialization Successful.");
+    //NSLog(@"Initialization Successful.");
 }
 
 /*!
@@ -811,8 +811,8 @@
     [YuMeUnitTestUtils deleteFile:@"jquery-1.10.2.min.js"];
     [YuMeUnitTestUtils deleteFile:@"jquery.mobile-1.4.5.js"];
     
-    //GHTestLog(@"Test AdParams: \n%@", [YuMeUnitTestUtils getStringYuMeAdParms:params]);
-    //GHTestLog(@"Initializes with the fetched YuMe Ad Params.");
+    //NSLog(@"Test AdParams: \n%@", [YuMeUnitTestUtils getStringYuMeAdParms:params]);
+    //NSLog(@"Initializes with the fetched YuMe Ad Params.");
     
 #if pYuMeMPlayerController
     XCTAssertTrue([pYuMeSDK yumeSdkInit:params
@@ -833,14 +833,14 @@
     [self performSelectorInBackground:@selector(initEventListener:) withObject:userInfo];
     [self waitForStatus:kXCTUnitWaitStatusSuccess timeout:kTIME_OUT];
     
-    //GHTestLog(@"Notifies YuMeAdEventInitSuccess event.");
+    //NSLog(@"Notifies YuMeAdEventInitSuccess event.");
     
     if (pError) {
         XCTFail(@"Fail : %@", [NSString stringWithFormat:@" %s <Error>: %@", __FUNCTION__ , [[YuMeUnitTestUtils getErrDesc:pError] description]]);
-        //GHTestLog(@"Error: %@", [[YuMeUnitTestUtils getErrDesc:pError] description]);
+        //NSLog(@"Error: %@", [[YuMeUnitTestUtils getErrDesc:pError] description]);
     }
     
-    //GHTestLog(@"Initialization Successful.");
+    //NSLog(@"Initialization Successful.");
 }
 
 /*!
@@ -870,8 +870,8 @@
     YuMeAdParams *params = [YuMeUnitTestUtils getApplicationYuMeAdParams];
     XCTAssertNotNil(params, @"params object not found");
     
-    //GHTestLog(@"Test AdParams: \n%@", [YuMeUnitTestUtils getStringYuMeAdParms:params]);
-    //GHTestLog(@"Initializes with the fetched YuMe Ad Params.");
+    //NSLog(@"Test AdParams: \n%@", [YuMeUnitTestUtils getStringYuMeAdParms:params]);
+    //NSLog(@"Initializes with the fetched YuMe Ad Params.");
     
 #if pYuMeMPlayerController
     XCTAssertTrue([pYuMeSDK yumeSdkInit:params
@@ -892,14 +892,14 @@
     [self performSelectorInBackground:@selector(initEventListener:) withObject:userInfo];
     [self waitForStatus:kXCTUnitWaitStatusSuccess timeout:kTIME_OUT];
     
-    //GHTestLog(@"Notifies YuMeAdEventInitSuccess event.");
+    //NSLog(@"Notifies YuMeAdEventInitSuccess event.");
     
     if (pError) {
         XCTFail(@"Fail : %@", [NSString stringWithFormat:@" %s <Error>: %@", __FUNCTION__ , [[YuMeUnitTestUtils getErrDesc:pError] description]]);
-        //GHTestLog(@"Error: %@", [[YuMeUnitTestUtils getErrDesc:pError] description]);
+        //NSLog(@"Error: %@", [[YuMeUnitTestUtils getErrDesc:pError] description]);
     }
     
-    //GHTestLog(@"Result: Initialization Successful.");
+    //NSLog(@"Result: Initialization Successful.");
 }
 
 /*!
@@ -923,7 +923,7 @@
  */
 - (void)test_INIT_018 {
     XCTFail(@"Please do it manually");
-    //GHTestLog(@"Result : %@", @"Please do it manually");
+    //NSLog(@"Result : %@", @"Please do it manually");
 }
 
 /*!
@@ -937,7 +937,7 @@
  */
 - (void)test_INIT_019 {
     XCTFail(@"Please do it manually");
-    //GHTestLog(@"Result : %@", @"Please do it manually");
+    //NSLog(@"Result : %@", @"Please do it manually");
 }
 
 /*!
@@ -956,7 +956,7 @@
  */
 - (void)test_INIT_020 {
     XCTFail(@"Please do it manually");
-    //GHTestLog(@"Result : %@", @"Please do it manually");
+    //NSLog(@"Result : %@", @"Please do it manually");
 }
 
 /*!
@@ -984,7 +984,7 @@
  */
 - (void)test_INIT_021 {
     XCTFail(@"Please do it manually");
-    //GHTestLog(@"Result : %@", @"Please do it manually");
+    //NSLog(@"Result : %@", @"Please do it manually");
 }
 
 /*!
@@ -1013,8 +1013,8 @@
     params.adTimeout = 2;
     XCTAssertNotNil(params, @"params object not found");
     
-    //GHTestLog(@"Test AdParams: \n%@", [YuMeUnitTestUtils getStringYuMeAdParms:params]);
-    //GHTestLog(@"Initializes with the fetched YuMe Ad Params.");
+    //NSLog(@"Test AdParams: \n%@", [YuMeUnitTestUtils getStringYuMeAdParms:params]);
+    //NSLog(@"Initializes with the fetched YuMe Ad Params.");
     
 #if pYuMeMPlayerController
     XCTAssertTrue([pYuMeSDK yumeSdkInit:params
@@ -1035,14 +1035,14 @@
     [self performSelectorInBackground:@selector(initEventListener:) withObject:userInfo];
     [self waitForStatus:kXCTUnitWaitStatusSuccess timeout:kTIME_OUT];
     
-    //GHTestLog(@"Notifies YuMeAdEventInitSuccess event.");
+    //NSLog(@"Notifies YuMeAdEventInitSuccess event.");
     
     if (pError) {
         XCTFail(@"Fail : %@", [NSString stringWithFormat:@" %s <Error>: %@", __FUNCTION__ , [[YuMeUnitTestUtils getErrDesc:pError] description]]);
-        //GHTestLog(@"Error: %@", [[YuMeUnitTestUtils getErrDesc:pError] description]);
+        //NSLog(@"Error: %@", [[YuMeUnitTestUtils getErrDesc:pError] description]);
     }
     
-    //GHTestLog(@"Result: Initialization Successful.");
+    //NSLog(@"Result: Initialization Successful.");
     
     pError = nil;
     YuMeAdParams *adParams = [pYuMeSDK yumeSdkGetAdParams:&pError];
@@ -1076,8 +1076,8 @@
     params.videoTimeout = 2;
     XCTAssertNotNil(params, @"params object not found");
     
-    //GHTestLog(@"Test AdParams: \n%@", [YuMeUnitTestUtils getStringYuMeAdParms:params]);
-    //GHTestLog(@"Initializes with the fetched YuMe Ad Params.");
+    //NSLog(@"Test AdParams: \n%@", [YuMeUnitTestUtils getStringYuMeAdParms:params]);
+    //NSLog(@"Initializes with the fetched YuMe Ad Params.");
     
 #if pYuMeMPlayerController
     XCTAssertTrue([pYuMeSDK yumeSdkInit:params
@@ -1098,14 +1098,14 @@
     [self performSelectorInBackground:@selector(initEventListener:) withObject:userInfo];
     [self waitForStatus:kXCTUnitWaitStatusSuccess timeout:kTIME_OUT];
     
-    //GHTestLog(@"Notifies YuMeAdEventInitSuccess event.");
+    //NSLog(@"Notifies YuMeAdEventInitSuccess event.");
     
     if (pError) {
         XCTFail(@"Fail : %@", [NSString stringWithFormat:@" %s <Error>: %@", __FUNCTION__ , [[YuMeUnitTestUtils getErrDesc:pError] description]]);
-        //GHTestLog(@"Error: %@", [[YuMeUnitTestUtils getErrDesc:pError] description]);
+        //NSLog(@"Error: %@", [[YuMeUnitTestUtils getErrDesc:pError] description]);
     }
     
-    //GHTestLog(@"Result: Initialization Successful.");
+    //NSLog(@"Result: Initialization Successful.");
     
     pError = nil;
     YuMeAdParams *adParams = [pYuMeSDK yumeSdkGetAdParams:&pError];
@@ -1142,8 +1142,8 @@
     params.pDomainId = @"211Eshvderer";
     XCTAssertNotNil(params, @"params object not found");
     
-    //GHTestLog(@"Test AdParams: \n%@", [YuMeUnitTestUtils getStringYuMeAdParms:params]);
-    //GHTestLog(@"Initializes with the fetched YuMe Ad Params.");
+    //NSLog(@"Test AdParams: \n%@", [YuMeUnitTestUtils getStringYuMeAdParms:params]);
+    //NSLog(@"Initializes with the fetched YuMe Ad Params.");
     
 #if pYuMeMPlayerController
     XCTAssertTrue([pYuMeSDK yumeSdkInit:params
@@ -1167,10 +1167,10 @@
     if (pError) {
         NSString *str = [YuMeUnitTestUtils getErrDesc:pError];
         XCTAssertEqualObjects(str, @"yumeSdkInit(): Invalid Ad Server Url.", @"");
-        //GHTestLog(@"Result : %@", str);
+        //NSLog(@"Result : %@", str);
     }
-    //GHTestLog(@"Notifies YuMeAdEventInitFailed event.");
-    //GHTestLog(@"Result: Initialization Fails.");
+    //NSLog(@"Notifies YuMeAdEventInitFailed event.");
+    //NSLog(@"Result: Initialization Fails.");
 }
 
 /*!
@@ -1204,8 +1204,8 @@
     
     XCTAssertNotNil(params, @"params object not found");
     
-    //GHTestLog(@"Test AdParams: \n%@", [YuMeUnitTestUtils getStringYuMeAdParms:params]);
-    //GHTestLog(@"Initializes with the fetched YuMe Ad Params.");
+    //NSLog(@"Test AdParams: \n%@", [YuMeUnitTestUtils getStringYuMeAdParms:params]);
+    //NSLog(@"Initializes with the fetched YuMe Ad Params.");
     
 #if pYuMeMPlayerController
     XCTAssertTrue([pYuMeSDK yumeSdkInit:params
@@ -1229,10 +1229,10 @@
     if (pError) {
         NSString *str = [YuMeUnitTestUtils getErrDesc:pError];
         XCTAssertEqualObjects(str, @"yumeSdkInit(): Malformed Ad Server Url.", @"");
-        //GHTestLog(@"Result : %@", str);
+        //NSLog(@"Result : %@", str);
     }
-    //GHTestLog(@"Notifies YuMeAdEventInitFailed event.");
-    //GHTestLog(@"Result: Initialization Fails.");
+    //NSLog(@"Notifies YuMeAdEventInitFailed event.");
+    //NSLog(@"Result: Initialization Fails.");
 }
 
 /*!
@@ -1265,8 +1265,8 @@
     params.adTimeout = 61;
     XCTAssertNotNil(params, @"params object not found");
     
-    //GHTestLog(@"Test AdParams: \n%@", [YuMeUnitTestUtils getStringYuMeAdParms:params]);
-    //GHTestLog(@"Initializes with the fetched YuMe Ad Params.");
+    //NSLog(@"Test AdParams: \n%@", [YuMeUnitTestUtils getStringYuMeAdParms:params]);
+    //NSLog(@"Initializes with the fetched YuMe Ad Params.");
     
 #if pYuMeMPlayerController
     XCTAssertTrue([pYuMeSDK yumeSdkInit:params
@@ -1290,10 +1290,10 @@
     if (pError) {
         NSString *str = [YuMeUnitTestUtils getErrDesc:pError];
         XCTAssertEqualObjects(str, @"yumeSdkInit(): Invalid Ad Connection Timeout value. It cannot exceed 60.", @"");
-        //GHTestLog(@"Result : %@", str);
+        //NSLog(@"Result : %@", str);
     }
-    //GHTestLog(@"Notifies YuMeAdEventInitFailed event.");
-    //GHTestLog(@"Result: Initialization Fails.");
+    //NSLog(@"Notifies YuMeAdEventInitFailed event.");
+    //NSLog(@"Result: Initialization Fails.");
 }
 
 /*!
@@ -1326,8 +1326,8 @@
     params.videoTimeout = 61;
     XCTAssertNotNil(params, @"params object not found");
     
-    //GHTestLog(@"Test AdParams: \n%@", [YuMeUnitTestUtils getStringYuMeAdParms:params]);
-    //GHTestLog(@"Initializes with the fetched YuMe Ad Params.");
+    //NSLog(@"Test AdParams: \n%@", [YuMeUnitTestUtils getStringYuMeAdParms:params]);
+    //NSLog(@"Initializes with the fetched YuMe Ad Params.");
     
 #if pYuMeMPlayerController
     XCTAssertTrue([pYuMeSDK yumeSdkInit:params
@@ -1351,10 +1351,10 @@
     if (pError) {
         NSString *str = [YuMeUnitTestUtils getErrDesc:pError];
         XCTAssertEqualObjects(str, @"yumeSdkInit(): Invalid Progressive Download Timeout Value. It cannot exceed 60.", @"");
-        //GHTestLog(@"Result : %@", str);
+        //NSLog(@"Result : %@", str);
     }
-    //GHTestLog(@"Notifies YuMeAdEventInitFailed event.");
-    //GHTestLog(@"Result: Initialization Fails.");
+    //NSLog(@"Notifies YuMeAdEventInitFailed event.");
+    //NSLog(@"Result: Initialization Fails.");
 }
 
 /*!
@@ -1385,8 +1385,8 @@
     params.adTimeout = 3;
     XCTAssertNotNil(params, @"params object not found");
     
-    //GHTestLog(@"Test AdParams: \n%@", [YuMeUnitTestUtils getStringYuMeAdParms:params]);
-    //GHTestLog(@"Initializes with the fetched YuMe Ad Params.");
+    //NSLog(@"Test AdParams: \n%@", [YuMeUnitTestUtils getStringYuMeAdParms:params]);
+    //NSLog(@"Initializes with the fetched YuMe Ad Params.");
     
 #if pYuMeMPlayerController
     XCTAssertTrue([pYuMeSDK yumeSdkInit:params
@@ -1407,14 +1407,14 @@
     [self performSelectorInBackground:@selector(initEventListener:) withObject:userInfo];
     [self waitForStatus:kXCTUnitWaitStatusSuccess timeout:kTIME_OUT];
     
-    //GHTestLog(@"Notifies YuMeAdEventInitSuccess event.");
+    //NSLog(@"Notifies YuMeAdEventInitSuccess event.");
     
     if (pError) {
         XCTFail(@"Fail : %@", [NSString stringWithFormat:@" %s <Error>: %@", __FUNCTION__ , [[YuMeUnitTestUtils getErrDesc:pError] description]]);
-        //GHTestLog(@"Error: %@", [[YuMeUnitTestUtils getErrDesc:pError] description]);
+        //NSLog(@"Error: %@", [[YuMeUnitTestUtils getErrDesc:pError] description]);
     }
     
-    //GHTestLog(@"Result: Initialization Successful.");
+    //NSLog(@"Result: Initialization Successful.");
     
     pError = nil;
     YuMeAdParams *adParams = [pYuMeSDK yumeSdkGetAdParams:&pError];
@@ -1449,8 +1449,8 @@
     params.videoTimeout = 2;
     XCTAssertNotNil(params, @"params object not found");
     
-    //GHTestLog(@"Test AdParams: \n%@", [YuMeUnitTestUtils getStringYuMeAdParms:params]);
-    //GHTestLog(@"Initializes with the fetched YuMe Ad Params.");
+    //NSLog(@"Test AdParams: \n%@", [YuMeUnitTestUtils getStringYuMeAdParms:params]);
+    //NSLog(@"Initializes with the fetched YuMe Ad Params.");
     
 #if pYuMeMPlayerController
     XCTAssertTrue([pYuMeSDK yumeSdkInit:params
@@ -1471,14 +1471,14 @@
     [self performSelectorInBackground:@selector(initEventListener:) withObject:userInfo];
     [self waitForStatus:kXCTUnitWaitStatusSuccess timeout:kTIME_OUT];
     
-    //GHTestLog(@"Notifies YuMeAdEventInitSuccess event.");
+    //NSLog(@"Notifies YuMeAdEventInitSuccess event.");
     
     if (pError) {
         XCTFail(@"Fail : %@", [NSString stringWithFormat:@" %s <Error>: %@", __FUNCTION__ , [[YuMeUnitTestUtils getErrDesc:pError] description]]);
-        //GHTestLog(@"Error: %@", [[YuMeUnitTestUtils getErrDesc:pError] description]);
+        //NSLog(@"Error: %@", [[YuMeUnitTestUtils getErrDesc:pError] description]);
     }
     
-    //GHTestLog(@"Result: Initialization Successful.");
+    //NSLog(@"Result: Initialization Successful.");
     
     pError = nil;
     YuMeAdParams *adParams = [pYuMeSDK yumeSdkGetAdParams:&pError];
@@ -1510,8 +1510,8 @@
     YuMeAdParams *params = [YuMeUnitTestUtils getApplicationYuMeAdParams];
     XCTAssertNotNil(params, @"params object not found");
     
-    //GHTestLog(@"Test AdParams: \n%@", [YuMeUnitTestUtils getStringYuMeAdParms:params]);
-    //GHTestLog(@"Initializes with the fetched YuMe Ad Params.");
+    //NSLog(@"Test AdParams: \n%@", [YuMeUnitTestUtils getStringYuMeAdParms:params]);
+    //NSLog(@"Initializes with the fetched YuMe Ad Params.");
     
 #if pYuMeMPlayerController
     XCTAssertTrue([pYuMeSDK yumeSdkInit:params
@@ -1532,11 +1532,11 @@
     [self performSelectorInBackground:@selector(initEventListener:) withObject:userInfo];
     [self waitForStatus:kXCTUnitWaitStatusSuccess timeout:kTIME_OUT];
 
-    //GHTestLog(@"Notifies YuMeAdEventInitFailed event.");
+    //NSLog(@"Notifies YuMeAdEventInitFailed event.");
     
     if (pError) {
-        //GHTestLog(@"Error: %@", [[YuMeUnitTestUtils getErrDesc:pError] description]);
-        //GHTestLog(@"Result: Initialization Fails.");
+        //NSLog(@"Error: %@", [[YuMeUnitTestUtils getErrDesc:pError] description]);
+        //NSLog(@"Result: Initialization Fails.");
     }
 }
 
@@ -1564,8 +1564,8 @@
     YuMeAdParams *params = [YuMeUnitTestUtils getApplicationYuMeAdParams];
     XCTAssertNotNil(params, @"params object not found");
     
-    //GHTestLog(@"Test AdParams: \n%@", [YuMeUnitTestUtils getStringYuMeAdParms:params]);
-    //GHTestLog(@"Initializes with the fetched YuMe Ad Params.");
+    //NSLog(@"Test AdParams: \n%@", [YuMeUnitTestUtils getStringYuMeAdParms:params]);
+    //NSLog(@"Initializes with the fetched YuMe Ad Params.");
     
 #if pYuMeMPlayerController
     XCTAssertTrue([pYuMeSDK yumeSdkInit:params
@@ -1586,11 +1586,11 @@
     [self performSelectorInBackground:@selector(initEventListener:) withObject:userInfo];
     [self waitForStatus:kXCTUnitWaitStatusSuccess timeout:kTIME_OUT];
     
-    //GHTestLog(@"Notifies YuMeAdEventInitFailed event.");
+    //NSLog(@"Notifies YuMeAdEventInitFailed event.");
     
     if (pError) {
-        //GHTestLog(@"Error: %@", [[YuMeUnitTestUtils getErrDesc:pError] description]);
-        //GHTestLog(@"Result: Initialization Fails.");
+        //NSLog(@"Error: %@", [[YuMeUnitTestUtils getErrDesc:pError] description]);
+        //NSLog(@"Result: Initialization Fails.");
     }
 }
 

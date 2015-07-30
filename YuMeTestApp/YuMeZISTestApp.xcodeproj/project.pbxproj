@@ -84,6 +84,28 @@
 		8EAD3C441B15D8E800C23C94 /* one.m4v in Resources */ = {isa = PBXBuildFile; fileRef = 8D3DDC591A5BF8BC006203E8 /* one.m4v */; };
 		8EAD3C451B15D8E800C23C94 /* two.m4v in Resources */ = {isa = PBXBuildFile; fileRef = 8D3DDC5A1A5BF8BC006203E8 /* two.m4v */; };
 		8EAD3C461B15D8E800C23C94 /* yume_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 8D3DDC5B1A5BF8BC006203E8 /* yume_logo.png */; };
+		8EB5F5551B6A4531004EA8D2 /* DeInit.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EB5F5541B6A4531004EA8D2 /* DeInit.m */; };
+		8EB5F5581B6A46B9004EA8D2 /* GetParams.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EB5F5561B6A46B9004EA8D2 /* GetParams.m */; };
+		8EB5F5591B6A46B9004EA8D2 /* ModParams.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EB5F5571B6A46B9004EA8D2 /* ModParams.m */; };
+		8EB5F5611B6A49FA004EA8D2 /* ClearCookies.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EB5F55A1B6A49FA004EA8D2 /* ClearCookies.m */; };
+		8EB5F5621B6A49FA004EA8D2 /* HandleEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EB5F55B1B6A49FA004EA8D2 /* HandleEvent.m */; };
+		8EB5F5631B6A49FA004EA8D2 /* InitAd.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EB5F55C1B6A49FA004EA8D2 /* InitAd.m */; };
+		8EB5F5641B6A49FA004EA8D2 /* IsAdAvailability.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EB5F55D1B6A49FA004EA8D2 /* IsAdAvailability.m */; };
+		8EB5F5651B6A49FA004EA8D2 /* SetCBT.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EB5F55E1B6A49FA004EA8D2 /* SetCBT.m */; };
+		8EB5F5661B6A49FA004EA8D2 /* ShowAdStreaming.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EB5F55F1B6A49FA004EA8D2 /* ShowAdStreaming.m */; };
+		8EB5F5671B6A49FA004EA8D2 /* StopAd.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EB5F5601B6A49FA004EA8D2 /* StopAd.m */; };
+		8EB5F5691B6A4FA9004EA8D2 /* SetCacheEnabled.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EB5F5681B6A4FA9004EA8D2 /* SetCacheEnabled.m */; };
+		8EB5F5751B6A50A1004EA8D2 /* AbortDownload.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EB5F56A1B6A50A1004EA8D2 /* AbortDownload.m */; };
+		8EB5F5761B6A50A1004EA8D2 /* ClearCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EB5F56B1B6A50A1004EA8D2 /* ClearCache.m */; };
+		8EB5F5771B6A50A1004EA8D2 /* GeneralCases.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EB5F56C1B6A50A1004EA8D2 /* GeneralCases.m */; };
+		8EB5F5781B6A50A1004EA8D2 /* GetDownloadPercentage.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EB5F56D1B6A50A1004EA8D2 /* GetDownloadPercentage.m */; };
+		8EB5F5791B6A50A1004EA8D2 /* GetDownloadStatus.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EB5F56E1B6A50A1004EA8D2 /* GetDownloadStatus.m */; };
+		8EB5F57A1B6A50A1004EA8D2 /* GetVersion.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EB5F56F1B6A50A1004EA8D2 /* GetVersion.m */; };
+		8EB5F57B1B6A50A1004EA8D2 /* IsAutoPFEnabled.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EB5F5701B6A50A1004EA8D2 /* IsAutoPFEnabled.m */; };
+		8EB5F57C1B6A50A1004EA8D2 /* IsCacheEnabled.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EB5F5711B6A50A1004EA8D2 /* IsCacheEnabled.m */; };
+		8EB5F57D1B6A50A1004EA8D2 /* PauseDownload.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EB5F5721B6A50A1004EA8D2 /* PauseDownload.m */; };
+		8EB5F57E1B6A50A1004EA8D2 /* ResumeDownload.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EB5F5731B6A50A1004EA8D2 /* ResumeDownload.m */; };
+		8EB5F57F1B6A50A1004EA8D2 /* SetLogLevel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EB5F5741B6A50A1004EA8D2 /* SetLogLevel.m */; };
 		8EFC665B1ACBC32300605328 /* YuMeAboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D3DDC251A5BF7EA006203E8 /* YuMeAboutViewController.m */; };
 		8EFC665C1ACBC32300605328 /* YuMeAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D3DDC291A5BF7EA006203E8 /* YuMeAppDelegate.m */; };
 		8EFC665D1ACBC32300605328 /* YuMeAppSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D3DDC2B1A5BF7EA006203E8 /* YuMeAppSettings.m */; };
@@ -228,6 +250,28 @@
 		8E8006C51B304B3200221BDB /* YuMeUnitTestUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YuMeUnitTestUtils.h; sourceTree = "<group>"; };
 		8E8006C61B304B3200221BDB /* YuMeUnitTestUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YuMeUnitTestUtils.m; sourceTree = "<group>"; };
 		8E9733031B26F07B006EF8BC /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		8EB5F5541B6A4531004EA8D2 /* DeInit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeInit.m; sourceTree = "<group>"; };
+		8EB5F5561B6A46B9004EA8D2 /* GetParams.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GetParams.m; sourceTree = "<group>"; };
+		8EB5F5571B6A46B9004EA8D2 /* ModParams.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModParams.m; sourceTree = "<group>"; };
+		8EB5F55A1B6A49FA004EA8D2 /* ClearCookies.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClearCookies.m; sourceTree = "<group>"; };
+		8EB5F55B1B6A49FA004EA8D2 /* HandleEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HandleEvent.m; sourceTree = "<group>"; };
+		8EB5F55C1B6A49FA004EA8D2 /* InitAd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InitAd.m; sourceTree = "<group>"; };
+		8EB5F55D1B6A49FA004EA8D2 /* IsAdAvailability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IsAdAvailability.m; sourceTree = "<group>"; };
+		8EB5F55E1B6A49FA004EA8D2 /* SetCBT.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SetCBT.m; sourceTree = "<group>"; };
+		8EB5F55F1B6A49FA004EA8D2 /* ShowAdStreaming.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShowAdStreaming.m; sourceTree = "<group>"; };
+		8EB5F5601B6A49FA004EA8D2 /* StopAd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StopAd.m; sourceTree = "<group>"; };
+		8EB5F5681B6A4FA9004EA8D2 /* SetCacheEnabled.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SetCacheEnabled.m; sourceTree = "<group>"; };
+		8EB5F56A1B6A50A1004EA8D2 /* AbortDownload.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AbortDownload.m; sourceTree = "<group>"; };
+		8EB5F56B1B6A50A1004EA8D2 /* ClearCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClearCache.m; sourceTree = "<group>"; };
+		8EB5F56C1B6A50A1004EA8D2 /* GeneralCases.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GeneralCases.m; sourceTree = "<group>"; };
+		8EB5F56D1B6A50A1004EA8D2 /* GetDownloadPercentage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GetDownloadPercentage.m; sourceTree = "<group>"; };
+		8EB5F56E1B6A50A1004EA8D2 /* GetDownloadStatus.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GetDownloadStatus.m; sourceTree = "<group>"; };
+		8EB5F56F1B6A50A1004EA8D2 /* GetVersion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GetVersion.m; sourceTree = "<group>"; };
+		8EB5F5701B6A50A1004EA8D2 /* IsAutoPFEnabled.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IsAutoPFEnabled.m; sourceTree = "<group>"; };
+		8EB5F5711B6A50A1004EA8D2 /* IsCacheEnabled.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IsCacheEnabled.m; sourceTree = "<group>"; };
+		8EB5F5721B6A50A1004EA8D2 /* PauseDownload.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PauseDownload.m; sourceTree = "<group>"; };
+		8EB5F5731B6A50A1004EA8D2 /* ResumeDownload.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResumeDownload.m; sourceTree = "<group>"; };
+		8EB5F5741B6A50A1004EA8D2 /* SetLogLevel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SetLogLevel.m; sourceTree = "<group>"; };
 		8EFC666C1ACBCCDA00605328 /* YuMeUnitTestUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YuMeUnitTestUtils.h; path = Tests/YuMeUnitTestUtils.h; sourceTree = "<group>"; };
 		8EFC666D1ACBCCDA00605328 /* YuMeUnitTestUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YuMeUnitTestUtils.m; path = Tests/YuMeUnitTestUtils.m; sourceTree = "<group>"; };
 		99895FDF4B97A4B2218212F4 /* HLS.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HLS.m; path = Tests/HLS.m; sourceTree = "<group>"; };
@@ -488,14 +532,9 @@
 		8E8006B31B304A7000221BDB /* YuMeZISTests */ = {
 			isa = PBXGroup;
 			children = (
-				8E7D6D481B32903D00BA7A25 /* ShowAd.m */,
-				8E8006C41B304B3200221BDB /* Init.m */,
-				8E8006C51B304B3200221BDB /* YuMeUnitTestUtils.h */,
-				8E8006C61B304B3200221BDB /* YuMeUnitTestUtils.m */,
-				8E8006BD1B304AD100221BDB /* XCTAsyncTestCase.h */,
-				8E8006BE1B304AD100221BDB /* XCTAsyncTestCase.m */,
-				8E8006BF1B304AD100221BDB /* XCTAsyncTestCase.podspec */,
-				8E8006C01B304AD100221BDB /* xctestify.sh */,
+				8EB5F5521B6A3411004EA8D2 /* API_UseCases */,
+				8EB5F5511B6A33FE004EA8D2 /* Common */,
+				8EB5F5531B6A4406004EA8D2 /* Conversion-files */,
 				8E8006B41B304A7000221BDB /* Supporting Files */,
 			);
 			path = YuMeZISTests;
@@ -507,6 +546,57 @@
 				8E8006B51B304A7000221BDB /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8EB5F5511B6A33FE004EA8D2 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				8E8006C51B304B3200221BDB /* YuMeUnitTestUtils.h */,
+				8E8006C61B304B3200221BDB /* YuMeUnitTestUtils.m */,
+			);
+			name = Common;
+			sourceTree = "<group>";
+		};
+		8EB5F5521B6A3411004EA8D2 /* API_UseCases */ = {
+			isa = PBXGroup;
+			children = (
+				8E8006C41B304B3200221BDB /* Init.m */,
+				8EB5F5541B6A4531004EA8D2 /* DeInit.m */,
+				8EB5F5561B6A46B9004EA8D2 /* GetParams.m */,
+				8EB5F5571B6A46B9004EA8D2 /* ModParams.m */,
+				8EB5F55F1B6A49FA004EA8D2 /* ShowAdStreaming.m */,
+				8EB5F5601B6A49FA004EA8D2 /* StopAd.m */,
+				8EB5F55A1B6A49FA004EA8D2 /* ClearCookies.m */,
+				8EB5F55E1B6A49FA004EA8D2 /* SetCBT.m */,
+				8EB5F55B1B6A49FA004EA8D2 /* HandleEvent.m */,
+				8EB5F55D1B6A49FA004EA8D2 /* IsAdAvailability.m */,
+				8EB5F55C1B6A49FA004EA8D2 /* InitAd.m */,
+				8E7D6D481B32903D00BA7A25 /* ShowAd.m */,
+				8EB5F5681B6A4FA9004EA8D2 /* SetCacheEnabled.m */,
+				8EB5F5711B6A50A1004EA8D2 /* IsCacheEnabled.m */,
+				8EB5F5701B6A50A1004EA8D2 /* IsAutoPFEnabled.m */,
+				8EB5F56B1B6A50A1004EA8D2 /* ClearCache.m */,
+				8EB5F5721B6A50A1004EA8D2 /* PauseDownload.m */,
+				8EB5F5731B6A50A1004EA8D2 /* ResumeDownload.m */,
+				8EB5F56A1B6A50A1004EA8D2 /* AbortDownload.m */,
+				8EB5F56E1B6A50A1004EA8D2 /* GetDownloadStatus.m */,
+				8EB5F56D1B6A50A1004EA8D2 /* GetDownloadPercentage.m */,
+				8EB5F56F1B6A50A1004EA8D2 /* GetVersion.m */,
+				8EB5F5741B6A50A1004EA8D2 /* SetLogLevel.m */,
+				8EB5F56C1B6A50A1004EA8D2 /* GeneralCases.m */,
+			);
+			name = API_UseCases;
+			sourceTree = "<group>";
+		};
+		8EB5F5531B6A4406004EA8D2 /* Conversion-files */ = {
+			isa = PBXGroup;
+			children = (
+				8E8006BD1B304AD100221BDB /* XCTAsyncTestCase.h */,
+				8E8006BE1B304AD100221BDB /* XCTAsyncTestCase.m */,
+				8E8006BF1B304AD100221BDB /* XCTAsyncTestCase.podspec */,
+				8E8006C01B304AD100221BDB /* xctestify.sh */,
+			);
+			name = "Conversion-files";
 			sourceTree = "<group>";
 		};
 		8EFC66681ACBC97900605328 /* API_Use_Cases */ = {
@@ -821,10 +911,32 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8EB5F57D1B6A50A1004EA8D2 /* PauseDownload.m in Sources */,
+				8EB5F5761B6A50A1004EA8D2 /* ClearCache.m in Sources */,
+				8EB5F5621B6A49FA004EA8D2 /* HandleEvent.m in Sources */,
+				8EB5F57B1B6A50A1004EA8D2 /* IsAutoPFEnabled.m in Sources */,
+				8EB5F5581B6A46B9004EA8D2 /* GetParams.m in Sources */,
 				8E8006C81B304B3200221BDB /* YuMeUnitTestUtils.m in Sources */,
 				8E7D6D491B32903D00BA7A25 /* ShowAd.m in Sources */,
+				8EB5F57A1B6A50A1004EA8D2 /* GetVersion.m in Sources */,
+				8EB5F57E1B6A50A1004EA8D2 /* ResumeDownload.m in Sources */,
 				8E8006C11B304AD100221BDB /* XCTAsyncTestCase.m in Sources */,
 				8E8006C71B304B3200221BDB /* Init.m in Sources */,
+				8EB5F5671B6A49FA004EA8D2 /* StopAd.m in Sources */,
+				8EB5F5631B6A49FA004EA8D2 /* InitAd.m in Sources */,
+				8EB5F5691B6A4FA9004EA8D2 /* SetCacheEnabled.m in Sources */,
+				8EB5F57F1B6A50A1004EA8D2 /* SetLogLevel.m in Sources */,
+				8EB5F5791B6A50A1004EA8D2 /* GetDownloadStatus.m in Sources */,
+				8EB5F5611B6A49FA004EA8D2 /* ClearCookies.m in Sources */,
+				8EB5F5751B6A50A1004EA8D2 /* AbortDownload.m in Sources */,
+				8EB5F5651B6A49FA004EA8D2 /* SetCBT.m in Sources */,
+				8EB5F57C1B6A50A1004EA8D2 /* IsCacheEnabled.m in Sources */,
+				8EB5F5591B6A46B9004EA8D2 /* ModParams.m in Sources */,
+				8EB5F5771B6A50A1004EA8D2 /* GeneralCases.m in Sources */,
+				8EB5F5781B6A50A1004EA8D2 /* GetDownloadPercentage.m in Sources */,
+				8EB5F5551B6A4531004EA8D2 /* DeInit.m in Sources */,
+				8EB5F5641B6A49FA004EA8D2 /* IsAdAvailability.m in Sources */,
+				8EB5F5661B6A49FA004EA8D2 /* ShowAdStreaming.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

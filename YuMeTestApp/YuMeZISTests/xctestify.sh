@@ -14,4 +14,12 @@ find . -maxdepth 1 | grep "\.h$\|\.m$" | xargs -IZ sed -e 's/GHTestCase/XCTestCa
 find . -maxdepth 1 | grep "\.h$\|\.m$" | xargs -IZ sed -e 's/GHAssertEquals/XCTAssertEqual/g' -i '' Z
 find . -maxdepth 1 | grep "\.h$\|\.m$" | xargs -IZ sed -e 's/GHAssertEqualStrings/XCTAssertEqualObjects/g' -i '' Z
 find . -maxdepth 1 | grep "\.h$\|\.m$" | xargs -IZ sed -e 's/GHAssertEqualObjects/XCTAssertEqualObjects/g' -i '' Z
+find . -maxdepth 1 | grep "\.h$\|\.m$" | xargs -IZ sed -e 's/GHAssertNotEquals/XCTAssertNotEqual/g' -i '' Z
 find . -maxdepth 1 | grep "\.h$\|\.m$" | xargs -IZ sed -e 's/GHAssertNil/XCTAssertNil/g' -i '' Z
+find . -maxdepth 1 | grep "\.h$\|\.m$" | xargs -IZ sed -e 's/GHRunForInterval/runForInterval/g' -i '' Z
+find . -maxdepth 1 | grep "\.h$\|\.m$" | xargs -IZ sed -e 's/GHTestLog/NSLog/g' -i '' Z
+find . -maxdepth 1 | grep "\.h$\|\.m$" | xargs -IZ sed -e 's/GHFail(/XCTFail(@"%@",/g' -i '' Z
+find . -maxdepth 1 | grep "\.h$\|\.m$" | xargs -IZ sed -e 's/kGHUnitWaitStatusSuccess/kXCTUnitWaitStatusSuccess/g' -i '' Z
+find . -maxdepth 1 | grep "\.h$\|\.m$" | xargs -IZ sed -e 's/kGHUnitWaitStatusFailure/kXCTUnitWaitStatusFailure/g' -i '' Z
+find . -maxdepth 1 | grep "\.h$\|\.m$" | xargs -IZ sed -e 's/<GHUnit\/GHUnit.h>/"XCTAsyncTestCase.h"/g' -i '' Z
+
