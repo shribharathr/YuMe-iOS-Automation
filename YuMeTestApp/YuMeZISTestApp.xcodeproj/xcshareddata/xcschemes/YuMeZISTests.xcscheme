@@ -39,7 +39,67 @@
             </BuildableReference>
             <SkippedTests>
                <Test
+                  Identifier = "ClearCache">
+               </Test>
+               <Test
+                  Identifier = "ClearCookies">
+               </Test>
+               <Test
+                  Identifier = "DeInit">
+               </Test>
+               <Test
+                  Identifier = "GeneralCases">
+               </Test>
+               <Test
+                  Identifier = "GetDownloadPercentage">
+               </Test>
+               <Test
+                  Identifier = "GetDownloadStatus">
+               </Test>
+               <Test
+                  Identifier = "GetParams">
+               </Test>
+               <Test
+                  Identifier = "GetVersion">
+               </Test>
+               <Test
+                  Identifier = "HandleEvent">
+               </Test>
+               <Test
                   Identifier = "Init">
+               </Test>
+               <Test
+                  Identifier = "InitAd">
+               </Test>
+               <Test
+                  Identifier = "IsAdAvailability">
+               </Test>
+               <Test
+                  Identifier = "IsAutoPFEnabled">
+               </Test>
+               <Test
+                  Identifier = "IsCacheEnabled">
+               </Test>
+               <Test
+                  Identifier = "ModParams">
+               </Test>
+               <Test
+                  Identifier = "PauseDownload">
+               </Test>
+               <Test
+                  Identifier = "ResumeDownload">
+               </Test>
+               <Test
+                  Identifier = "SetCBT">
+               </Test>
+               <Test
+                  Identifier = "SetCacheEnabled">
+               </Test>
+               <Test
+                  Identifier = "SetLogLevel">
+               </Test>
+               <Test
+                  Identifier = "ShowAd">
                </Test>
                <Test
                   Identifier = "ShowAd/test_SHOW_AD_003">
@@ -100,6 +160,12 @@
                </Test>
                <Test
                   Identifier = "ShowAd/test_SHOW_AD_022">
+               </Test>
+               <Test
+                  Identifier = "ShowAdStreaming">
+               </Test>
+               <Test
+                  Identifier = "StopAd">
                </Test>
                <Test
                   Identifier = "XCTAsyncTestCase">

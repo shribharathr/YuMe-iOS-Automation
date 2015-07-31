@@ -39,10 +39,11 @@
     
     // Run after each test method
     if (pYuMeSDK) {
-        [self runForInterval:1];
         [pYuMeSDK yumeSdkDeInit:&pError];
     }
-    
+
+    [self runForInterval:2];
+
     if (pYuMeInterface) {
         pYuMeInterface = nil;
     }
@@ -133,6 +134,8 @@
         NSLog(@"Result : %@", str);
         XCTFail(@"%@",str);
     }
+    
+    [self runForInterval:2];
 }
 
 
@@ -184,7 +187,7 @@
     }
     NSLog(@"Initialization Successful.");
     
-    [self runForInterval:1];
+    //[self runForInterval:1];
     
     BOOL bIsAdAlreadyDownloaded = FALSE;
     
@@ -268,13 +271,13 @@
     }
     NSLog(@"Initialization Successful.");
     
-    [self runForInterval:1];
+    [self runForInterval:0.5];
     
     BOOL bIsAdAlreadyDownloaded = FALSE;
     
     YuMeDownloadStatus eDownloadStatus = YuMeDownloadStatusNone;
     do {
-        [self runForInterval:0.5];
+        [self runForInterval:0.2];
         pError = nil;
         eDownloadStatus = [pYuMeSDK yumeSdkGetDownloadStatus:&pError];
         
