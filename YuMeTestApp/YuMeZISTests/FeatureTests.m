@@ -30,35 +30,36 @@
 - (void)setUpClass {
     // Run at start of all tests in the class
     NSLog(@"######################## RUN START - SetUpClass #######################################");
-    pYuMeInterface = [YuMeUnitTestUtils getYuMeInterface];
-    pYuMeSDK = [pYuMeInterface getYuMeSDKHandle];
-    bSDKInitialized = NO;
 }
 
 - (void)tearDownClass {
     // Run at end of all tests in the class
     NSLog(@"######################## RUN END - TeatDownClass #######################################");
-    NSError *pError = nil;
-    
-    // Run after each test method
-    if (pYuMeSDK) {
-        [self runForInterval:1];
-        [pYuMeSDK yumeSdkDeInit:&pError];
-    }
-    
-    if (pYuMeInterface) {
-        pYuMeInterface = nil;
-    }
-    [self runForInterval:1];
 }
 
 - (void)setUp {
     // Run before each test method
     NSLog(@"************************ Unit Test - SetUp ************************");
+    pYuMeInterface = [YuMeUnitTestUtils getYuMeInterface];
+    pYuMeSDK = [pYuMeInterface getYuMeSDKHandle];
+    bSDKInitialized = NO;
 }
 
 - (void)tearDown {
     NSLog(@"************************ Unit Test - TearDown ************************");
+    NSError *pError = nil;
+    
+    // Run after each test method
+    if (pYuMeSDK) {
+        [pYuMeSDK yumeSdkDeInit:&pError];
+    }
+    bSDKInitialized = NO;
+    [self runForInterval:1];
+    
+    if (pYuMeInterface) {
+        pYuMeInterface = nil;
+    }
+    [self runForInterval:1];
 }
 
 #pragma mark -
