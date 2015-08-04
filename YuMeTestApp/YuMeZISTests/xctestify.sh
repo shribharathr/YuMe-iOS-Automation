@@ -22,4 +22,3 @@ find . -maxdepth 1 | grep "\.h$\|\.m$" | xargs -IZ sed -e 's/GHFail(/XCTFail(@"%
 find . -maxdepth 1 | grep "\.h$\|\.m$" | xargs -IZ sed -e 's/kGHUnitWaitStatusSuccess/kXCTUnitWaitStatusSuccess/g' -i '' Z
 find . -maxdepth 1 | grep "\.h$\|\.m$" | xargs -IZ sed -e 's/kGHUnitWaitStatusFailure/kXCTUnitWaitStatusFailure/g' -i '' Z
 find . -maxdepth 1 | grep "\.h$\|\.m$" | xargs -IZ sed -e 's/<GHUnit\/GHUnit.h>/"XCTAsyncTestCase.h"/g' -i '' Z
-

@@ -106,6 +106,7 @@
 		8EB5F57D1B6A50A1004EA8D2 /* PauseDownload.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EB5F5721B6A50A1004EA8D2 /* PauseDownload.m */; };
 		8EB5F57E1B6A50A1004EA8D2 /* ResumeDownload.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EB5F5731B6A50A1004EA8D2 /* ResumeDownload.m */; };
 		8EB5F57F1B6A50A1004EA8D2 /* SetLogLevel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EB5F5741B6A50A1004EA8D2 /* SetLogLevel.m */; };
+		8EE804FC1B709638004F48BD /* FeatureTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EE804FB1B709638004F48BD /* FeatureTests.m */; };
 		8EFC665B1ACBC32300605328 /* YuMeAboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D3DDC251A5BF7EA006203E8 /* YuMeAboutViewController.m */; };
 		8EFC665C1ACBC32300605328 /* YuMeAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D3DDC291A5BF7EA006203E8 /* YuMeAppDelegate.m */; };
 		8EFC665D1ACBC32300605328 /* YuMeAppSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D3DDC2B1A5BF7EA006203E8 /* YuMeAppSettings.m */; };
@@ -272,6 +273,7 @@
 		8EB5F5721B6A50A1004EA8D2 /* PauseDownload.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PauseDownload.m; sourceTree = "<group>"; };
 		8EB5F5731B6A50A1004EA8D2 /* ResumeDownload.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResumeDownload.m; sourceTree = "<group>"; };
 		8EB5F5741B6A50A1004EA8D2 /* SetLogLevel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SetLogLevel.m; sourceTree = "<group>"; };
+		8EE804FB1B709638004F48BD /* FeatureTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeatureTests.m; sourceTree = "<group>"; };
 		8EFC666C1ACBCCDA00605328 /* YuMeUnitTestUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YuMeUnitTestUtils.h; path = Tests/YuMeUnitTestUtils.h; sourceTree = "<group>"; };
 		8EFC666D1ACBCCDA00605328 /* YuMeUnitTestUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YuMeUnitTestUtils.m; path = Tests/YuMeUnitTestUtils.m; sourceTree = "<group>"; };
 		99895FDF4B97A4B2218212F4 /* HLS.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HLS.m; path = Tests/HLS.m; sourceTree = "<group>"; };
@@ -532,6 +534,7 @@
 		8E8006B31B304A7000221BDB /* YuMeZISTests */ = {
 			isa = PBXGroup;
 			children = (
+				8EE804FD1B70963D004F48BD /* Feature_testcase */,
 				8EB5F5521B6A3411004EA8D2 /* API_UseCases */,
 				8EB5F5511B6A33FE004EA8D2 /* Common */,
 				8EB5F5531B6A4406004EA8D2 /* Conversion-files */,
@@ -597,6 +600,14 @@
 				8E8006C01B304AD100221BDB /* xctestify.sh */,
 			);
 			name = "Conversion-files";
+			sourceTree = "<group>";
+		};
+		8EE804FD1B70963D004F48BD /* Feature_testcase */ = {
+			isa = PBXGroup;
+			children = (
+				8EE804FB1B709638004F48BD /* FeatureTests.m */,
+			);
+			name = Feature_testcase;
 			sourceTree = "<group>";
 		};
 		8EFC66681ACBC97900605328 /* API_Use_Cases */ = {
@@ -913,6 +924,7 @@
 			files = (
 				8EB5F57D1B6A50A1004EA8D2 /* PauseDownload.m in Sources */,
 				8EB5F5761B6A50A1004EA8D2 /* ClearCache.m in Sources */,
+				8EE804FC1B709638004F48BD /* FeatureTests.m in Sources */,
 				8EB5F5621B6A49FA004EA8D2 /* HandleEvent.m in Sources */,
 				8EB5F57B1B6A50A1004EA8D2 /* IsAutoPFEnabled.m in Sources */,
 				8EB5F5581B6A46B9004EA8D2 /* GetParams.m in Sources */,

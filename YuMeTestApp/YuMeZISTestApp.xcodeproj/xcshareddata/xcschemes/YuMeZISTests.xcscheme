@@ -39,6 +39,9 @@
             </BuildableReference>
             <SkippedTests>
                <Test
+                  Identifier = "AbortDownload">
+               </Test>
+               <Test
                   Identifier = "ClearCache">
                </Test>
                <Test
