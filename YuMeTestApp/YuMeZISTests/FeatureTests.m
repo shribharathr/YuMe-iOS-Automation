@@ -59,7 +59,7 @@
     if (pYuMeInterface) {
         pYuMeInterface = nil;
     }
-    [self runForInterval:1];
+    [self runForInterval:2];
 }
 
 #pragma mark -
