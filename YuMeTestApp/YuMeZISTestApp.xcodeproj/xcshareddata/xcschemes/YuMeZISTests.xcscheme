@@ -51,6 +51,36 @@
                   Identifier = "DeInit">
                </Test>
                <Test
+                  Identifier = "FeatureTests/test_FEATURE_1GEN_MB">
+               </Test>
+               <Test
+                  Identifier = "FeatureTests/test_FEATURE_1GEN_MC">
+               </Test>
+               <Test
+                  Identifier = "FeatureTests/test_FEATURE_2GEN_MB">
+               </Test>
+               <Test
+                  Identifier = "FeatureTests/test_FEATURE_2GEN_MC">
+               </Test>
+               <Test
+                  Identifier = "FeatureTests/test_FEATURE_FLIP_SWIPE">
+               </Test>
+               <Test
+                  Identifier = "FeatureTests/test_FEATURE_FLIP_TAP">
+               </Test>
+               <Test
+                  Identifier = "FeatureTests/test_FEATURE_MRAID">
+               </Test>
+               <Test
+                  Identifier = "FeatureTests/test_FEATURE_P_I">
+               </Test>
+               <Test
+                  Identifier = "FeatureTests/test_FEATURE_VPAID">
+               </Test>
+               <Test
+                  Identifier = "FeatureTests/test_FEATURE_WRAPPER">
+               </Test>
+               <Test
                   Identifier = "GeneralCases">
                </Test>
                <Test
