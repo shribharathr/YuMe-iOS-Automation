@@ -103,6 +103,16 @@
     }
 }
 
+- (void)testSample {
+    XCTAssertNotNil(pYuMeInterface, @"pYuMeInterface object not found");
+    XCTAssertNotNil(pYuMeSDK, @"pYuMeSDK object not found");
+    
+    YuMeAdParams *params = [YuMeUnitTestUtils getApplicationYuMeAdParams];
+    XCTAssertNotNil(params, @"params object not found");
+
+    XCTAssertTrue(true);
+}
+
 
 /**
  Plain Video
