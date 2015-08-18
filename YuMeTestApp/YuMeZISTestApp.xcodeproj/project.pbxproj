@@ -7,21 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0B15752DB11F71D75FA09D73 /* GetParams.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DCA0F090D33C3AA65E6CD85 /* GetParams.m */; };
-		0EB10DB1AFE4B588DB646B45 /* ResumeDownload.m in Sources */ = {isa = PBXBuildFile; fileRef = 07C297ABA084F07C5A9234F9 /* ResumeDownload.m */; };
-		283DCCC9EC11549147D11749 /* Init.m in Sources */ = {isa = PBXBuildFile; fileRef = EB5E73174F95F0C6DAD19FB2 /* Init.m */; };
-		3DA1A950E192E2A8F8C39AC6 /* GeneralCases.m in Sources */ = {isa = PBXBuildFile; fileRef = F2687B50E0611F5C10B21D87 /* GeneralCases.m */; };
-		480F941BD7F3436417357723 /* PlainImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 80346622ED8B19AD7F54FA09 /* PlainImage.m */; };
-		4D1F85A4EBCB7808D9214929 /* SetCacheEnabled.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D0B4DB193E02534FCF485C4 /* SetCacheEnabled.m */; };
-		50C53FFE5E9758018274941E /* StopAd.m in Sources */ = {isa = PBXBuildFile; fileRef = 49EE89A0AD19562AC831A719 /* StopAd.m */; };
-		50CAE6D77847D6087CA7B927 /* IsCacheEnabled.m in Sources */ = {isa = PBXBuildFile; fileRef = 1146B787B0A4174A8EBFA1E1 /* IsCacheEnabled.m */; };
-		599E368272E0813502D648D0 /* SetLogLevel.m in Sources */ = {isa = PBXBuildFile; fileRef = 47C92EEDB8634DBC0AB9A685 /* SetLogLevel.m */; };
-		6B6FAF1A10136E96FB8EB50D /* SetCBT.m in Sources */ = {isa = PBXBuildFile; fileRef = 28BEC1893722564C7DBE5219 /* SetCBT.m */; };
-		6CB7DDEABA659C83E674189C /* ShowAdStreaming.m in Sources */ = {isa = PBXBuildFile; fileRef = DB2F7A53417D53699DD69D74 /* ShowAdStreaming.m */; };
-		75947FE6D37FAA6D7CA69B78 /* GetDownloadPercentage.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BE3973B51859E14381ED826 /* GetDownloadPercentage.m */; };
-		8417936DAD1BF7524DEAF2A5 /* ModParams.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CF120A0121E980D9A20EEC0 /* ModParams.m */; };
-		896503C6F8FCE2227B66BE54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A6EC13678357C9B9691D8CD /* Foundation.framework */; };
-		8C258525D12D7A9C5B4AF9EE /* HandleEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = F8CB24F6AFD272207B205C8B /* HandleEvent.m */; };
 		8D3DDBF61A5BF000006203E8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D3DDBF51A5BF000006203E8 /* Foundation.framework */; };
 		8D3DDBF81A5BF000006203E8 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D3DDBF71A5BF000006203E8 /* CoreGraphics.framework */; };
 		8D3DDBFA1A5BF000006203E8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D3DDBF91A5BF000006203E8 /* UIKit.framework */; };
@@ -58,8 +43,6 @@
 		8D50B0DC1A5CF997006BCA88 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D50B0D71A5CF86C006BCA88 /* Main_iPhone.storyboard */; };
 		8D50B0DD1A5CF9C5006BCA88 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8D3DDBFE1A5BF000006203E8 /* InfoPlist.strings */; };
 		8D92AAB11A9E09F900A58E28 /* YuMePresentedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D92AAB01A9E09F900A58E28 /* YuMePresentedViewController.m */; };
-		8E49D6F31AD57B8600115222 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D50B0D51A5CF86C006BCA88 /* Main_iPad.storyboard */; };
-		8E49D6F41AD57B8900115222 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D50B0D71A5CF86C006BCA88 /* Main_iPhone.storyboard */; };
 		8E734BA31B67496B0072D9AA /* EventKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D3DDC651A5BF9A9006203E8 /* EventKit.framework */; };
 		8E734BA41B67496B0072D9AA /* EventKitUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D3DDC661A5BF9A9006203E8 /* EventKitUI.framework */; };
 		8E734BA51B67497E0072D9AA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D3DDBF91A5BF000006203E8 /* UIKit.framework */; };
@@ -75,15 +58,6 @@
 		8E8006C81B304B3200221BDB /* YuMeUnitTestUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E8006C61B304B3200221BDB /* YuMeUnitTestUtils.m */; };
 		8E8006C91B304B5800221BDB /* libical.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D3DDC6F1A5BFC3D006203E8 /* libical.a */; };
 		8E8006CA1B304B5A00221BDB /* libYuMeSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D3DDC701A5BFC3D006203E8 /* libYuMeSDK.a */; };
-		8EAD3C3E1B15D8E800C23C94 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8D3DDC531A5BF8BC006203E8 /* Default-568h@2x.png */; };
-		8EAD3C3F1B15D8E800C23C94 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 8D3DDC541A5BF8BC006203E8 /* Default.png */; };
-		8EAD3C401B15D8E800C23C94 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8D3DDC551A5BF8BC006203E8 /* Default@2x.png */; };
-		8EAD3C411B15D8E800C23C94 /* icon_57x57.png in Resources */ = {isa = PBXBuildFile; fileRef = 8D3DDC561A5BF8BC006203E8 /* icon_57x57.png */; };
-		8EAD3C421B15D8E800C23C94 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 8D3DDC571A5BF8BC006203E8 /* icon.png */; };
-		8EAD3C431B15D8E800C23C94 /* info.png in Resources */ = {isa = PBXBuildFile; fileRef = 8D3DDC581A5BF8BC006203E8 /* info.png */; };
-		8EAD3C441B15D8E800C23C94 /* one.m4v in Resources */ = {isa = PBXBuildFile; fileRef = 8D3DDC591A5BF8BC006203E8 /* one.m4v */; };
-		8EAD3C451B15D8E800C23C94 /* two.m4v in Resources */ = {isa = PBXBuildFile; fileRef = 8D3DDC5A1A5BF8BC006203E8 /* two.m4v */; };
-		8EAD3C461B15D8E800C23C94 /* yume_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 8D3DDC5B1A5BF8BC006203E8 /* yume_logo.png */; };
 		8EB5F5551B6A4531004EA8D2 /* DeInit.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EB5F5541B6A4531004EA8D2 /* DeInit.m */; };
 		8EB5F5581B6A46B9004EA8D2 /* GetParams.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EB5F5561B6A46B9004EA8D2 /* GetParams.m */; };
 		8EB5F5591B6A46B9004EA8D2 /* ModParams.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EB5F5571B6A46B9004EA8D2 /* ModParams.m */; };
@@ -107,50 +81,9 @@
 		8EB5F57E1B6A50A1004EA8D2 /* ResumeDownload.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EB5F5731B6A50A1004EA8D2 /* ResumeDownload.m */; };
 		8EB5F57F1B6A50A1004EA8D2 /* SetLogLevel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EB5F5741B6A50A1004EA8D2 /* SetLogLevel.m */; };
 		8EE804FC1B709638004F48BD /* FeatureTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EE804FB1B709638004F48BD /* FeatureTests.m */; };
-		8EFC665B1ACBC32300605328 /* YuMeAboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D3DDC251A5BF7EA006203E8 /* YuMeAboutViewController.m */; };
-		8EFC665C1ACBC32300605328 /* YuMeAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D3DDC291A5BF7EA006203E8 /* YuMeAppDelegate.m */; };
-		8EFC665D1ACBC32300605328 /* YuMeAppSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D3DDC2B1A5BF7EA006203E8 /* YuMeAppSettings.m */; };
-		8EFC665E1ACBC32300605328 /* YuMeAppUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D3DDC2D1A5BF7EA006203E8 /* YuMeAppUtils.m */; };
-		8EFC665F1ACBC32300605328 /* YuMeInterface.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D3DDC2F1A5BF7EA006203E8 /* YuMeInterface.m */; };
-		8EFC66601ACBC32300605328 /* YuMeLogViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D3DDC311A5BF7EA006203E8 /* YuMeLogViewController.m */; };
-		8EFC66611ACBC32300605328 /* YuMeMPlayerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D3DDC331A5BF7EA006203E8 /* YuMeMPlayerController.m */; };
-		8EFC66621ACBC32300605328 /* YuMeSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D3DDC351A5BF7EA006203E8 /* YuMeSettingsViewController.m */; };
-		8EFC66631ACBC32300605328 /* YuMeSizeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D3DDC371A5BF7EA006203E8 /* YuMeSizeViewController.m */; };
-		8EFC66641ACBC32300605328 /* YuMeToast.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D3DDC391A5BF7EA006203E8 /* YuMeToast.m */; };
-		8EFC66651ACBC32300605328 /* YuMeVideoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D3DDC3B1A5BF7EA006203E8 /* YuMeVideoView.m */; };
-		8EFC66661ACBC32300605328 /* YuMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D3DDC3D1A5BF7EA006203E8 /* YuMeViewController.m */; };
-		8EFC66671ACBC32300605328 /* YuMePresentedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D92AAB01A9E09F900A58E28 /* YuMePresentedViewController.m */; };
-		8EFC666E1ACBCCDA00605328 /* YuMeUnitTestUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EFC666D1ACBCCDA00605328 /* YuMeUnitTestUtils.m */; };
-		8EFC66701ACBD00900605328 /* libYuMeSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D3DDC701A5BFC3D006203E8 /* libYuMeSDK.a */; };
-		8EFC66711ACBD00C00605328 /* libical.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D3DDC6F1A5BFC3D006203E8 /* libical.a */; };
-		8EFC66721ACBD02600605328 /* YuMeUnitTestUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EFC666D1ACBCCDA00605328 /* YuMeUnitTestUtils.m */; };
-		97292C6563BA7B0BB1FCE0B8 /* PlainVideo.m in Sources */ = {isa = PBXBuildFile; fileRef = C473304725FA0EA449EA2B28 /* PlainVideo.m */; };
-		99FC6C1E1A60A7FC66408361 /* ClearCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 7794E5950C91C16F32460090 /* ClearCache.m */; };
-		9FB59FD05D182F094F833E08 /* DeInit.m in Sources */ = {isa = PBXBuildFile; fileRef = 873C8F5889BC5F583035E4F8 /* DeInit.m */; };
-		9FC417BDD7D6D7F14FC5ACBE /* ShowAd.m in Sources */ = {isa = PBXBuildFile; fileRef = F9DE50945E71E6C7D829503B /* ShowAd.m */; };
-		A20FE9AAA2C5DD011F7C5027 /* HLS.m in Sources */ = {isa = PBXBuildFile; fileRef = 99895FDF4B97A4B2218212F4 /* HLS.m */; };
-		AE55C7B5DD5AC8A3E846E622 /* IsAutoPFEnabled.m in Sources */ = {isa = PBXBuildFile; fileRef = F28B127AFF826D5FA78F15A2 /* IsAutoPFEnabled.m */; };
-		B38BB6AE415401C595ED7B8B /* AdCoverage.m in Sources */ = {isa = PBXBuildFile; fileRef = FC3505F83EB99E4268C2787F /* AdCoverage.m */; };
-		B8627BD31BC49E4B731BC867 /* InitAd.m in Sources */ = {isa = PBXBuildFile; fileRef = 025BD7753CFE34CB51EE16E4 /* InitAd.m */; };
-		B9DFD64A5346607BC2F7433C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E9272240DA4A2688038B4E35 /* main.m */; };
-		CC342ED6AB767696740BA260 /* GetDownloadStatus.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F00E54FC1E8BA15D317E152 /* GetDownloadStatus.m */; };
-		CD9B0019E68DFF812DA71313 /* PauseDownload.m in Sources */ = {isa = PBXBuildFile; fileRef = A98A635F8E405135F8ED6CDE /* PauseDownload.m */; };
-		D00AFBC602C28D611FE3980E /* AbortDownload.m in Sources */ = {isa = PBXBuildFile; fileRef = 40AA89039384FA604A565E5C /* AbortDownload.m */; };
-		D122FEBE405B772E9F69038B /* IsAdAvailability.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AB068667DF16262EBFC2249 /* IsAdAvailability.m */; };
-		D19ADCECE4D6E5A6A0FA527A /* FeatureTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 67F03554CDD7B38C33763FFD /* FeatureTests.m */; };
-		E00827EFD30CB215544AD564 /* GetVersion.m in Sources */ = {isa = PBXBuildFile; fileRef = EBA924B3BD48188459E6444C /* GetVersion.m */; };
-		EF313BDBB96B650713A8EC9E /* ErrorVAST.m in Sources */ = {isa = PBXBuildFile; fileRef = 393203FD756ECDCEEF67CDF9 /* ErrorVAST.m */; };
-		FF7A7F1FBB17721057A1489D /* ClearCookies.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C2CBB6566C147A2D89D949A /* ClearCookies.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		829F09EAD49AE3E6B59E3FC9 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 8D3DDBEA1A5BF000006203E8 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 8D3DDBF11A5BF000006203E8;
-			remoteInfo = YuMeZISTestApp;
-		};
 		8E8006B81B304A7000221BDB /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 8D3DDBEA1A5BF000006203E8 /* Project object */;
@@ -161,28 +94,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		025BD7753CFE34CB51EE16E4 /* InitAd.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = InitAd.m; path = Tests/InitAd.m; sourceTree = "<group>"; };
-		042116F9FB519C7517B3C5FE /* Tests.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tests.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		07C297ABA084F07C5A9234F9 /* ResumeDownload.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ResumeDownload.m; path = Tests/ResumeDownload.m; sourceTree = "<group>"; };
-		1146B787B0A4174A8EBFA1E1 /* IsCacheEnabled.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = IsCacheEnabled.m; path = Tests/IsCacheEnabled.m; sourceTree = "<group>"; };
-		1BF5DAB1A57ECDA5DCA595FB /* Pods-Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Tests/Pods-Tests.release.xcconfig"; sourceTree = "<group>"; };
 		1C46205DD0F98E9B67CB697A /* libPods-Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		28BEC1893722564C7DBE5219 /* SetCBT.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SetCBT.m; path = Tests/SetCBT.m; sourceTree = "<group>"; };
-		2F00E54FC1E8BA15D317E152 /* GetDownloadStatus.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GetDownloadStatus.m; path = Tests/GetDownloadStatus.m; sourceTree = "<group>"; };
-		393203FD756ECDCEEF67CDF9 /* ErrorVAST.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ErrorVAST.m; path = Tests/ErrorVAST.m; sourceTree = "<group>"; };
-		3C2CBB6566C147A2D89D949A /* ClearCookies.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ClearCookies.m; path = Tests/ClearCookies.m; sourceTree = "<group>"; };
-		3DCA0F090D33C3AA65E6CD85 /* GetParams.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GetParams.m; path = Tests/GetParams.m; sourceTree = "<group>"; };
-		40AA89039384FA604A565E5C /* AbortDownload.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AbortDownload.m; path = Tests/AbortDownload.m; sourceTree = "<group>"; };
-		47C92EEDB8634DBC0AB9A685 /* SetLogLevel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SetLogLevel.m; path = Tests/SetLogLevel.m; sourceTree = "<group>"; };
-		49EE89A0AD19562AC831A719 /* StopAd.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = StopAd.m; path = Tests/StopAd.m; sourceTree = "<group>"; };
-		5CF120A0121E980D9A20EEC0 /* ModParams.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ModParams.m; path = Tests/ModParams.m; sourceTree = "<group>"; };
-		5D0B4DB193E02534FCF485C4 /* SetCacheEnabled.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SetCacheEnabled.m; path = Tests/SetCacheEnabled.m; sourceTree = "<group>"; };
-		67F03554CDD7B38C33763FFD /* FeatureTests.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FeatureTests.m; path = Tests/FeatureTests.m; sourceTree = "<group>"; };
-		7794E5950C91C16F32460090 /* ClearCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ClearCache.m; path = Tests/ClearCache.m; sourceTree = "<group>"; };
-		7AB068667DF16262EBFC2249 /* IsAdAvailability.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = IsAdAvailability.m; path = Tests/IsAdAvailability.m; sourceTree = "<group>"; };
-		7BE3973B51859E14381ED826 /* GetDownloadPercentage.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GetDownloadPercentage.m; path = Tests/GetDownloadPercentage.m; sourceTree = "<group>"; };
-		80346622ED8B19AD7F54FA09 /* PlainImage.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PlainImage.m; path = Tests/PlainImage.m; sourceTree = "<group>"; };
-		873C8F5889BC5F583035E4F8 /* DeInit.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DeInit.m; path = Tests/DeInit.m; sourceTree = "<group>"; };
 		8D3DDBF21A5BF000006203E8 /* YuMeZISTestApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YuMeZISTestApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D3DDBF51A5BF000006203E8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		8D3DDBF71A5BF000006203E8 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -274,22 +186,7 @@
 		8EB5F5731B6A50A1004EA8D2 /* ResumeDownload.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResumeDownload.m; sourceTree = "<group>"; };
 		8EB5F5741B6A50A1004EA8D2 /* SetLogLevel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SetLogLevel.m; sourceTree = "<group>"; };
 		8EE804FB1B709638004F48BD /* FeatureTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeatureTests.m; sourceTree = "<group>"; };
-		8EFC666C1ACBCCDA00605328 /* YuMeUnitTestUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YuMeUnitTestUtils.h; path = Tests/YuMeUnitTestUtils.h; sourceTree = "<group>"; };
-		8EFC666D1ACBCCDA00605328 /* YuMeUnitTestUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YuMeUnitTestUtils.m; path = Tests/YuMeUnitTestUtils.m; sourceTree = "<group>"; };
-		99895FDF4B97A4B2218212F4 /* HLS.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HLS.m; path = Tests/HLS.m; sourceTree = "<group>"; };
 		9A6EC13678357C9B9691D8CD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		A98A635F8E405135F8ED6CDE /* PauseDownload.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PauseDownload.m; path = Tests/PauseDownload.m; sourceTree = "<group>"; };
-		C473304725FA0EA449EA2B28 /* PlainVideo.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PlainVideo.m; path = Tests/PlainVideo.m; sourceTree = "<group>"; };
-		DB2F7A53417D53699DD69D74 /* ShowAdStreaming.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ShowAdStreaming.m; path = Tests/ShowAdStreaming.m; sourceTree = "<group>"; };
-		E9272240DA4A2688038B4E35 /* main.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = main.m; path = Tests/main.m; sourceTree = "<group>"; };
-		EB5E73174F95F0C6DAD19FB2 /* Init.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = Init.m; path = Tests/Init.m; sourceTree = "<group>"; };
-		EBA924B3BD48188459E6444C /* GetVersion.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GetVersion.m; path = Tests/GetVersion.m; sourceTree = "<group>"; };
-		F2687B50E0611F5C10B21D87 /* GeneralCases.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GeneralCases.m; path = Tests/GeneralCases.m; sourceTree = "<group>"; };
-		F28B127AFF826D5FA78F15A2 /* IsAutoPFEnabled.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = IsAutoPFEnabled.m; path = Tests/IsAutoPFEnabled.m; sourceTree = "<group>"; };
-		F8CB24F6AFD272207B205C8B /* HandleEvent.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HandleEvent.m; path = Tests/HandleEvent.m; sourceTree = "<group>"; };
-		F9DE50945E71E6C7D829503B /* ShowAd.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ShowAd.m; path = Tests/ShowAd.m; sourceTree = "<group>"; };
-		FC3505F83EB99E4268C2787F /* AdCoverage.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AdCoverage.m; path = Tests/AdCoverage.m; sourceTree = "<group>"; };
-		FE31B14D8BDC4FA7422FB157 /* Pods-Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Tests/Pods-Tests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -325,28 +222,9 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F2626E7C1D7E9825D4A93635 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				896503C6F8FCE2227B66BE54 /* Foundation.framework in Frameworks */,
-				8EFC66711ACBD00C00605328 /* libical.a in Frameworks */,
-				8EFC66701ACBD00900605328 /* libYuMeSDK.a in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0C9D13C9F2FB909B94974E9D /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				1BF5DAB1A57ECDA5DCA595FB /* Pods-Tests.release.xcconfig */,
-				FE31B14D8BDC4FA7422FB157 /* Pods-Tests.debug.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 		545EB2E788609F7F6660F95D /* iOS */ = {
 			isa = PBXGroup;
 			children = (
@@ -363,8 +241,6 @@
 				8E8006B31B304A7000221BDB /* YuMeZISTests */,
 				8D3DDBF41A5BF000006203E8 /* Frameworks */,
 				8D3DDBF31A5BF000006203E8 /* Products */,
-				A86AF7BB1E5AD850A999B3D5 /* Tests */,
-				0C9D13C9F2FB909B94974E9D /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -372,7 +248,6 @@
 			isa = PBXGroup;
 			children = (
 				8D3DDBF21A5BF000006203E8 /* YuMeZISTestApp.app */,
-				042116F9FB519C7517B3C5FE /* Tests.app */,
 				8E8006B21B304A7000221BDB /* YuMeZISTests.xctest */,
 			);
 			name = Products;
@@ -491,46 +366,6 @@
 			path = libYuMeSDK;
 			sourceTree = "<group>";
 		};
-		8E013C9F1ACE92A9009B9BA9 /* AdCoverage */ = {
-			isa = PBXGroup;
-			children = (
-				FC3505F83EB99E4268C2787F /* AdCoverage.m */,
-			);
-			name = AdCoverage;
-			sourceTree = "<group>";
-		};
-		8E013CA01ACE9597009B9BA9 /* Error */ = {
-			isa = PBXGroup;
-			children = (
-				393203FD756ECDCEEF67CDF9 /* ErrorVAST.m */,
-			);
-			name = Error;
-			sourceTree = "<group>";
-		};
-		8E013CA11ACE959D009B9BA9 /* PlainVideo */ = {
-			isa = PBXGroup;
-			children = (
-				C473304725FA0EA449EA2B28 /* PlainVideo.m */,
-			);
-			name = PlainVideo;
-			sourceTree = "<group>";
-		};
-		8E013CA21ACE95A7009B9BA9 /* PlainImage */ = {
-			isa = PBXGroup;
-			children = (
-				80346622ED8B19AD7F54FA09 /* PlainImage.m */,
-			);
-			name = PlainImage;
-			sourceTree = "<group>";
-		};
-		8E013CA31ACE95AF009B9BA9 /* HLS */ = {
-			isa = PBXGroup;
-			children = (
-				99895FDF4B97A4B2218212F4 /* HLS.m */,
-			);
-			name = HLS;
-			sourceTree = "<group>";
-		};
 		8E8006B31B304A7000221BDB /* YuMeZISTests */ = {
 			isa = PBXGroup;
 			children = (
@@ -610,62 +445,6 @@
 			name = Feature_testcase;
 			sourceTree = "<group>";
 		};
-		8EFC66681ACBC97900605328 /* API_Use_Cases */ = {
-			isa = PBXGroup;
-			children = (
-				EB5E73174F95F0C6DAD19FB2 /* Init.m */,
-				873C8F5889BC5F583035E4F8 /* DeInit.m */,
-				5CF120A0121E980D9A20EEC0 /* ModParams.m */,
-				3DCA0F090D33C3AA65E6CD85 /* GetParams.m */,
-				DB2F7A53417D53699DD69D74 /* ShowAdStreaming.m */,
-				49EE89A0AD19562AC831A719 /* StopAd.m */,
-				3C2CBB6566C147A2D89D949A /* ClearCookies.m */,
-				28BEC1893722564C7DBE5219 /* SetCBT.m */,
-				F8CB24F6AFD272207B205C8B /* HandleEvent.m */,
-				7AB068667DF16262EBFC2249 /* IsAdAvailability.m */,
-				025BD7753CFE34CB51EE16E4 /* InitAd.m */,
-				F9DE50945E71E6C7D829503B /* ShowAd.m */,
-				5D0B4DB193E02534FCF485C4 /* SetCacheEnabled.m */,
-				1146B787B0A4174A8EBFA1E1 /* IsCacheEnabled.m */,
-				F28B127AFF826D5FA78F15A2 /* IsAutoPFEnabled.m */,
-				7794E5950C91C16F32460090 /* ClearCache.m */,
-				A98A635F8E405135F8ED6CDE /* PauseDownload.m */,
-				07C297ABA084F07C5A9234F9 /* ResumeDownload.m */,
-				40AA89039384FA604A565E5C /* AbortDownload.m */,
-				2F00E54FC1E8BA15D317E152 /* GetDownloadStatus.m */,
-				7BE3973B51859E14381ED826 /* GetDownloadPercentage.m */,
-				EBA924B3BD48188459E6444C /* GetVersion.m */,
-				47C92EEDB8634DBC0AB9A685 /* SetLogLevel.m */,
-				F2687B50E0611F5C10B21D87 /* GeneralCases.m */,
-			);
-			name = API_Use_Cases;
-			sourceTree = "<group>";
-		};
-		8EFC666F1ACBCCE300605328 /* Common */ = {
-			isa = PBXGroup;
-			children = (
-				8EFC666C1ACBCCDA00605328 /* YuMeUnitTestUtils.h */,
-				8EFC666D1ACBCCDA00605328 /* YuMeUnitTestUtils.m */,
-			);
-			name = Common;
-			sourceTree = "<group>";
-		};
-		A86AF7BB1E5AD850A999B3D5 /* Tests */ = {
-			isa = PBXGroup;
-			children = (
-				E9272240DA4A2688038B4E35 /* main.m */,
-				8EFC666F1ACBCCE300605328 /* Common */,
-				8EFC66681ACBC97900605328 /* API_Use_Cases */,
-				8E013C9F1ACE92A9009B9BA9 /* AdCoverage */,
-				8E013CA01ACE9597009B9BA9 /* Error */,
-				8E013CA11ACE959D009B9BA9 /* PlainVideo */,
-				8E013CA21ACE95A7009B9BA9 /* PlainImage */,
-				8E013CA31ACE95AF009B9BA9 /* HLS */,
-				67F03554CDD7B38C33763FFD /* FeatureTests.m */,
-			);
-			name = Tests;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -704,26 +483,6 @@
 			productReference = 8E8006B21B304A7000221BDB /* YuMeZISTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		A7777A9B220A492C924C808B /* Tests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 3FE51F8BB19018A6717B4842 /* Build configuration list for PBXNativeTarget "Tests" */;
-			buildPhases = (
-				5E9C97359ECE8F8ECBC03E9D /* Check Pods Manifest.lock */,
-				88608EDD9A608742CB4B9C50 /* Sources */,
-				F2626E7C1D7E9825D4A93635 /* Frameworks */,
-				4EAD2DA31F2D584BA449DE60 /* Resources */,
-				1809AC546E9C021552B32731 /* Copy Pods Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				241244A3D3E75D6027AD7CD8 /* PBXTargetDependency */,
-			);
-			name = Tests;
-			productName = Tests;
-			productReference = 042116F9FB519C7517B3C5FE /* Tests.app */;
-			productType = "com.apple.product-type.application";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -754,31 +513,12 @@
 			projectRoot = "";
 			targets = (
 				8D3DDBF11A5BF000006203E8 /* YuMeZISTestApp */,
-				A7777A9B220A492C924C808B /* Tests */,
 				8E8006B11B304A7000221BDB /* YuMeZISTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		4EAD2DA31F2D584BA449DE60 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				8EAD3C3E1B15D8E800C23C94 /* Default-568h@2x.png in Resources */,
-				8EAD3C3F1B15D8E800C23C94 /* Default.png in Resources */,
-				8EAD3C401B15D8E800C23C94 /* Default@2x.png in Resources */,
-				8EAD3C411B15D8E800C23C94 /* icon_57x57.png in Resources */,
-				8EAD3C421B15D8E800C23C94 /* icon.png in Resources */,
-				8EAD3C431B15D8E800C23C94 /* info.png in Resources */,
-				8EAD3C441B15D8E800C23C94 /* one.m4v in Resources */,
-				8EAD3C451B15D8E800C23C94 /* two.m4v in Resources */,
-				8EAD3C461B15D8E800C23C94 /* yume_logo.png in Resources */,
-				8E49D6F31AD57B8600115222 /* Main_iPad.storyboard in Resources */,
-				8E49D6F41AD57B8900115222 /* Main_iPhone.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		8D3DDBF01A5BF000006203E8 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -810,92 +550,7 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
-/* Begin PBXShellScriptBuildPhase section */
-		1809AC546E9C021552B32731 /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Tests/Pods-Tests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		5E9C97359ECE8F8ECBC03E9D /* Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
-		88608EDD9A608742CB4B9C50 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				8EFC66721ACBD02600605328 /* YuMeUnitTestUtils.m in Sources */,
-				8EFC665B1ACBC32300605328 /* YuMeAboutViewController.m in Sources */,
-				8EFC665C1ACBC32300605328 /* YuMeAppDelegate.m in Sources */,
-				8EFC665D1ACBC32300605328 /* YuMeAppSettings.m in Sources */,
-				8EFC665E1ACBC32300605328 /* YuMeAppUtils.m in Sources */,
-				8EFC665F1ACBC32300605328 /* YuMeInterface.m in Sources */,
-				8EFC66601ACBC32300605328 /* YuMeLogViewController.m in Sources */,
-				8EFC66611ACBC32300605328 /* YuMeMPlayerController.m in Sources */,
-				8EFC66621ACBC32300605328 /* YuMeSettingsViewController.m in Sources */,
-				8EFC66631ACBC32300605328 /* YuMeSizeViewController.m in Sources */,
-				8EFC66641ACBC32300605328 /* YuMeToast.m in Sources */,
-				8EFC66651ACBC32300605328 /* YuMeVideoView.m in Sources */,
-				8EFC66661ACBC32300605328 /* YuMeViewController.m in Sources */,
-				8EFC66671ACBC32300605328 /* YuMePresentedViewController.m in Sources */,
-				B9DFD64A5346607BC2F7433C /* main.m in Sources */,
-				283DCCC9EC11549147D11749 /* Init.m in Sources */,
-				9FB59FD05D182F094F833E08 /* DeInit.m in Sources */,
-				8417936DAD1BF7524DEAF2A5 /* ModParams.m in Sources */,
-				0B15752DB11F71D75FA09D73 /* GetParams.m in Sources */,
-				6CB7DDEABA659C83E674189C /* ShowAdStreaming.m in Sources */,
-				50C53FFE5E9758018274941E /* StopAd.m in Sources */,
-				FF7A7F1FBB17721057A1489D /* ClearCookies.m in Sources */,
-				6B6FAF1A10136E96FB8EB50D /* SetCBT.m in Sources */,
-				8C258525D12D7A9C5B4AF9EE /* HandleEvent.m in Sources */,
-				D122FEBE405B772E9F69038B /* IsAdAvailability.m in Sources */,
-				B8627BD31BC49E4B731BC867 /* InitAd.m in Sources */,
-				9FC417BDD7D6D7F14FC5ACBE /* ShowAd.m in Sources */,
-				4D1F85A4EBCB7808D9214929 /* SetCacheEnabled.m in Sources */,
-				50CAE6D77847D6087CA7B927 /* IsCacheEnabled.m in Sources */,
-				AE55C7B5DD5AC8A3E846E622 /* IsAutoPFEnabled.m in Sources */,
-				99FC6C1E1A60A7FC66408361 /* ClearCache.m in Sources */,
-				CD9B0019E68DFF812DA71313 /* PauseDownload.m in Sources */,
-				0EB10DB1AFE4B588DB646B45 /* ResumeDownload.m in Sources */,
-				D00AFBC602C28D611FE3980E /* AbortDownload.m in Sources */,
-				CC342ED6AB767696740BA260 /* GetDownloadStatus.m in Sources */,
-				75947FE6D37FAA6D7CA69B78 /* GetDownloadPercentage.m in Sources */,
-				E00827EFD30CB215544AD564 /* GetVersion.m in Sources */,
-				599E368272E0813502D648D0 /* SetLogLevel.m in Sources */,
-				3DA1A950E192E2A8F8C39AC6 /* GeneralCases.m in Sources */,
-				B38BB6AE415401C595ED7B8B /* AdCoverage.m in Sources */,
-				EF313BDBB96B650713A8EC9E /* ErrorVAST.m in Sources */,
-				97292C6563BA7B0BB1FCE0B8 /* PlainVideo.m in Sources */,
-				480F941BD7F3436417357723 /* PlainImage.m in Sources */,
-				A20FE9AAA2C5DD011F7C5027 /* HLS.m in Sources */,
-				D19ADCECE4D6E5A6A0FA527A /* FeatureTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		8D3DDBEE1A5BF000006203E8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -903,7 +558,6 @@
 				8D3DDC481A5BF7EA006203E8 /* YuMeVideoView.m in Sources */,
 				8D3DDC451A5BF7EA006203E8 /* YuMeSettingsViewController.m in Sources */,
 				8D3DDC441A5BF7EA006203E8 /* YuMeMPlayerController.m in Sources */,
-				8EFC666E1ACBCCDA00605328 /* YuMeUnitTestUtils.m in Sources */,
 				8D3DDC3E1A5BF7EA006203E8 /* YuMeAboutViewController.m in Sources */,
 				8D3DDC021A5BF000006203E8 /* main.m in Sources */,
 				8D3DDC471A5BF7EA006203E8 /* YuMeToast.m in Sources */,
@@ -955,12 +609,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		241244A3D3E75D6027AD7CD8 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = YuMeZISTestApp;
-			target = 8D3DDBF11A5BF000006203E8 /* YuMeZISTestApp */;
-			targetProxy = 829F09EAD49AE3E6B59E3FC9 /* PBXContainerItemProxy */;
-		};
 		8E8006B91B304A7000221BDB /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 8D3DDBF11A5BF000006203E8 /* YuMeZISTestApp */;
@@ -996,32 +644,6 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		648E39E795749F0A13871E09 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1BF5DAB1A57ECDA5DCA595FB /* Pods-Tests.release.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PREFIX_HEADER = "YuMeZISTestApp/YuMeZISTestApp-Prefix.pch";
-				INFOPLIST_FILE = "Tests/Tests-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/libYuMeSDK",
-				);
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_BUNDLE_IDENTIFIER = "tests.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-			};
-			name = Release;
-		};
 		8D3DDC1C1A5BF000006203E8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1204,44 +826,9 @@
 			};
 			name = Release;
 		};
-		CB8F73000CA1BF76EDBA4658 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = FE31B14D8BDC4FA7422FB157 /* Pods-Tests.debug.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PREFIX_HEADER = "YuMeZISTestApp/YuMeZISTestApp-Prefix.pch";
-				INFOPLIST_FILE = "Tests/Tests-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/libYuMeSDK",
-				);
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = "tests.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-			};
-			name = Debug;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		3FE51F8BB19018A6717B4842 /* Build configuration list for PBXNativeTarget "Tests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				648E39E795749F0A13871E09 /* Release */,
-				CB8F73000CA1BF76EDBA4658 /* Debug */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		8D3DDBED1A5BF000006203E8 /* Build configuration list for PBXProject "YuMeZISTestApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
