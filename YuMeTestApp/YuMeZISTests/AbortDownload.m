@@ -52,8 +52,8 @@
 }
 
 - (void)aDEventListener:(NSArray *)userInfo {
-    NSString *pSelector = [userInfo objectAtIndex:0];
-    NSString *pAdEvent = [userInfo objectAtIndex:1];
+    NSString *pSelector = [[userInfo objectAtIndex:0] stringValue];
+    NSString *pAdEvent = [[userInfo objectAtIndex:1] stringValue];
     
     [YuMeUnitTestUtils getYuMeEventListenerEvent:pAdEvent completion:^(BOOL bSuccess) {
         if (bSuccess) {
