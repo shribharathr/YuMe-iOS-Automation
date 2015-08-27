@@ -17,7 +17,7 @@ export PATH=$OCLINT_HOME/bin:$PATH
 # OCLint report build
 maxPriority=15000
 
-oclint-json-compilation-database -enable-clang-static-analyzer -- -max-priority-1 $maxPriority -max-priority-2 $maxPriority -max-priority-3 $maxPriority -rc LONG_LINE=500 -rc LONG_VARIABLE_NAME=100 -report-type pmd -o bin/oclint.xml
+oclint-json-compilation-database -enable-clang-static-analyzer -- -max-priority-1 $maxPriority -max-priority-2 $maxPriority -max-priority-3 $maxPriority -rc LONG_LINE=500 -rc LONG_VARIABLE_NAME=100 -report-type pmd -o oclint.xml
     
 echo "<<<<<<<<<<<<<<<<<<<<<<< OCLINT ANALYZER END >>>>>>>>>>>>>>>>>>>>>>>>>>>"
 
