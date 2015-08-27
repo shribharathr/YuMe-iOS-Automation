@@ -10,6 +10,14 @@ export PATH=$XCTOOL_HOME/bin:$PATH
 SCHEME_NAME=YuMeZISTests
 TEST_REPORT_FILE="bin/yume_report/test-result.xml"
 
+/Users/Shared/Jenkins/Home/jobs/YuMeiOSZISUnitTest/workspace/YuMeTestApp/YuMeZISTestApp.xcworkspace
+
+PROJECT_FOLDER=/YuMeTestApp
+PROJECT=$PROJECT_FOLDER/YuMeZISTestApp
+PWORKSPACE=$PROJECT.xcworkspace
+
+echo $PWORKSPACE
+
 echo "<<<<<<<<<<<<<<<<<<<<<<< UNIT TEST START >>>>>>>>>>>>>>>>>>>>>>>>>>>"
 
 	#xcodebuild -sdk iphonesimulator \
@@ -20,11 +28,7 @@ echo "<<<<<<<<<<<<<<<<<<<<<<< UNIT TEST START >>>>>>>>>>>>>>>>>>>>>>>>>>>"
     #       ONLY_ACTIVE_ARCH=NO \
     #       clean build           
     
-echo $WORKSPACE
-echo $SCHEME_NAME
-echo $TEST_REPORT_FILE
-	
-xctool -workspace $WORKSPACE/YuMeTestApp/YuMeZISTestApp.xcworkspace -scheme $SCHEME_NAME -sdk iphonesimulator -reporter plain -reporter junit:$TEST_REPORT_FILE clean test
+xctool -workspace $PWORKSPACE -scheme $SCHEME_NAME -sdk iphonesimulator -reporter plain -reporter junit:$TEST_REPORT_FILE clean test
     
 
     #-IDECustomDerivedDataLocation=$BUILD_PATH \
