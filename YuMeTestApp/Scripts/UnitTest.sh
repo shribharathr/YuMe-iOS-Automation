@@ -4,6 +4,9 @@
 XCTOOL_HOME=/usr/local/Cellar/xctool/0.2.4
 export PATH=$XCTOOL_HOME/bin:$PATH
 
+SCHEME_NAME=YuMeZISTests
+TEST_REPORT_FILE="bin/yume_report/test-result.xml"
+
 echo "<<<<<<<<<<<<<<<<<<<<<<< UNIT TEST START >>>>>>>>>>>>>>>>>>>>>>>>>>>"
 
 	#xcodebuild -sdk iphonesimulator \
