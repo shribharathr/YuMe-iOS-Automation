@@ -15,13 +15,7 @@ PWORKSPACE=$PROJECT.xcworkspace
 
 echo "<<<<<<<<<<<<<<<<<<<<<<< UNIT TEST START >>>>>>>>>>>>>>>>>>>>>>>>>>>"
 
-	xcodebuild -sdk iphonesimulator \
-           -workspace "$WORKSPACE/$PWORKSPACE" \
-           -scheme $SCHEME_NAME \
-           -configuration Debug \
-           RUN_APPLICATION_TESTS_WITH_IOS_SIM=YES \
-           ONLY_ACTIVE_ARCH=NO \
-    	   clean build           
+xcodebuild -sdk iphonesimulator -workspace $WORKSPACE/$PWORKSPACE -scheme $SCHEME_NAME -configuration Debug RUN_APPLICATION_TESTS_WITH_IOS_SIM=YES ONLY_ACTIVE_ARCH=NO clean build          
     
 #xctool -workspace "$WORKSPACE/$PWORKSPACE" -scheme $SCHEME_NAME -sdk iphonesimulator8.4 -reporter plain -reporter junit:$TEST_REPORT_FILE test
     
