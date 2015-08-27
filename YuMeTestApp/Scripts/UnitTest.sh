@@ -23,7 +23,7 @@ echo "<<<<<<<<<<<<<<<<<<<<<<< UNIT TEST START >>>>>>>>>>>>>>>>>>>>>>>>>>>"
     #       ONLY_ACTIVE_ARCH=NO \
     #       clean build           
     
-xctool -workspace $WORKSPACE/$PWORKSPACE -scheme $SCHEME_NAME -sdk iphonesimulator8.4 -reporter plain -reporter junit:$TEST_REPORT_FILE clean test
+xctool -workspace $WORKSPACE/$PWORKSPACE -scheme $SCHEME_NAME -sdk iphonesimulator8.4 -reporter plain -reporter junit:$TEST_REPORT_FILE test
     
 
     #-IDECustomDerivedDataLocation=$BUILD_PATH \
