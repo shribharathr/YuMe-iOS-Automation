@@ -1,8 +1,5 @@
 #!/bin/bash
 
-#./Scripts/Common.sh
-#init
-
 # XCTool Setup Path
 XCTOOL_HOME=/usr/local/Cellar/xctool/0.2.4
 export PATH=$XCTOOL_HOME/bin:$PATH
@@ -16,8 +13,6 @@ PROJECT_FOLDER=YuMeTestApp
 PROJECT=$PROJECT_FOLDER/YuMeZISTestApp
 PWORKSPACE=$PROJECT.xcworkspace
 
-echo $WORKSPACE/$PWORKSPACE
-
 echo "<<<<<<<<<<<<<<<<<<<<<<< UNIT TEST START >>>>>>>>>>>>>>>>>>>>>>>>>>>"
 
 	#xcodebuild -sdk iphonesimulator \
@@ -28,7 +23,7 @@ echo "<<<<<<<<<<<<<<<<<<<<<<< UNIT TEST START >>>>>>>>>>>>>>>>>>>>>>>>>>>"
     #       ONLY_ACTIVE_ARCH=NO \
     #       clean build           
     
-xctool -workspace $WORKSPACE/$PWORKSPACE -scheme $SCHEME_NAME -sdk iphonesimulator -reporter plain -reporter junit:$TEST_REPORT_FILE clean test
+xctool -workspace $WORKSPACE/$PWORKSPACE -scheme $SCHEME_NAME -sdk iphonesimulator8.4 -reporter plain -reporter junit:$TEST_REPORT_FILE clean test
     
 
     #-IDECustomDerivedDataLocation=$BUILD_PATH \
