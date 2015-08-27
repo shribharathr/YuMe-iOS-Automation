@@ -1,9 +1,8 @@
 #!/bin/bash
 
-.Common.sh
+./Scripts/Common.sh
 
 init
-
 
 # XCTool Setup Path
 XCTOOL_HOME=/usr/local/Cellar/xctool/0.2.4
@@ -29,7 +28,7 @@ echo $WORKSPACE
 echo $SCHEME_NAME
 echo $TEST_REPORT_FILE
 	
-xctool -workspace $WORKSPACE/PWORKSPACE -scheme $SCHEME_NAME -sdk iphonesimulator -reporter plain -reporter junit:$TEST_REPORT_FILE clean test
+xctool -workspace $WORKSPACE/YuMeTestApp/YuMeZISTestApp.xcworkspace -scheme $SCHEME_NAME -sdk iphonesimulator -reporter plain -reporter junit:$TEST_REPORT_FILE clean test
     
 
     #-IDECustomDerivedDataLocation=$BUILD_PATH \
