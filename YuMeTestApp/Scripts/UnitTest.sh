@@ -1,18 +1,19 @@
-#!/bin/sh
+#!/bin/bash
+
+.Common.sh
+
+init
+
 
 # XCTool Setup Path
 XCTOOL_HOME=/usr/local/Cellar/xctool/0.2.4
 export PATH=$XCTOOL_HOME/bin:$PATH
 
-PROJECT=YuMeTestApp/YuMeZISTestApp
-PWORKSPACE=$PROJECT.xcworkspace
-
+#PROJECT=YuMeTestApp/YuMeZISTestApp
+#PWORKSPACE=$PROJECT.xcworkspace
 
 SCHEME_NAME=YuMeZISTests
 TEST_REPORT_FILE="bin/yume_report/test-result.xml"
-
-
-
 
 echo "<<<<<<<<<<<<<<<<<<<<<<< UNIT TEST START >>>>>>>>>>>>>>>>>>>>>>>>>>>"
 
@@ -24,7 +25,7 @@ echo "<<<<<<<<<<<<<<<<<<<<<<< UNIT TEST START >>>>>>>>>>>>>>>>>>>>>>>>>>>"
     #       ONLY_ACTIVE_ARCH=NO \
     #       clean build           
     
-echo $WORKSPACE/PWORKSPACE
+echo $WORKSPACE
 echo $SCHEME_NAME
 echo $TEST_REPORT_FILE
 	
