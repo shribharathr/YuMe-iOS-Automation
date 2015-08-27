@@ -28,3 +28,8 @@ TEST_REPORT_FILE="bin/yume_report/test-result.xml"
 
 # cleanup the output directory first
 rm -rf $BUILD_PATH
+
+# XCTool Setup Path
+XCTOOL_HOME=/usr/local/Cellar/xctool/0.2.4
+export PATH=$XCTOOL_HOME/bin:$PATH
+

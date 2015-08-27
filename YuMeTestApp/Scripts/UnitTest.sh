@@ -1,8 +1,5 @@
 #!/bin/sh
 
-XCTOOL_HOME=/usr/local/Cellar/xctool/0.2.4
-export PATH=$XCTOOL_HOME/bin:$PATH
-
 echo "<<<<<<<<<<<<<<<<<<<<<<< UNIT TEST START >>>>>>>>>>>>>>>>>>>>>>>>>>>"
 
 	#xcodebuild -sdk iphonesimulator \
