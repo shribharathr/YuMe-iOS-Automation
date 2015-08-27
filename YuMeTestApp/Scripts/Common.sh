@@ -24,7 +24,7 @@ COVERAGE_INFO="bin/coverage.info"
 COVERAGE_CSDK_INFO="bin/coverage-csdk.info"
 REPORT_PATH="bin/coverage_report"
 REPORT_FILE="bin/coverage.xml"
-TEST_REPORT_FILE="bin/yume_report/test-result.xml"
+
 
 # cleanup the output directory first
 rm -rf $BUILD_PATH

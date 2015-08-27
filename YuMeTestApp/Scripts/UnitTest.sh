@@ -4,8 +4,15 @@
 XCTOOL_HOME=/usr/local/Cellar/xctool/0.2.4
 export PATH=$XCTOOL_HOME/bin:$PATH
 
+PROJECT=YuMeTestApp/YuMeZISTestApp
+PWORKSPACE=$PROJECT.xcworkspace
+
+
 SCHEME_NAME=YuMeZISTests
 TEST_REPORT_FILE="bin/yume_report/test-result.xml"
+
+
+
 
 echo "<<<<<<<<<<<<<<<<<<<<<<< UNIT TEST START >>>>>>>>>>>>>>>>>>>>>>>>>>>"
 
@@ -17,11 +24,11 @@ echo "<<<<<<<<<<<<<<<<<<<<<<< UNIT TEST START >>>>>>>>>>>>>>>>>>>>>>>>>>>"
     #       ONLY_ACTIVE_ARCH=NO \
     #       clean build           
     
-echo $WORKSPACE
+echo $WORKSPACE/PWORKSPACE
 echo $SCHEME_NAME
 echo $TEST_REPORT_FILE
 	
-xctool -workspace $WORKSPACE -scheme $SCHEME_NAME -sdk iphonesimulator -reporter plain -reporter junit:$TEST_REPORT_FILE clean test
+xctool -workspace $WORKSPACE/PWORKSPACE -scheme $SCHEME_NAME -sdk iphonesimulator -reporter plain -reporter junit:$TEST_REPORT_FILE clean test
     
 
     #-IDECustomDerivedDataLocation=$BUILD_PATH \
