@@ -12,11 +12,11 @@ TEST_REPORT_FILE="bin/yume_report/test-result.xml"
 
 /Users/Shared/Jenkins/Home/jobs/YuMeiOSZISUnitTest/workspace/YuMeTestApp/YuMeZISTestApp.xcworkspace
 
-PROJECT_FOLDER=/YuMeTestApp
+PROJECT_FOLDER=YuMeTestApp
 PROJECT=$PROJECT_FOLDER/YuMeZISTestApp
 PWORKSPACE=$PROJECT.xcworkspace
 
-echo $PWORKSPACE
+echo $WORKSPACE/$PWORKSPACE
 
 echo "<<<<<<<<<<<<<<<<<<<<<<< UNIT TEST START >>>>>>>>>>>>>>>>>>>>>>>>>>>"
 
@@ -28,7 +28,7 @@ echo "<<<<<<<<<<<<<<<<<<<<<<< UNIT TEST START >>>>>>>>>>>>>>>>>>>>>>>>>>>"
     #       ONLY_ACTIVE_ARCH=NO \
     #       clean build           
     
-xctool -workspace $PWORKSPACE -scheme $SCHEME_NAME -sdk iphonesimulator -reporter plain -reporter junit:$TEST_REPORT_FILE clean test
+xctool -workspace $WORKSPACE/$PWORKSPACE -scheme $SCHEME_NAME -sdk iphonesimulator -reporter plain -reporter junit:$TEST_REPORT_FILE clean test
     
 
     #-IDECustomDerivedDataLocation=$BUILD_PATH \
