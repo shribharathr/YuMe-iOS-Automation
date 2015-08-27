@@ -1,15 +1,11 @@
 #!/bin/bash
 
-./Scripts/Common.sh
-
-init
+#./Scripts/Common.sh
+#init
 
 # XCTool Setup Path
 XCTOOL_HOME=/usr/local/Cellar/xctool/0.2.4
 export PATH=$XCTOOL_HOME/bin:$PATH
-
-#PROJECT=YuMeTestApp/YuMeZISTestApp
-#PWORKSPACE=$PROJECT.xcworkspace
 
 SCHEME_NAME=YuMeZISTests
 TEST_REPORT_FILE="bin/yume_report/test-result.xml"
