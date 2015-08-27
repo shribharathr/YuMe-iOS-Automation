@@ -23,8 +23,10 @@ echo "<<<<<<<<<<<<<<<<<<<<<<< UNIT TEST START >>>>>>>>>>>>>>>>>>>>>>>>>>>"
     #       ONLY_ACTIVE_ARCH=NO \
     #       clean build           
     
-xctool -workspace $WORKSPACE/$PWORKSPACE -scheme $SCHEME_NAME -sdk iphonesimulator8.4 -reporter plain -reporter junit:$TEST_REPORT_FILE test
+#xctool -workspace "$WORKSPACE/$PWORKSPACE" -scheme $SCHEME_NAME -sdk iphonesimulator8.4 -reporter plain -reporter junit:$TEST_REPORT_FILE test
     
+xctool -workspace /Users/Shared/Jenkins/Home/jobs/YuMeiOSZISUnitTest/workspace/YuMeTestApp/YuMeZISTestApp.xcworkspace -scheme YuMeZISTests -reporter plain  -reporter junit:$TEST_REPORT_FILE test -test-sdk iphonesimulator
+
 
     #-IDECustomDerivedDataLocation=$BUILD_PATH \
 	#GCC_GENERATE_TEST_COVERAGE_FILES=YES GCC_INSTRUMENT_PROGRAM_FLOW_ARCS=YES \
