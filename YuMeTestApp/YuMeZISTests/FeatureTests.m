@@ -7,6 +7,22 @@
 #import "YuMeAppUtils.h"
 #import "YuMePresentedViewController.h"
 
+#define AD_SERVER_URL               @"http://shadow01.yumenetworks.com/"
+#define DOMAIN_ID                   @"1736jrhZObnN"
+
+#define FEATURE_P_V_PARAMS          @""
+#define FEATURE_P_I_PARAMS          @""
+#define FEATURE_1GEN_MC_PARAMS      @""
+#define FEATURE_2GEN_MC_PARAMS      @""
+#define FEATURE_1GEN_MB_PARAMS      @""
+#define FEATURE_2GEN_MB_PARAMS      @""
+#define FEATURE_FLIP_TAP_PARAMS     @""
+#define FEATURE_FLIP_SWIPE_PARAMS   @""
+#define FEATURE_MRAID_PARAMS        @""
+#define FEATURE_WRAPPER_PARAMS      @""
+#define FEATURE_VPAID_PARAMS        @""
+
+
 @interface FeatureTests : XCTAsyncTestCase
 
 @property (nonatomic) BOOL bSDKInitialized;
@@ -146,9 +162,9 @@
 
     pError = nil;
     params.eSdkUsageMode = YuMeSdkUsageModePrefetch;
-    params.pAdServerUrl = @"http://shadow01.yumenetworks.com/";
-    params.pDomainId = @"211EsvNSRHO";
-    params.pAdditionalParams = @"placement_id=5571&advertisement_id=7585";
+    params.pAdServerUrl = AD_SERVER_URL;
+    params.pDomainId = DOMAIN_ID;
+    params.pAdditionalParams = FEATURE_P_V_PARAMS;
     
     XCTAssertTrue([pYuMeSDK yumeSdkModifyAdParams:params errorInfo:&pError], @"yumeSdkModifyAdParams() fails");
     if (pError) {
@@ -245,9 +261,9 @@
     
     pError = nil;
     params.eSdkUsageMode = YuMeSdkUsageModePrefetch;
-    params.pAdServerUrl = @"http://shadow01.yumenetworks.com/";
-    params.pDomainId = @"211EsvNSRHO";
-    params.pAdditionalParams = @"placement_id=5571&advertisement_id=9524";
+    params.pAdServerUrl = AD_SERVER_URL;
+    params.pDomainId = DOMAIN_ID;
+    params.pAdditionalParams = FEATURE_P_I_PARAMS;
     
     XCTAssertTrue([pYuMeSDK yumeSdkModifyAdParams:params errorInfo:&pError], @"yumeSdkModifyAdParams() fails");
     if (pError) {
@@ -344,9 +360,9 @@
     
     pError = nil;
     params.eSdkUsageMode = YuMeSdkUsageModePrefetch;
-    params.pAdServerUrl = @"http://shadow01.yumenetworks.com/";
-    params.pDomainId = @"211EsvNSRHO";
-    params.pAdditionalParams = @"placement_id=5571&advertisement_id=4293";
+    params.pAdServerUrl = AD_SERVER_URL;
+    params.pDomainId = DOMAIN_ID;
+    params.pAdditionalParams = FEATURE_1GEN_MC_PARAMS;
     
     XCTAssertTrue([pYuMeSDK yumeSdkModifyAdParams:params errorInfo:&pError], @"yumeSdkModifyAdParams() fails");
     if (pError) {
@@ -443,9 +459,9 @@
     
     pError = nil;
     params.eSdkUsageMode = YuMeSdkUsageModePrefetch;
-    params.pAdServerUrl = @"http://shadow01.yumenetworks.com/";
-    params.pDomainId = @"211EsvNSRHO";
-    params.pAdditionalParams = @"placement_id=5571&advertisement_id=5418";
+    params.pAdServerUrl = AD_SERVER_URL;
+    params.pDomainId = DOMAIN_ID;
+    params.pAdditionalParams = FEATURE_2GEN_MC_PARAMS;
     
     XCTAssertTrue([pYuMeSDK yumeSdkModifyAdParams:params errorInfo:&pError], @"yumeSdkModifyAdParams() fails");
     if (pError) {
@@ -542,9 +558,9 @@
     
     pError = nil;
     params.eSdkUsageMode = YuMeSdkUsageModePrefetch;
-    params.pAdServerUrl = @"http://shadow01.yumenetworks.com/";
-    params.pDomainId = @"211EsvNSRHO";
-    params.pAdditionalParams = @"placement_id=5571&advertisement_id=4294";
+    params.pAdServerUrl = AD_SERVER_URL;
+    params.pDomainId = DOMAIN_ID;
+    params.pAdditionalParams = FEATURE_1GEN_MB_PARAMS;
     
     XCTAssertTrue([pYuMeSDK yumeSdkModifyAdParams:params errorInfo:&pError], @"yumeSdkModifyAdParams() fails");
     if (pError) {
@@ -641,9 +657,9 @@
     
     pError = nil;
     params.eSdkUsageMode = YuMeSdkUsageModePrefetch;
-    params.pAdServerUrl = @"http://shadow01.yumenetworks.com/";
-    params.pDomainId = @"211EsvNSRHO";
-    params.pAdditionalParams = @"placement_id=5571&advertisement_id=5417";
+    params.pAdServerUrl = AD_SERVER_URL;
+    params.pDomainId = DOMAIN_ID;
+    params.pAdditionalParams = FEATURE_2GEN_MB_PARAMS;
     
     XCTAssertTrue([pYuMeSDK yumeSdkModifyAdParams:params errorInfo:&pError], @"yumeSdkModifyAdParams() fails");
     if (pError) {
@@ -740,9 +756,9 @@
     
     pError = nil;
     params.eSdkUsageMode = YuMeSdkUsageModePrefetch;
-    params.pAdServerUrl = @"http://shadow01.yumenetworks.com/";
-    params.pDomainId = @"211EsvNSRHO";
-    params.pAdditionalParams = @"placement_id=5571&advertisement_id=7183";
+    params.pAdServerUrl = AD_SERVER_URL;
+    params.pDomainId = DOMAIN_ID;
+    params.pAdditionalParams = FEATURE_FLIP_TAP_PARAMS;
     
     XCTAssertTrue([pYuMeSDK yumeSdkModifyAdParams:params errorInfo:&pError], @"yumeSdkModifyAdParams() fails");
     if (pError) {
@@ -839,9 +855,9 @@
     
     pError = nil;
     params.eSdkUsageMode = YuMeSdkUsageModePrefetch;
-    params.pAdServerUrl = @"http://shadow01.yumenetworks.com/";
-    params.pDomainId = @"211EsvNSRHO";
-    params.pAdditionalParams = @"placement_id=5571&advertisement_id=7223";
+    params.pAdServerUrl = AD_SERVER_URL;
+    params.pDomainId = DOMAIN_ID;
+    params.pAdditionalParams = FEATURE_FLIP_SWIPE_PARAMS;
     
     XCTAssertTrue([pYuMeSDK yumeSdkModifyAdParams:params errorInfo:&pError], @"yumeSdkModifyAdParams() fails");
     if (pError) {
@@ -1037,9 +1053,9 @@
     
     pError = nil;
     params.eSdkUsageMode = YuMeSdkUsageModePrefetch;
-    params.pAdServerUrl = @"http://shadow01.yumenetworks.com/";
-    params.pDomainId = @"211EsvNSRHO";
-    params.pAdditionalParams = @"placement_id=5571&advertisement_id=5479";
+    params.pAdServerUrl = AD_SERVER_URL;
+    params.pDomainId = DOMAIN_ID;
+    params.pAdditionalParams = FEATURE_WRAPPER_PARAMS;
     
     XCTAssertTrue([pYuMeSDK yumeSdkModifyAdParams:params errorInfo:&pError], @"yumeSdkModifyAdParams() fails");
     if (pError) {
