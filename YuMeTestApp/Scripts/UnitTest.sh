@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # XCTool Setup Path
-XCTOOL_HOME=/usr/local/Cellar/xctool/0.2.5
+XCTOOL_HOME=/usr/local/Cellar/xctool/0.2.6
 export PATH=$XCTOOL_HOME/bin:$PATH
 
 SCHEME_NAME=YuMeZISTests

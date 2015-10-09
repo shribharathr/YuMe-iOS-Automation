@@ -5,7 +5,7 @@ YUME_TEST_SCHEME=YuMeZISTests
 echo "<<<<<<<<<<<<<<<<<<<<<<< OCLINT ANALYZER START >>>>>>>>>>>>>>>>>>>>>>>>>>>"
 
 # set XCTool PATH 
-XCTOOL_HOME=/usr/local/Cellar/xctool/0.2.5
+XCTOOL_HOME=/usr/local/Cellar/xctool/0.2.6
 export PATH=$XCTOOL_HOME/bin:$PATH
 
 # xctool report with json format
