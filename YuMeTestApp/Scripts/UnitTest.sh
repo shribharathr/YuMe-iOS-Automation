@@ -7,8 +7,6 @@ export PATH=$XCTOOL_HOME/bin:$PATH
 SCHEME_NAME=YuMeZISTests
 TEST_REPORT_FILE="bin/yume_report/test-result.xml"
 
-/Users/Shared/Jenkins/Home/jobs/YuMeiOSZISUnitTest/workspace/YuMeTestApp/YuMeZISTestApp.xcworkspace
-
 PROJECT_FOLDER=YuMeTestApp
 PROJECT=$PROJECT_FOLDER/YuMeZISTestApp
 PWORKSPACE=$PROJECT.xcworkspace
