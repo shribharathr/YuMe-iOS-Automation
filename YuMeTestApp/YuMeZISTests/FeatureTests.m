@@ -103,17 +103,6 @@
     }
 }
 
-- (void)testSample {
-    XCTAssertNotNil(pYuMeInterface, @"pYuMeInterface object not found");
-    XCTAssertNotNil(pYuMeSDK, @"pYuMeSDK object not found");
-    
-    YuMeAdParams *params = [YuMeUnitTestUtils getApplicationYuMeAdParams];
-    XCTAssertNotNil(params, @"params object not found");
-
-    XCTAssertTrue(true);
-}
-
-
 /**
  Plain Video
  http://shadow01.yumenetworks.com/dynamic_preroll_playlist.vast2xml?domain=211EsvNSRHO&xml_version=v3&placement_id=5571&advertisement_id=7585
