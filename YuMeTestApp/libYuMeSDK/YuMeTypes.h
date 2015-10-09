@@ -403,7 +403,8 @@ typedef enum {
  Default Value: YES. */
 @property (nonatomic, assign) BOOL bOverrideOrientation;
 
-/** Flag to enable tap to Calendar
+/** Flag to enable Tap-to-Calendar for MRaid Ads.
+ For non-MRaid Ads, Tap-to-Calendar functionality is not supported. So, enabling this flag doesn't have any effect.
  Default value: YES */
 @property (nonatomic, assign) BOOL bEnableTTC;
 
@@ -447,6 +448,15 @@ typedef enum {
  it will be played when yumeSdkShowAd() is called.
  Default Value: YES. */
 //@property (nonatomic, assign) BOOL bAutoPlayStreamingAds;
+
+
+/** YuMe CDN Url. HTTPS will be actve if the url is HTTPS */
+@property (nonatomic, strong) NSString *pCdnUrl;
+
+/** Flag indicating whether HTTPS is to be used or not. Default is false (Use HTTP)
+ This is currently a place holder) */
+ 
+@property (nonatomic, assign) BOOL bUsesHttps;
 
 @end //@interface YuMeAdParams
 

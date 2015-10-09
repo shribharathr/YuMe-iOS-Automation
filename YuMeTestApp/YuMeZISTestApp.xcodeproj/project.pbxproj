@@ -37,7 +37,6 @@
 		8D3DDC681A5BF9A9006203E8 /* EventKitUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D3DDC661A5BF9A9006203E8 /* EventKitUI.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 		8D3DDC6A1A5BF9D2006203E8 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D3DDC691A5BF9D1006203E8 /* SystemConfiguration.framework */; };
 		8D3DDC6C1A5BF9DD006203E8 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D3DDC6B1A5BF9DD006203E8 /* MobileCoreServices.framework */; };
-		8D3DDC731A5BFC3D006203E8 /* libical.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D3DDC6F1A5BFC3D006203E8 /* libical.a */; };
 		8D3DDC741A5BFC3D006203E8 /* libYuMeSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D3DDC701A5BFC3D006203E8 /* libYuMeSDK.a */; };
 		8D50B0DB1A5CF997006BCA88 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D50B0D51A5CF86C006BCA88 /* Main_iPad.storyboard */; };
 		8D50B0DC1A5CF997006BCA88 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D50B0D71A5CF86C006BCA88 /* Main_iPhone.storyboard */; };
@@ -56,7 +55,6 @@
 		8E8006C31B304AD100221BDB /* xctestify.sh in Resources */ = {isa = PBXBuildFile; fileRef = 8E8006C01B304AD100221BDB /* xctestify.sh */; };
 		8E8006C71B304B3200221BDB /* Init.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E8006C41B304B3200221BDB /* Init.m */; };
 		8E8006C81B304B3200221BDB /* YuMeUnitTestUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E8006C61B304B3200221BDB /* YuMeUnitTestUtils.m */; };
-		8E8006C91B304B5800221BDB /* libical.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D3DDC6F1A5BFC3D006203E8 /* libical.a */; };
 		8E8006CA1B304B5A00221BDB /* libYuMeSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D3DDC701A5BFC3D006203E8 /* libYuMeSDK.a */; };
 		8EB5F5551B6A4531004EA8D2 /* DeInit.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EB5F5541B6A4531004EA8D2 /* DeInit.m */; };
 		8EB5F5581B6A46B9004EA8D2 /* GetParams.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EB5F5561B6A46B9004EA8D2 /* GetParams.m */; };
@@ -81,6 +79,8 @@
 		8EB5F57E1B6A50A1004EA8D2 /* ResumeDownload.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EB5F5731B6A50A1004EA8D2 /* ResumeDownload.m */; };
 		8EB5F57F1B6A50A1004EA8D2 /* SetLogLevel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EB5F5741B6A50A1004EA8D2 /* SetLogLevel.m */; };
 		8EE804FC1B709638004F48BD /* FeatureTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EE804FB1B709638004F48BD /* FeatureTests.m */; };
+		A8C244481BC7E88600A30AFC /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8C244471BC7E88600A30AFC /* CoreMotion.framework */; };
+		A8C2444A1BC7E89300A30AFC /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8C244491BC7E89300A30AFC /* CoreTelephony.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -143,8 +143,6 @@
 		8D3DDC661A5BF9A9006203E8 /* EventKitUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKitUI.framework; path = System/Library/Frameworks/EventKitUI.framework; sourceTree = SDKROOT; };
 		8D3DDC691A5BF9D1006203E8 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		8D3DDC6B1A5BF9DD006203E8 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
-		8D3DDC6E1A5BFC3D006203E8 /* ical.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ical.h; sourceTree = "<group>"; };
-		8D3DDC6F1A5BFC3D006203E8 /* libical.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libical.a; sourceTree = "<group>"; };
 		8D3DDC701A5BFC3D006203E8 /* libYuMeSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libYuMeSDK.a; sourceTree = "<group>"; };
 		8D3DDC711A5BFC3D006203E8 /* YuMeSDKInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YuMeSDKInterface.h; sourceTree = "<group>"; };
 		8D3DDC721A5BFC3D006203E8 /* YuMeTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YuMeTypes.h; sourceTree = "<group>"; };
@@ -187,6 +185,8 @@
 		8EB5F5741B6A50A1004EA8D2 /* SetLogLevel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SetLogLevel.m; sourceTree = "<group>"; };
 		8EE804FB1B709638004F48BD /* FeatureTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeatureTests.m; sourceTree = "<group>"; };
 		9A6EC13678357C9B9691D8CD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		A8C244471BC7E88600A30AFC /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		A8C244491BC7E89300A30AFC /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -194,7 +194,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8D3DDC731A5BFC3D006203E8 /* libical.a in Frameworks */,
+				A8C2444A1BC7E89300A30AFC /* CoreTelephony.framework in Frameworks */,
+				A8C244481BC7E88600A30AFC /* CoreMotion.framework in Frameworks */,
 				8D3DDC741A5BFC3D006203E8 /* libYuMeSDK.a in Frameworks */,
 				8D3DDC671A5BF9A9006203E8 /* EventKit.framework in Frameworks */,
 				8D3DDC681A5BF9A9006203E8 /* EventKitUI.framework in Frameworks */,
@@ -217,7 +218,6 @@
 				8E734BA51B67497E0072D9AA /* UIKit.framework in Frameworks */,
 				8E734BA31B67496B0072D9AA /* EventKit.framework in Frameworks */,
 				8E734BA41B67496B0072D9AA /* EventKitUI.framework in Frameworks */,
-				8E8006C91B304B5800221BDB /* libical.a in Frameworks */,
 				8E8006CA1B304B5A00221BDB /* libYuMeSDK.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -256,6 +256,8 @@
 		8D3DDBF41A5BF000006203E8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A8C244491BC7E89300A30AFC /* CoreTelephony.framework */,
+				A8C244471BC7E88600A30AFC /* CoreMotion.framework */,
 				8E9733031B26F07B006EF8BC /* SenTestingKit.framework */,
 				8D3DDC6B1A5BF9DD006203E8 /* MobileCoreServices.framework */,
 				8D3DDC691A5BF9D1006203E8 /* SystemConfiguration.framework */,
@@ -357,8 +359,6 @@
 		8D3DDC6D1A5BFC3C006203E8 /* libYuMeSDK */ = {
 			isa = PBXGroup;
 			children = (
-				8D3DDC6E1A5BFC3D006203E8 /* ical.h */,
-				8D3DDC6F1A5BFC3D006203E8 /* libical.a */,
 				8D3DDC701A5BFC3D006203E8 /* libYuMeSDK.a */,
 				8D3DDC711A5BFC3D006203E8 /* YuMeSDKInterface.h */,
 				8D3DDC721A5BFC3D006203E8 /* YuMeTypes.h */,
