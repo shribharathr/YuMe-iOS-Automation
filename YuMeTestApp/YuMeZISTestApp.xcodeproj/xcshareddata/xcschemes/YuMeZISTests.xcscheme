@@ -72,12 +72,6 @@
                   Identifier = "FeatureTests/test_FEATURE_MRAID">
                </Test>
                <Test
-                  Identifier = "FeatureTests/test_FEATURE_P_I">
-               </Test>
-               <Test
-                  Identifier = "FeatureTests/test_FEATURE_P_V">
-               </Test>
-               <Test
                   Identifier = "FeatureTests/test_FEATURE_VPAID">
                </Test>
                <Test
