@@ -13,9 +13,9 @@
 #import "YuMeSDKInterface.h"
 #import "YuMeMPlayerController.h"
 
-#define kTIME_OUT 60
-#define JSS_RESOURCE_PATH_DIR @"yume/jss_resources"
-#define YUME_UNITTEST_ASSETS_PATH @"/yume/unittest/";
+#define kTIME_OUT                       60
+#define JSS_RESOURCE_PATH_DIR           @"yume/jss_resources"
+#define YUME_UNITTEST_ASSETS_PATH       @"/yume/unittest/";
 
 #define EMPTY_INVALID_URL               @"http://172.18.8.72/~senthil/utest/iempty_200"
 #define EMPTY_VALID_URL                 @"http://172.18.8.72/~senthil/utest/vempty_200"
@@ -27,6 +27,21 @@
 #define FILLED_CREATIVERETRYINTERVAL    @"http://172.18.8.72/~senthil/utest/v_404retry"
 #define FILLED_EXPIRATIONTIME           @"http://172.18.8.72/~senthil/utest/v_200expiry"
 #define FILLED_PFCALLBACKINTERVAL       @"http://172.18.8.72/~senthil/utest/vempty_200callback"
+
+#define AD_SERVER_URL                   @"http://shadow01.yumenetworks.com/"
+#define DOMAIN_ID                       @"1736jrhZObnN"
+
+#define FEATURE_P_V_PARAMS              @""
+#define FEATURE_P_I_PARAMS              @""
+#define FEATURE_1GEN_MC_PARAMS          @""
+#define FEATURE_2GEN_MC_PARAMS          @""
+#define FEATURE_1GEN_MB_PARAMS          @""
+#define FEATURE_2GEN_MB_PARAMS          @""
+#define FEATURE_FLIP_TAP_PARAMS         @""
+#define FEATURE_FLIP_SWIPE_PARAMS       @""
+#define FEATURE_MRAID_PARAMS            @""
+#define FEATURE_WRAPPER_PARAMS          @""
+#define FEATURE_VPAID_PARAMS            @""
 
 static YuMeInterface *pYuMeInterface;
 static YuMeMPlayerController *pYuMeMPlayerController;

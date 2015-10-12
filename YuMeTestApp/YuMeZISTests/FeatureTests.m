@@ -7,22 +7,6 @@
 #import "YuMeAppUtils.h"
 #import "YuMePresentedViewController.h"
 
-#define AD_SERVER_URL               @"http://shadow01.yumenetworks.com/"
-#define DOMAIN_ID                   @"1736jrhZObnN"
-
-#define FEATURE_P_V_PARAMS          @""
-#define FEATURE_P_I_PARAMS          @""
-#define FEATURE_1GEN_MC_PARAMS      @""
-#define FEATURE_2GEN_MC_PARAMS      @""
-#define FEATURE_1GEN_MB_PARAMS      @""
-#define FEATURE_2GEN_MB_PARAMS      @""
-#define FEATURE_FLIP_TAP_PARAMS     @""
-#define FEATURE_FLIP_SWIPE_PARAMS   @""
-#define FEATURE_MRAID_PARAMS        @""
-#define FEATURE_WRAPPER_PARAMS      @""
-#define FEATURE_VPAID_PARAMS        @""
-
-
 @interface FeatureTests : XCTAsyncTestCase
 
 @property (nonatomic) BOOL bSDKInitialized;
