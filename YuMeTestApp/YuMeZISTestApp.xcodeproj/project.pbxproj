@@ -750,6 +750,10 @@
 				INFOPLIST_FILE = "YuMeZISTestApp/YuMeZISTestApp-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LIBRARY_SEARCH_PATHS = "$(SRCROOT)/libYuMeSDK";
+				OTHER_CFLAGS = (
+					"-Qunused-arguments",
+					"-fembed-bitcode",
+				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.yume.sdk.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -785,6 +789,7 @@
 					"$(PROJECT_DIR)/libYuMeSDK",
 				);
 				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_CFLAGS = "";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-framework",
@@ -820,6 +825,10 @@
 					"$(PROJECT_DIR)/libYuMeSDK",
 				);
 				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_CFLAGS = (
+					"-fembed-bitcode",
+					"-Qunused-arguments",
+				);
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-framework",
