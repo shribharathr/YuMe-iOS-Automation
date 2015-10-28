@@ -79,6 +79,9 @@
 		8EB5F57E1B6A50A1004EA8D2 /* ResumeDownload.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EB5F5731B6A50A1004EA8D2 /* ResumeDownload.m */; };
 		8EB5F57F1B6A50A1004EA8D2 /* SetLogLevel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EB5F5741B6A50A1004EA8D2 /* SetLogLevel.m */; };
 		8EE804FC1B709638004F48BD /* FeatureTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EE804FB1B709638004F48BD /* FeatureTests.m */; };
+		A8747A9E1BE0CE19009C75EC /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8747A9D1BE0CE19009C75EC /* AVFoundation.framework */; };
+		A8747AA01BE0CE33009C75EC /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8747A9F1BE0CE33009C75EC /* MediaPlayer.framework */; };
+		A8747AA21BE0CE50009C75EC /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8747AA11BE0CE50009C75EC /* AdSupport.framework */; };
 		A8C244481BC7E88600A30AFC /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8C244471BC7E88600A30AFC /* CoreMotion.framework */; };
 		A8C2444A1BC7E89300A30AFC /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8C244491BC7E89300A30AFC /* CoreTelephony.framework */; };
 /* End PBXBuildFile section */
@@ -185,6 +188,9 @@
 		8EB5F5741B6A50A1004EA8D2 /* SetLogLevel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SetLogLevel.m; sourceTree = "<group>"; };
 		8EE804FB1B709638004F48BD /* FeatureTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeatureTests.m; sourceTree = "<group>"; };
 		9A6EC13678357C9B9691D8CD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		A8747A9D1BE0CE19009C75EC /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		A8747A9F1BE0CE33009C75EC /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		A8747AA11BE0CE50009C75EC /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
 		A8C244471BC7E88600A30AFC /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
 		A8C244491BC7E89300A30AFC /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
@@ -194,6 +200,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A8747AA21BE0CE50009C75EC /* AdSupport.framework in Frameworks */,
+				A8747AA01BE0CE33009C75EC /* MediaPlayer.framework in Frameworks */,
+				A8747A9E1BE0CE19009C75EC /* AVFoundation.framework in Frameworks */,
 				A8C2444A1BC7E89300A30AFC /* CoreTelephony.framework in Frameworks */,
 				A8C244481BC7E88600A30AFC /* CoreMotion.framework in Frameworks */,
 				8D3DDC741A5BFC3D006203E8 /* libYuMeSDK.a in Frameworks */,
@@ -256,6 +265,9 @@
 		8D3DDBF41A5BF000006203E8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A8747AA11BE0CE50009C75EC /* AdSupport.framework */,
+				A8747A9F1BE0CE33009C75EC /* MediaPlayer.framework */,
+				A8747A9D1BE0CE19009C75EC /* AVFoundation.framework */,
 				A8C244491BC7E89300A30AFC /* CoreTelephony.framework */,
 				A8C244471BC7E88600A30AFC /* CoreMotion.framework */,
 				8E9733031B26F07B006EF8BC /* SenTestingKit.framework */,
