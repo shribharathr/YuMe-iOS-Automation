@@ -87,6 +87,19 @@
 		A8747AA51BE0D06D009C75EC /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8747A9D1BE0CE19009C75EC /* AVFoundation.framework */; };
 		A8747AA61BE0D076009C75EC /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8C244491BC7E89300A30AFC /* CoreTelephony.framework */; };
 		A8747AA71BE0D080009C75EC /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8C244471BC7E88600A30AFC /* CoreMotion.framework */; };
+		A8747AA81BE0E052009C75EC /* YuMeAboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D3DDC251A5BF7EA006203E8 /* YuMeAboutViewController.m */; };
+		A8747AA91BE0E052009C75EC /* YuMeAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D3DDC291A5BF7EA006203E8 /* YuMeAppDelegate.m */; };
+		A8747AAA1BE0E052009C75EC /* YuMeAppSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D3DDC2B1A5BF7EA006203E8 /* YuMeAppSettings.m */; };
+		A8747AAB1BE0E052009C75EC /* YuMeAppUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D3DDC2D1A5BF7EA006203E8 /* YuMeAppUtils.m */; };
+		A8747AAC1BE0E052009C75EC /* YuMeInterface.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D3DDC2F1A5BF7EA006203E8 /* YuMeInterface.m */; };
+		A8747AAD1BE0E052009C75EC /* YuMeLogViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D3DDC311A5BF7EA006203E8 /* YuMeLogViewController.m */; };
+		A8747AAE1BE0E052009C75EC /* YuMeMPlayerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D3DDC331A5BF7EA006203E8 /* YuMeMPlayerController.m */; };
+		A8747AAF1BE0E052009C75EC /* YuMeSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D3DDC351A5BF7EA006203E8 /* YuMeSettingsViewController.m */; };
+		A8747AB01BE0E052009C75EC /* YuMeSizeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D3DDC371A5BF7EA006203E8 /* YuMeSizeViewController.m */; };
+		A8747AB11BE0E052009C75EC /* YuMeToast.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D3DDC391A5BF7EA006203E8 /* YuMeToast.m */; };
+		A8747AB21BE0E052009C75EC /* YuMeVideoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D3DDC3B1A5BF7EA006203E8 /* YuMeVideoView.m */; };
+		A8747AB31BE0E052009C75EC /* YuMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D3DDC3D1A5BF7EA006203E8 /* YuMeViewController.m */; };
+		A8747AB41BE0E052009C75EC /* YuMePresentedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D92AAB01A9E09F900A58E28 /* YuMePresentedViewController.m */; };
 		A8C244481BC7E88600A30AFC /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8C244471BC7E88600A30AFC /* CoreMotion.framework */; };
 		A8C2444A1BC7E89300A30AFC /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8C244491BC7E89300A30AFC /* CoreTelephony.framework */; };
 /* End PBXBuildFile section */
@@ -598,6 +611,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A8747AA81BE0E052009C75EC /* YuMeAboutViewController.m in Sources */,
+				A8747AA91BE0E052009C75EC /* YuMeAppDelegate.m in Sources */,
+				A8747AAA1BE0E052009C75EC /* YuMeAppSettings.m in Sources */,
+				A8747AAB1BE0E052009C75EC /* YuMeAppUtils.m in Sources */,
+				A8747AAC1BE0E052009C75EC /* YuMeInterface.m in Sources */,
+				A8747AAD1BE0E052009C75EC /* YuMeLogViewController.m in Sources */,
+				A8747AAE1BE0E052009C75EC /* YuMeMPlayerController.m in Sources */,
+				A8747AAF1BE0E052009C75EC /* YuMeSettingsViewController.m in Sources */,
+				A8747AB01BE0E052009C75EC /* YuMeSizeViewController.m in Sources */,
+				A8747AB11BE0E052009C75EC /* YuMeToast.m in Sources */,
+				A8747AB21BE0E052009C75EC /* YuMeVideoView.m in Sources */,
+				A8747AB31BE0E052009C75EC /* YuMeViewController.m in Sources */,
+				A8747AB41BE0E052009C75EC /* YuMePresentedViewController.m in Sources */,
 				8EB5F57D1B6A50A1004EA8D2 /* PauseDownload.m in Sources */,
 				8EB5F5761B6A50A1004EA8D2 /* ClearCache.m in Sources */,
 				8EE804FC1B709638004F48BD /* FeatureTests.m in Sources */,
