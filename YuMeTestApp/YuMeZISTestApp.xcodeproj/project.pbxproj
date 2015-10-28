@@ -770,7 +770,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer: Ravi Kodali (567R54LS73)";
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_BITCODE = YES;
+				ENABLE_BITCODE = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
@@ -810,7 +810,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer: Ravi Kodali (567R54LS73)";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_BITCODE = YES;
+				ENABLE_BITCODE = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
@@ -825,10 +825,7 @@
 					"$(PROJECT_DIR)/libYuMeSDK",
 				);
 				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_CFLAGS = (
-					"-fembed-bitcode",
-					"-Qunused-arguments",
-				);
+				OTHER_CFLAGS = "";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-framework",
