@@ -82,6 +82,11 @@
 		A8747A9E1BE0CE19009C75EC /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8747A9D1BE0CE19009C75EC /* AVFoundation.framework */; };
 		A8747AA01BE0CE33009C75EC /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8747A9F1BE0CE33009C75EC /* MediaPlayer.framework */; };
 		A8747AA21BE0CE50009C75EC /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8747AA11BE0CE50009C75EC /* AdSupport.framework */; };
+		A8747AA31BE0D05A009C75EC /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8747AA11BE0CE50009C75EC /* AdSupport.framework */; };
+		A8747AA41BE0D063009C75EC /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8747A9F1BE0CE33009C75EC /* MediaPlayer.framework */; };
+		A8747AA51BE0D06D009C75EC /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8747A9D1BE0CE19009C75EC /* AVFoundation.framework */; };
+		A8747AA61BE0D076009C75EC /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8C244491BC7E89300A30AFC /* CoreTelephony.framework */; };
+		A8747AA71BE0D080009C75EC /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8C244471BC7E88600A30AFC /* CoreMotion.framework */; };
 		A8C244481BC7E88600A30AFC /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8C244471BC7E88600A30AFC /* CoreMotion.framework */; };
 		A8C2444A1BC7E89300A30AFC /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8C244491BC7E89300A30AFC /* CoreTelephony.framework */; };
 /* End PBXBuildFile section */
@@ -220,6 +225,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A8747AA71BE0D080009C75EC /* CoreMotion.framework in Frameworks */,
+				A8747AA61BE0D076009C75EC /* CoreTelephony.framework in Frameworks */,
+				A8747AA51BE0D06D009C75EC /* AVFoundation.framework in Frameworks */,
+				A8747AA41BE0D063009C75EC /* MediaPlayer.framework in Frameworks */,
+				A8747AA31BE0D05A009C75EC /* AdSupport.framework in Frameworks */,
 				8E734BA91B6749B90072D9AA /* Foundation.framework in Frameworks */,
 				8E734BA81B6749AD0072D9AA /* MobileCoreServices.framework in Frameworks */,
 				8E734BA71B6749A50072D9AA /* SystemConfiguration.framework in Frameworks */,
