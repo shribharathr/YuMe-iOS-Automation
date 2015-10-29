@@ -6,6 +6,11 @@
 #  Created by yume on 10/29/15.
 #  Copyright © 2015 YuMe. All rights reserved.
 
+#import path
+export PATH=${PATH}:/usr/local/bin
+
+YUME_TEST_SCHEME=YuMeZISTests
+
 # Run test and get JUnit report XML
 xctool -workspace ${WORKSPACE}/YuMeTestApp/YuMeZISTestApp.xcworkspace -scheme $YUME_TEST_SCHEME -reporter plain -sdk iphonesimulator -reporter junit:test-reports/yume_test-report.xml test -resetSimulator -freshInstall
 
