@@ -6,14 +6,17 @@
 #  Created by yume on 10/29/15.
 #  Copyright © 2015 YuMe. All rights reserved.
 
+#import path
+export PATH=${PATH}:/usr/local/bin
+
+YUME_TEST_SCHEME=YuMeZISTests
 
 # OCLint Analysis - PMD Result
 # xctool report with json-compilation-database format
 xctool -workspace ${WORKSPACE}/YuMeTestApp/YuMeZISTestApp.xcworkspace -scheme "$YUME_TEST_SCHEME" -reporter json-compilation-database:compile_commands.json clean build
 
 #PMD Analysis
-oclint-json-compilation-database -e Pods -- -rc=LONG_LINE=500 -rc=NCSS_METHOD=60 -rc=LONG_METHOD=500 -rc LONG_VARIABLE_NAME=100 -rc=MINIMUM_CASES_IN_SWITCH=1 -max-priority-1 1000
--max-priority-2 1000 -max-priority-3 1000 -report-type pmd -o test-reports/yume_oclint.xml
+oclint-json-compilation-database -e Pods -- -rc=LONG_LINE=500 -rc=NCSS_METHOD=60 -rc=LONG_METHOD=500 -rc LONG_VARIABLE_NAME=100 -rc=MINIMUM_CASES_IN_SWITCH=1 -max-priority-1 1000 -max-priority-2 1000 -max-priority-3 1000 -report-type pmd -o test-reports/yume_oclint.xml
 #-report-type html -o test-reports/yume_report.html
 
 
